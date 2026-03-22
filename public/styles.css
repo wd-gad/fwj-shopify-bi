@@ -75,6 +75,25 @@ body {
   max-width: 15ch;
 }
 
+.back-to-portal-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  margin-bottom: 12px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.82rem;
+  transition: background 0.15s, color 0.15s;
+}
+.back-to-portal-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+}
+
 .lede {
   max-width: 46ch;
   color: var(--muted);
