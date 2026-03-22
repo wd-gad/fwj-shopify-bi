@@ -549,8 +549,28 @@ server.listen(PORT, HOST, () => {
       else console.log("prisma db push: schema synced");
     });
 
-    // Seed contest schedules from bundled JSON
+    // Seed contest schedules, then reclassify products, then rebuild analytics
     const { seedContestSchedules } = require("./scripts/seed-contest-schedules.js");
-    seedContestSchedules().catch((err) => console.error("seed-contest-schedules failed:", err));
+    seedContestSchedules()
+      .then(() => {
+        const { execFile } = require("child_process");
+        const node = process.execPath;
+        const reclassify = require("path").join(__dirname, "scripts/reclassify-products.js");
+        const rebuild = require("path").join(__dirname, "scripts/rebuild-analytics.js");
+        return new Promise((resolve, reject) => {
+          execFile(node, [reclassify], (err, stdout, stderr) => {
+            if (stdout) process.stdout.write(stdout);
+            if (stderr) process.stderr.write(stderr);
+            if (err) { console.error("reclassify-products failed:", err.message); return reject(err); }
+            execFile(node, [rebuild], (err2, stdout2, stderr2) => {
+              if (stdout2) process.stdout.write(stdout2);
+              if (stderr2) process.stderr.write(stderr2);
+              if (err2) { console.error("rebuild-analytics failed:", err2.message); return reject(err2); }
+              resolve();
+            });
+          });
+        });
+      })
+      .catch((err) => console.error("startup analytics init failed:", err));
   }
 });
