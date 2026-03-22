@@ -493,6 +493,11 @@ const server = http.createServer(async (req, res) => {
       return await handleSsoPortal(req, res, requestUrl);
     }
 
+    // Health check — no auth required
+    if (pathname === "/api/health") {
+      return sendJson(res, 200, { ok: true });
+    }
+
     // Internal server-to-server calls (e.g. from Itinerary)
     const isInternalCall = INTERNAL_API_KEY && req.headers["x-internal-key"] === INTERNAL_API_KEY;
     const isInternalPath = INTERNAL_PATHS.includes(pathname);
