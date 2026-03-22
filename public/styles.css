@@ -1877,6 +1877,11 @@ body:not([data-role="ADMIN"]) .admin-only {
   display: none !important;
 }
 
+/* Inhouse-only elements: hidden for USER role */
+body[data-role="USER"] .inhouse-only {
+  display: none !important;
+}
+
 /* Revenue fields: blurred for USER role (in-house flag required to see) */
 body[data-role="USER"] .revenue-field,
 body[data-role="USER"] .revenue-card,
