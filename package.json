@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
+    "postinstall": "prisma generate",
     "dev": "node --env-file=.env server.js",
     "contest:import": "node --env-file=.env scripts/import-contest-schedules.js",
     "db:generate": "prisma generate",

@@ -9,23 +9,9 @@ if (fs.existsSync(envPath)) {
   dotenv.config({ path: envPath, quiet: true });
 }
 
-function validateDatabaseUrl() {
-  const databaseUrl = process.env.DATABASE_URL;
-
-  if (!databaseUrl) {
-    throw new Error(
-      `DATABASE_URL is not configured. Set it in ${envPath} or export it before starting the app.`
-    );
-  }
-
-  if (!/^postgres(ql)?:\/\//.test(databaseUrl)) {
-    throw new Error(
-      "DATABASE_URL must start with postgresql:// or postgres:// so Prisma can connect to PostgreSQL."
-    );
-  }
+if (!process.env.DATABASE_URL) {
+  console.warn("WARNING: DATABASE_URL is not set. Database queries will fail.");
 }
-
-validateDatabaseUrl();
 
 const prisma = global.__documentPrintPrisma ?? new PrismaClient();
 
