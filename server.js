@@ -535,20 +535,17 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-async function migrate() {
-  if (!process.env.DATABASE_URL) return;
-  try {
-    const { execSync } = require("child_process");
-    execSync("npx prisma db push --accept-data-loss", { stdio: "inherit" });
-  } catch (e) {
-    console.error("prisma db push failed:", e.message);
-  }
-}
+server.listen(PORT, HOST, () => {
+  console.log(`Shopify analytics dashboard running at http://${HOST}:${PORT}`);
+  console.log(`Alias: http://${LOCAL_ALIAS}`);
+  scheduleNextAutoSync();
 
-migrate().then(() => {
-  server.listen(PORT, HOST, () => {
-    console.log(`Shopify analytics dashboard running at http://${HOST}:${PORT}`);
-    console.log(`Alias: http://${LOCAL_ALIAS}`);
-    scheduleNextAutoSync();
-  });
+  // Run schema sync in background after server is up
+  if (process.env.DATABASE_URL) {
+    const { exec } = require("child_process");
+    exec("npx prisma db push --accept-data-loss", (err, stdout, stderr) => {
+      if (err) console.error("prisma db push failed:", err.message);
+      else console.log("prisma db push: schema synced");
+    });
+  }
 });
