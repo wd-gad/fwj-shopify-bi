@@ -103,7 +103,8 @@ async function handleSsoPortal(req, res, url) {
     30 * 24 * 3600
   );
 
-  const secure = url.origin.startsWith("https://");
+  const secure = req.headers["x-forwarded-proto"] === "https" || url.origin.startsWith("https://");
+  const baseOrigin = secure ? `https://${req.headers.host}` : url.origin;
   const cookieParts = [
     `${SESSION_COOKIE}=${sessionToken}`,
     "HttpOnly", "SameSite=Lax", "Path=/",
@@ -111,7 +112,7 @@ async function handleSsoPortal(req, res, url) {
     ...(secure ? ["Secure"] : []),
   ];
 
-  res.writeHead(302, { Location: new URL("/", url.origin).toString(), "Set-Cookie": cookieParts.join("; ") });
+  res.writeHead(302, { Location: new URL("/", baseOrigin).toString(), "Set-Cookie": cookieParts.join("; ") });
   res.end();
 }
 const PUBLIC_DIR = path.join(__dirname, "public");
