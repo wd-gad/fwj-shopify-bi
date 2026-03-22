@@ -533,22 +533,29 @@ async function getEventBreakdown({ limit = 20 } = {}) {
 }
 
 async function getEventOptions() {
-  const events = await prisma.eventEntry.groupBy({
-    by: ["eventName", "eventDate", "eventVenueName"],
-    where: {
-      status: "applied",
-      eventDate: dateGte(DEFAULT_DISPLAY_FROM),
-    },
-    _count: { _all: true },
-    orderBy: [{ eventDate: "asc" }, { eventName: "asc" }]
+  // Use ContestSchedule (non-nullable eventDate) to find 2026+ events,
+  // then count matching EventEntry records by contestName.
+  // EventEntry.eventDate is nullable so filtering on it misses many records.
+  const schedules = await prisma.contestSchedule.findMany({
+    where: { eventDate: { gte: DEFAULT_DISPLAY_FROM } },
+    orderBy: [{ eventDate: "asc" }, { contestName: "asc" }]
   });
 
-  return events.map((event) => ({
-    eventName: event.eventName,
-    eventDate: event.eventDate,
-    eventVenueName: event.eventVenueName,
-    entries: event._count._all
-  }));
+  const results = await Promise.all(
+    schedules.map(async (schedule) => {
+      const count = await prisma.eventEntry.count({
+        where: { status: "applied", eventName: schedule.contestName }
+      });
+      return {
+        eventName: schedule.contestName,
+        eventDate: schedule.eventDate,
+        eventVenueName: schedule.venueName ?? null,
+        entries: count
+      };
+    })
+  );
+
+  return results.filter((r) => r.entries > 0);
 }
 
 async function getEventInsights(eventName) {
@@ -574,7 +581,6 @@ async function getEventInsights(eventName) {
   const entries = await prisma.eventEntry.findMany({
     where: {
       status: "applied",
-      appliedAt: dateGte(DEFAULT_DISPLAY_FROM),
       eventName
     },
     include: {
@@ -778,9 +784,6 @@ async function getSpectatorInsights(eventName) {
     where: {
       title: {
         contains: eventName
-      },
-      order: {
-        orderedAt: dateGte(DEFAULT_DISPLAY_FROM)
       }
     },
     select: {
