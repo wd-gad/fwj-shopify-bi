@@ -983,25 +983,32 @@ function exportCustomersAsCsv(rows = state.customersPayload || []) {
 
 function renderEventOptions(events) {
   state.eventOptions = events;
+
+  // Default to the next upcoming event (first with eventDate >= today), falling back to first
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const defaultEvent =
+    events.find((e) => e.eventDate && new Date(e.eventDate) >= today) ?? events[0];
+
   eventSelect.innerHTML = events
-    .map((event, index) => {
-      const selected = !state.selectedEventName && index === 0 ? "selected" : "";
+    .map((event) => {
+      const selected = !state.selectedEventName && event === defaultEvent ? "selected" : "";
       return `<option value="${event.eventName}" ${selected}>${event.eventName}</option>`;
     })
     .join("");
 
   spectatorEventSelect.innerHTML = events
-    .map((event, index) => {
-      const selected = !state.selectedSpectatorEventName && index === 0 ? "selected" : "";
+    .map((event) => {
+      const selected = !state.selectedSpectatorEventName && event === defaultEvent ? "selected" : "";
       return `<option value="${event.eventName}" ${selected}>${event.eventName}</option>`;
     })
     .join("");
 
-  if (!state.selectedEventName && events[0]) {
-    state.selectedEventName = events[0].eventName;
+  if (!state.selectedEventName && defaultEvent) {
+    state.selectedEventName = defaultEvent.eventName;
   }
-  if (!state.selectedSpectatorEventName && events[0]) {
-    state.selectedSpectatorEventName = events[0].eventName;
+  if (!state.selectedSpectatorEventName && defaultEvent) {
+    state.selectedSpectatorEventName = defaultEvent.eventName;
   }
   if (state.selectedEventName) {
     eventSelect.value = state.selectedEventName;
