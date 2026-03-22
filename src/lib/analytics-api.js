@@ -537,7 +537,6 @@ async function getEventOptions() {
     by: ["eventName", "eventDate", "eventVenueName"],
     where: {
       status: "applied",
-      appliedAt: dateGte(DEFAULT_DISPLAY_FROM)
     },
     _count: { _all: true },
     orderBy: [{ eventDate: "asc" }, { eventName: "asc" }]
