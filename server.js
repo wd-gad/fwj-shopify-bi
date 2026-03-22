@@ -548,5 +548,9 @@ server.listen(PORT, HOST, () => {
       if (err) console.error("prisma db push failed:", err.message);
       else console.log("prisma db push: schema synced");
     });
+
+    // Seed contest schedules from bundled JSON
+    const { seedContestSchedules } = require("./scripts/seed-contest-schedules.js");
+    seedContestSchedules().catch((err) => console.error("seed-contest-schedules failed:", err));
   }
 });
