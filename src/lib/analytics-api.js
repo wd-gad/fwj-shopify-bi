@@ -1,7 +1,7 @@
 const { prisma } = require("./prisma.js");
 const { normalizePrefecture, inferRegionFromPrefecture } = require("./member-analytics.js");
 
-const DEFAULT_DISPLAY_FROM = new Date("2026-01-01T00:00:00.000Z");
+const DEFAULT_DISPLAY_FROM = null;
 
 function maxDate(left, right) {
   if (!left) return right;
