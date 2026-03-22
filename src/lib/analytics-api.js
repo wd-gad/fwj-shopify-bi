@@ -537,6 +537,7 @@ async function getEventOptions() {
     by: ["eventName", "eventDate", "eventVenueName"],
     where: {
       status: "applied",
+      eventDate: dateGte(DEFAULT_DISPLAY_FROM),
     },
     _count: { _all: true },
     orderBy: [{ eventDate: "asc" }, { eventName: "asc" }]
@@ -573,7 +574,6 @@ async function getEventInsights(eventName) {
   const entries = await prisma.eventEntry.findMany({
     where: {
       status: "applied",
-      appliedAt: dateGte(DEFAULT_DISPLAY_FROM),
       eventName
     },
     include: {
@@ -778,9 +778,6 @@ async function getSpectatorInsights(eventName) {
       title: {
         contains: eventName
       },
-      order: {
-        orderedAt: dateGte(DEFAULT_DISPLAY_FROM)
-      }
     },
     select: {
       title: true,
