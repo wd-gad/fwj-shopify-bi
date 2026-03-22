@@ -3,6 +3,10 @@ const { normalizePrefecture, inferRegionFromPrefecture } = require("./member-ana
 
 const DEFAULT_DISPLAY_FROM = null;
 
+function dateGte(date) {
+  return date ? { gte: date } : {};
+}
+
 function maxDate(left, right) {
   if (!left) return right;
   if (!right) return left;
@@ -514,7 +518,7 @@ async function getEventBreakdown({ limit = 20 } = {}) {
     by: ["eventName", "eventDate"],
     where: {
       status: "applied",
-      appliedAt: { gte: DEFAULT_DISPLAY_FROM }
+      appliedAt: dateGte(DEFAULT_DISPLAY_FROM)
     },
     _count: { _all: true },
     orderBy: [{ eventDate: "desc" }, { eventName: "asc" }],
@@ -533,7 +537,7 @@ async function getEventOptions() {
     by: ["eventName", "eventDate", "eventVenueName"],
     where: {
       status: "applied",
-      appliedAt: { gte: DEFAULT_DISPLAY_FROM }
+      appliedAt: dateGte(DEFAULT_DISPLAY_FROM)
     },
     _count: { _all: true },
     orderBy: [{ eventDate: "asc" }, { eventName: "asc" }]
@@ -570,7 +574,7 @@ async function getEventInsights(eventName) {
   const entries = await prisma.eventEntry.findMany({
     where: {
       status: "applied",
-      appliedAt: { gte: DEFAULT_DISPLAY_FROM },
+      appliedAt: dateGte(DEFAULT_DISPLAY_FROM),
       eventName
     },
     include: {
@@ -637,7 +641,7 @@ async function getEventInsights(eventName) {
           contains: eventName
         },
         order: {
-          orderedAt: { gte: DEFAULT_DISPLAY_FROM }
+          orderedAt: dateGte(DEFAULT_DISPLAY_FROM)
         }
       },
       select: {
@@ -658,7 +662,7 @@ async function getEventInsights(eventName) {
           contains: eventName
         },
         order: {
-          orderedAt: { gte: DEFAULT_DISPLAY_FROM }
+          orderedAt: dateGte(DEFAULT_DISPLAY_FROM)
         }
       },
       select: {
@@ -776,7 +780,7 @@ async function getSpectatorInsights(eventName) {
         contains: eventName
       },
       order: {
-        orderedAt: { gte: DEFAULT_DISPLAY_FROM }
+        orderedAt: dateGte(DEFAULT_DISPLAY_FROM)
       }
     },
     select: {
@@ -950,12 +954,12 @@ async function getMembers(filters = {}) {
           eventEntries: {
             where: {
               status: "applied",
-              appliedAt: { gte: DEFAULT_DISPLAY_FROM }
+              appliedAt: dateGte(DEFAULT_DISPLAY_FROM)
             }
           },
           membershipPurchases: {
             where: {
-              purchasedAt: { gte: DEFAULT_DISPLAY_FROM }
+              purchasedAt: dateGte(DEFAULT_DISPLAY_FROM)
             }
           }
         }
@@ -963,7 +967,7 @@ async function getMembers(filters = {}) {
       eventEntries: {
         where: {
           status: "applied",
-          appliedAt: { gte: DEFAULT_DISPLAY_FROM }
+          appliedAt: dateGte(DEFAULT_DISPLAY_FROM)
         },
         orderBy: { appliedAt: "desc" },
         take: 1
@@ -1058,7 +1062,7 @@ async function getCustomers(filters = {}) {
       some: {
         status: "applied",
         ...(filters.contestName ? { eventName: filters.contestName } : {}),
-        appliedAt: { gte: DEFAULT_DISPLAY_FROM }
+        appliedAt: dateGte(DEFAULT_DISPLAY_FROM)
       }
     };
   }
@@ -1094,7 +1098,7 @@ async function getCustomers(filters = {}) {
               ]
             }
           },
-          orderedAt: { gte: DEFAULT_DISPLAY_FROM }
+          orderedAt: dateGte(DEFAULT_DISPLAY_FROM)
         }
       }
     };
@@ -1105,7 +1109,7 @@ async function getCustomers(filters = {}) {
           some: {
             status: "applied",
             eventName: filters.contestName,
-            appliedAt: { gte: DEFAULT_DISPLAY_FROM }
+            appliedAt: dateGte(DEFAULT_DISPLAY_FROM)
           }
         }
       },
@@ -1138,7 +1142,7 @@ async function getCustomers(filters = {}) {
                   ]
                 }
               },
-              orderedAt: { gte: DEFAULT_DISPLAY_FROM }
+              orderedAt: dateGte(DEFAULT_DISPLAY_FROM)
             }
           }
         }
@@ -1225,13 +1229,13 @@ async function getMemberDetail(memberId) {
       shopifyCustomer: true,
       membershipPurchases: {
         where: {
-          purchasedAt: { gte: DEFAULT_DISPLAY_FROM }
+          purchasedAt: dateGte(DEFAULT_DISPLAY_FROM)
         },
         orderBy: { purchasedAt: "desc" }
       },
       eventEntries: {
         where: {
-          appliedAt: { gte: DEFAULT_DISPLAY_FROM }
+          appliedAt: dateGte(DEFAULT_DISPLAY_FROM)
         },
         orderBy: { appliedAt: "desc" }
       }
