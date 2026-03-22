@@ -1,0 +1,40 @@
+{
+  "notes": [
+    "Gタグやメールアドレスから会員ランクを補完するための対応表です。",
+    "rate には 0, 20, 25, 30 を入れてください。",
+    "rankName は Novice, Iron, Steel, Titan のいずれかを想定しています。",
+    "2026-03-19 時点では、Gタグとランクの対応はストアデータだけでは確定できていません。業務確認が取れたものだけ入力してください。"
+  ],
+  "byGroupTag": {
+    "G5": {
+      "rankName": "",
+      "rate": null
+    },
+    "G7": {
+      "rankName": "",
+      "rate": null
+    },
+    "G8": {
+      "rankName": "",
+      "rate": null
+    },
+    "G9": {
+      "rankName": "",
+      "rate": null
+    },
+    "G10": {
+      "rankName": "",
+      "rate": null
+    },
+    "G11": {
+      "rankName": "",
+      "rate": null
+    },
+    "G12": {
+      "rankName": "",
+      "rate": null
+    }
+  },
+  "byEmail": {
+  }
+}

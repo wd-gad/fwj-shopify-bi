@@ -1,0 +1,6503 @@
+{
+  "generatedAt": "2026-03-18T17:01:18.655Z",
+  "period": {
+    "start": "2026-03-01T00:00:00.000Z",
+    "end": "2026-04-01T00:00:00.000Z"
+  },
+  "assumptions": {
+    "rewardItemFilter": "product tags include 還元対象 + no-easy-points and item is contest entry",
+    "earlyRule": "orderedAt <= eventDate minus 1 month for all reward items in the order",
+    "memberRankAvailability": "resolved from /Users/takashiwada/Documents/CodeX/ShopifyApp/docs/shopify-member-rank-map.json when group tag or email matched",
+    "provisionalPointsMeaning": "points calculated from count/early only, excluding member-rank uplift"
+  },
+  "totals": {
+    "candidateOrders": 68,
+    "candidateCustomers": 63,
+    "provisionalPointsWithoutRank": 61105,
+    "finalPointsResolved": 61105,
+    "unresolvedOrders": 68
+  },
+  "candidates": [
+    {
+      "orderId": "gid://shopify/Order/7489471840575",
+      "orderNumber": "#8700",
+      "orderedAt": "2026-03-18T13:35:04.000Z",
+      "customerId": "gid://shopify/Customer/7619257958719",
+      "customerEmail": "okazaki619ab@ezweb.ne.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "G11",
+        "newsletter",
+        "subscription-46639382847-plan:年間サブスクリプション",
+        "subscription-46639382847-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G11"
+      ],
+      "hasMembershipTag": true,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "loyaltyBalance": null,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 11000,
+      "discountAmount": 5640,
+      "payableAfterDiscount": 5360,
+      "eventNames": [
+        "Blaze Open"
+      ],
+      "eventDates": [
+        "2026-05-02"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17608470757695",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 428,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 428
+    },
+    {
+      "orderId": "gid://shopify/Order/7489463124287",
+      "orderNumber": "#8699",
+      "orderedAt": "2026-03-18T13:25:07.000Z",
+      "customerId": "gid://shopify/Customer/7619441393983",
+      "customerEmail": "bita0813@i.softbank.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "G5",
+        "Login with Shop",
+        "Shop",
+        "subscription-48168141119-plan:年間サブスクリプション",
+        "subscription-48168141119-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G5"
+      ],
+      "hasMembershipTag": true,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "loyaltyBalance": null,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 11000,
+      "discountAmount": 5640,
+      "payableAfterDiscount": 5360,
+      "eventNames": [
+        "Blaze Open"
+      ],
+      "eventDates": [
+        "2026-05-02"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17608455225663",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 428,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 428
+    },
+    {
+      "orderId": "gid://shopify/Order/7488987889983",
+      "orderNumber": "#8693",
+      "orderedAt": "2026-03-18T03:27:57.000Z",
+      "customerId": "gid://shopify/Customer/10302384210239",
+      "customerEmail": "kojima111110@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-48161685823-plan:年間サブスクリプション",
+        "subscription-48161685823-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 2,
+      "nCount": 20,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "eventNames": [
+        "Aprilis Championships"
+      ],
+      "eventDates": [
+        "2026-04-24"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17607700775231",
+          "title": "Aprilis Championships 2026 コンテストエントリー ボディビルディング",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Aprilis Championships",
+          "eventDate": "2026-04-24T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Aprilis Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "ボディビルディング",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17607700807999",
+          "title": "Aprilis Championships 2026 コンテストエントリー クラシックフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Aprilis Championships",
+          "eventDate": "2026-04-24T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Aprilis Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "クラシックフィジーク",
+            "コンテストエントリー",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 1097,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 1097
+    },
+    {
+      "orderId": "gid://shopify/Order/7487916900671",
+      "orderNumber": "#8685",
+      "orderedAt": "2026-03-17T10:12:46.000Z",
+      "customerId": "gid://shopify/Customer/10198549692735",
+      "customerEmail": "dragunv7.62mmr@icloud.com",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "Shop",
+        "subscription-47186903359-plan:年間サブスクリプション",
+        "subscription-47186903359-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 700,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 11000,
+      "discountAmount": 5640,
+      "payableAfterDiscount": 5360,
+      "eventNames": [
+        "Blaze Open"
+      ],
+      "eventDates": [
+        "2026-05-02"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17605590581567",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 428,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 428
+    },
+    {
+      "orderId": "gid://shopify/Order/7486715625791",
+      "orderNumber": "#8677",
+      "orderedAt": "2026-03-16T14:10:08.000Z",
+      "customerId": "gid://shopify/Customer/10266952139071",
+      "customerEmail": "banchansoruto@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "Shop",
+        "subscription-47609020735-plan:年間サブスクリプション",
+        "subscription-47609020735-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 2,
+      "nCount": 20,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "eventNames": [
+        "Blaze Open"
+      ],
+      "eventDates": [
+        "2026-05-02"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17603434348863",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17603434381631",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 1097,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 1097
+    },
+    {
+      "orderId": "gid://shopify/Order/7486575903039",
+      "orderNumber": "#8676",
+      "orderedAt": "2026-03-16T12:12:23.000Z",
+      "customerId": "gid://shopify/Customer/10144163103039",
+      "customerEmail": "myouseiji.25@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "Shop",
+        "subscription-45372113215-plan:年間サブスクリプション",
+        "subscription-45372113215-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 1000,
+      "entryCount": 2,
+      "nCount": 20,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 22000,
+      "discountAmount": 5280,
+      "payableAfterDiscount": 21120,
+      "eventNames": [
+        "Sea of Japan Championships"
+      ],
+      "eventDates": [
+        "2026-05-15"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17603111452991",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17603111485759",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 1689,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 1689
+    },
+    {
+      "orderId": "gid://shopify/Order/7486507352383",
+      "orderNumber": "#8675",
+      "orderedAt": "2026-03-16T10:16:33.000Z",
+      "customerId": "gid://shopify/Customer/10256081879359",
+      "customerEmail": "shananlian4@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "Shop",
+        "subscription-47383740735-plan:年間サブスクリプション",
+        "subscription-47383740735-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 2,
+      "nCount": 20,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "eventNames": [
+        "Sea of Japan Championships"
+      ],
+      "eventDates": [
+        "2026-05-15"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17602993881407",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17602993914175",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 1097,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 1097
+    },
+    {
+      "orderId": "gid://shopify/Order/7485676126527",
+      "orderNumber": "#8669",
+      "orderedAt": "2026-03-15T23:22:59.000Z",
+      "customerId": "gid://shopify/Customer/7619335160127",
+      "customerEmail": "ogayu2456@yahoo.co.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "G9",
+        "Login with Shop",
+        "Shop",
+        "subscription-47432237375-plan:年間サブスクリプション",
+        "subscription-47432237375-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G9"
+      ],
+      "hasMembershipTag": true,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "loyaltyBalance": null,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 20140,
+      "eventNames": [
+        "Aprilis Championships"
+      ],
+      "eventDates": [
+        "2026-04-24"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17601817280831",
+          "title": "Aprilis Championships 2026 コンテストエントリー クラシックフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Aprilis Championships",
+          "eventDate": "2026-04-24T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Aprilis Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "クラシックフィジーク",
+            "コンテストエントリー",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 1611,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 1611
+    },
+    {
+      "orderId": "gid://shopify/Order/7484848570687",
+      "orderNumber": "#8665",
+      "orderedAt": "2026-03-15T09:54:13.000Z",
+      "customerId": "gid://shopify/Customer/7695037301055",
+      "customerEmail": "s611119s@icloud.com",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "newsletter",
+        "Shop",
+        "subscription-48069968191-plan:年間サブスクリプション",
+        "subscription-48069968191-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 40,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 11000,
+      "discountAmount": 5640,
+      "payableAfterDiscount": 5360,
+      "eventNames": [
+        "Sea of Japan Championships"
+      ],
+      "eventDates": [
+        "2026-05-15"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17600277578047",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー クラシックスタイリッシュモデル",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "SEA OF JAPAN CHANPIONSHIPS 2026",
+            "クラシックスタイリッシュモデル",
+            "コンテストエントリー",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 428,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 428
+    },
+    {
+      "orderId": "gid://shopify/Order/7484718383423",
+      "orderNumber": "#8663",
+      "orderedAt": "2026-03-15T07:11:15.000Z",
+      "customerId": "gid://shopify/Customer/7619306946879",
+      "customerEmail": "etigotakeru@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "G9",
+        "Login with Shop",
+        "Shop",
+        "subscription-46379270463-plan:年間サブスクリプション",
+        "subscription-46379270463-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G9"
+      ],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 516,
+      "entryCount": 2,
+      "nCount": 20,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 22000,
+      "discountAmount": 5280,
+      "payableAfterDiscount": 16720,
+      "eventNames": [
+        "Blaze Open"
+      ],
+      "eventDates": [
+        "2026-05-02"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17600084214079",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17600084246847",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 1337,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 1337
+    },
+    {
+      "orderId": "gid://shopify/Order/7484708421951",
+      "orderNumber": "#8662",
+      "orderedAt": "2026-03-15T07:08:14.000Z",
+      "customerId": "gid://shopify/Customer/7619380019519",
+      "customerEmail": "87powersrrs@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "FWJカード会員（次回更新停止中）",
+        "G7",
+        "subscription-47125627199-cancel:2026-02-19"
+      ],
+      "groupTags": [
+        "G7"
+      ],
+      "hasMembershipTag": true,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "loyaltyBalance": null,
+      "entryCount": 3,
+      "nCount": 30,
+      "nEarlyAll": 0,
+      "nEarlyAny": 0,
+      "listPriceTotal": 33000,
+      "discountAmount": 10920,
+      "payableAfterDiscount": 22080,
+      "eventNames": [
+        "West Tokyo Championships"
+      ],
+      "eventDates": [
+        "2026-04-03"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17600073302335",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17600073335103",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17600073367871",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 1766,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 1766
+    },
+    {
+      "orderId": "gid://shopify/Order/7484082815295",
+      "orderNumber": "#8658",
+      "orderedAt": "2026-03-15T04:01:54.000Z",
+      "customerId": "gid://shopify/Customer/10210906079551",
+      "customerEmail": "moromiki123070@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-46605599039-plan:年間サブスクリプション",
+        "subscription-46605599039-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 0,
+      "nEarlyAny": 0,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "eventNames": [
+        "West Tokyo Championships"
+      ],
+      "eventDates": [
+        "2026-04-03"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17599538921791",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 0,
+      "finalRate": 0,
+      "finalPointAmount": 0,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 0,
+      "fixedRateWithoutRank": 0,
+      "provisionalPointsWithoutRank": 0
+    },
+    {
+      "orderId": "gid://shopify/Order/7483989066047",
+      "orderNumber": "#8657",
+      "orderedAt": "2026-03-15T01:55:25.000Z",
+      "customerId": "gid://shopify/Customer/10265804341567",
+      "customerEmail": "suuya5477@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "FWJカード会員（次回更新停止中）",
+        "subscription-47575892287-cancel:2026-03-04"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 0,
+      "nEarlyAny": 0,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "eventNames": [
+        "West Tokyo Championships"
+      ],
+      "eventDates": [
+        "2026-04-03"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17599377473855",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 0,
+      "finalRate": 0,
+      "finalPointAmount": 0,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 0,
+      "fixedRateWithoutRank": 0,
+      "provisionalPointsWithoutRank": 0
+    },
+    {
+      "orderId": "gid://shopify/Order/7483927429439",
+      "orderNumber": "#8655",
+      "orderedAt": "2026-03-15T00:46:33.000Z",
+      "customerId": "gid://shopify/Customer/7619448406335",
+      "customerEmail": "buonafortuna0314@yahoo.co.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "G5",
+        "subscription-48061776191-plan:年間サブスクリプション",
+        "subscription-48061776191-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G5"
+      ],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 500,
+      "entryCount": 2,
+      "nCount": 20,
+      "nEarlyAll": 0,
+      "nEarlyAny": 0,
+      "listPriceTotal": 22000,
+      "discountAmount": 5280,
+      "payableAfterDiscount": 16720,
+      "eventNames": [
+        "West Tokyo Championships"
+      ],
+      "eventDates": [
+        "2026-04-03"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17599268487487",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17599268520255",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 20,
+      "finalRate": 5,
+      "finalPointAmount": 836,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 20,
+      "fixedRateWithoutRank": 5,
+      "provisionalPointsWithoutRank": 836
+    },
+    {
+      "orderId": "gid://shopify/Order/7482952941887",
+      "orderNumber": "#8650",
+      "orderedAt": "2026-03-14T11:55:26.000Z",
+      "customerId": "gid://shopify/Customer/10278106497343",
+      "customerEmail": "keitomiyuu@icloud.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47706374463-plan:年間サブスクリプション",
+        "subscription-47706374463-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 3,
+      "nCount": 30,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 33000,
+      "discountAmount": 7920,
+      "payableAfterDiscount": 25080,
+      "eventNames": [
+        "Sea of Japan Championships"
+      ],
+      "eventDates": [
+        "2026-05-15"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17597390717247",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17597390750015",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17597390782783",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 2006,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 2006
+    },
+    {
+      "orderId": "gid://shopify/Order/7482774323519",
+      "orderNumber": "#8649",
+      "orderedAt": "2026-03-14T06:49:12.000Z",
+      "customerId": "gid://shopify/Customer/10215112016191",
+      "customerEmail": "r.taguchi_06@outlook.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "FWJカード会員（次回更新停止中）",
+        "Login with Shop",
+        "Shop",
+        "subscription-48038117695-cancel:2026-03-14"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 2,
+      "nCount": 20,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "eventNames": [
+        "Aprilis Championships"
+      ],
+      "eventDates": [
+        "2026-04-24"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17597093871935",
+          "title": "Aprilis Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Aprilis Championships",
+          "eventDate": "2026-04-24T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Aprilis Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17597093904703",
+          "title": "Aprilis Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Aprilis Championships",
+          "eventDate": "2026-04-24T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Aprilis Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 1097,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 1097
+    },
+    {
+      "orderId": "gid://shopify/Order/7481628459327",
+      "orderNumber": "#8643",
+      "orderedAt": "2026-03-13T15:00:04.000Z",
+      "customerId": "gid://shopify/Customer/7619381920063",
+      "customerEmail": "pomu2429dream@yahoo.co.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "G7",
+        "Login with Shop",
+        "Shop",
+        "subscription-48015900991-plan:年間サブスクリプション",
+        "subscription-48015900991-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G7"
+      ],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 50,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "eventNames": [
+        "Blaze Open"
+      ],
+      "eventDates": [
+        "2026-05-02"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17594923352383",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 668,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 668
+    },
+    {
+      "orderId": "gid://shopify/Order/7481446596927",
+      "orderNumber": "#8639",
+      "orderedAt": "2026-03-13T12:35:47.000Z",
+      "customerId": "gid://shopify/Customer/10261379973439",
+      "customerEmail": "b_b88@ybb.ne.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "Shop",
+        "subscription-47701524799-plan:年間サブスクリプション",
+        "subscription-47701524799-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "eventNames": [
+        "Blaze Open"
+      ],
+      "eventDates": [
+        "2026-05-02"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17594633945407",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィットネスモデル",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィットネスモデル",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 668,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 668
+    },
+    {
+      "orderId": "gid://shopify/Order/7481162858815",
+      "orderNumber": "#8634",
+      "orderedAt": "2026-03-13T05:12:52.000Z",
+      "customerId": "gid://shopify/Customer/10281563717951",
+      "customerEmail": "gonsuke0703@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47773188415-plan:年間サブスクリプション",
+        "subscription-47773188415-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 2,
+      "nCount": 20,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "eventNames": [
+        "Sea of Japan Championships"
+      ],
+      "eventDates": [
+        "2026-05-15"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17594163855679",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17594163888447",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 1097,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 1097
+    },
+    {
+      "orderId": "gid://shopify/Order/7480972017983",
+      "orderNumber": "#8633",
+      "orderedAt": "2026-03-13T01:17:03.000Z",
+      "customerId": "gid://shopify/Customer/7619352363327",
+      "customerEmail": "avaricious.spirit.taku.no23@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "G8",
+        "subscription-48001843519-plan:年間サブスクリプション",
+        "subscription-48001843519-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G8"
+      ],
+      "hasMembershipTag": true,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "loyaltyBalance": null,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 16060,
+      "eventNames": [
+        "Blaze Open"
+      ],
+      "eventDates": [
+        "2026-05-02"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17593816023359",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 1284,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 1284
+    },
+    {
+      "orderId": "gid://shopify/Order/7479930356031",
+      "orderNumber": "#8626",
+      "orderedAt": "2026-03-12T10:16:40.000Z",
+      "customerId": "gid://shopify/Customer/7619313991999",
+      "customerEmail": "lifeyell.5791@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "G9",
+        "subscription-45759660351-plan:年間サブスクリプション",
+        "subscription-45759660351-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G9"
+      ],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 500,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "eventNames": [
+        "Rising Star Championships"
+      ],
+      "eventDates": [
+        "2026-05-29"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17591863836991",
+          "title": "RISING STAR CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Rising Star Championships",
+          "eventDate": "2026-05-29T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "RISING STAR CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 668,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 668
+    },
+    {
+      "orderId": "gid://shopify/Order/7479563419967",
+      "orderNumber": "#8622",
+      "orderedAt": "2026-03-12T03:59:42.000Z",
+      "customerId": "gid://shopify/Customer/10209101513023",
+      "customerEmail": "ankitpurohit80@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-46566506815-plan:年間サブスクリプション",
+        "subscription-46566506815-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 2,
+      "nCount": 20,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 31320,
+      "eventNames": [
+        "Aprilis Championships"
+      ],
+      "eventDates": [
+        "2026-04-24"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17591328047423",
+          "title": "Aprilis Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Aprilis Championships",
+          "eventDate": "2026-04-24T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Aprilis Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17591328080191",
+          "title": "Aprilis Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Aprilis Championships",
+          "eventDate": "2026-04-24T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Aprilis Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 2505,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 2505
+    },
+    {
+      "orderId": "gid://shopify/Order/7477392900415",
+      "orderNumber": "#8614",
+      "orderedAt": "2026-03-11T10:18:56.000Z",
+      "customerId": "gid://shopify/Customer/10261693989183",
+      "customerEmail": "bgfdfikkjt56@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47451668799-plan:年間サブスクリプション",
+        "subscription-47451668799-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 3,
+      "nCount": 30,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 33000,
+      "discountAmount": 10920,
+      "payableAfterDiscount": 22080,
+      "eventNames": [
+        "Sea of Japan Championships"
+      ],
+      "eventDates": [
+        "2026-05-15"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17587553894719",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17587553927487",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17587553960255",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 1766,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 1766
+    },
+    {
+      "orderId": "gid://shopify/Order/7475933577535",
+      "orderNumber": "#8602",
+      "orderedAt": "2026-03-10T12:24:17.000Z",
+      "customerId": "gid://shopify/Customer/9566802149695",
+      "customerEmail": "vn_nv.emi@icloud.com",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "newsletter",
+        "Shop",
+        "subscription-45351043391-plan:年間サブスクリプション",
+        "subscription-45351043391-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 1015,
+      "entryCount": 2,
+      "nCount": 20,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 22000,
+      "discountAmount": 5280,
+      "payableAfterDiscount": 16720,
+      "eventNames": [
+        "West Gate Open"
+      ],
+      "eventDates": [
+        "2026-04-18"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17585033478463",
+          "title": "West Gate Open 2026 コンテストエントリー ビキニ",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "West Gate Open",
+          "eventDate": "2026-04-18T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "no-easy-points",
+            "West Gate Open 2026",
+            "Womens",
+            "コンテストエントリー",
+            "ビキニ",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17585033511231",
+          "title": "West Gate Open 2026 コンテストエントリー ビキニ",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "West Gate Open",
+          "eventDate": "2026-04-18T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "no-easy-points",
+            "West Gate Open 2026",
+            "Womens",
+            "コンテストエントリー",
+            "ビキニ",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 1337,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 1337
+    },
+    {
+      "orderId": "gid://shopify/Order/7474629148991",
+      "orderNumber": "#8596",
+      "orderedAt": "2026-03-09T16:10:59.000Z",
+      "customerId": "gid://shopify/Customer/7619327557951",
+      "customerEmail": "ys.301.vite@icloud.com",
+      "customerTags": [
+        "FWJカード会員",
+        "G9",
+        "subscription-47751725375-plan:年間サブスクリプション",
+        "subscription-47751725375-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G9"
+      ],
+      "hasMembershipTag": true,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "loyaltyBalance": null,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "eventNames": [
+        "Blaze Open"
+      ],
+      "eventDates": [
+        "2026-05-02"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17582796931391",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 668,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 668
+    },
+    {
+      "orderId": "gid://shopify/Order/7474451251519",
+      "orderNumber": "#8593",
+      "orderedAt": "2026-03-09T13:38:37.000Z",
+      "customerId": "gid://shopify/Customer/7619232792895",
+      "customerEmail": "sea.1132agepp@docomo.ne.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "G12",
+        "subscription-47745728831-plan:年間サブスクリプション",
+        "subscription-47745728831-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G12"
+      ],
+      "hasMembershipTag": true,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "loyaltyBalance": null,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "eventNames": [
+        "Rising Star Championships"
+      ],
+      "eventDates": [
+        "2026-05-29"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17582484816191",
+          "title": "RISING STAR CHAMPIONSHIPS 2026 コンテストエントリー ボディビルディング",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Rising Star Championships",
+          "eventDate": "2026-05-29T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "RISING STAR CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "ボディビルディング",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 668,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 668
+    },
+    {
+      "orderId": "gid://shopify/Order/7474448138559",
+      "orderNumber": "#8592",
+      "orderedAt": "2026-03-09T13:34:44.000Z",
+      "customerId": "gid://shopify/Customer/7619232792895",
+      "customerEmail": "sea.1132agepp@docomo.ne.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "G12",
+        "subscription-47745728831-plan:年間サブスクリプション",
+        "subscription-47745728831-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G12"
+      ],
+      "hasMembershipTag": true,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "loyaltyBalance": null,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "eventNames": [
+        "Sea of Japan Championships"
+      ],
+      "eventDates": [
+        "2026-05-15"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17582479376703",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー ボディビルディング",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "ボディビルディング",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 668,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 668
+    },
+    {
+      "orderId": "gid://shopify/Order/7474359796031",
+      "orderNumber": "#8590",
+      "orderedAt": "2026-03-09T11:52:45.000Z",
+      "customerId": "gid://shopify/Customer/10190256668991",
+      "customerEmail": "lucianosuguru26@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-46309081407-plan:年間サブスクリプション",
+        "subscription-46309081407-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 700,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 0,
+      "nEarlyAny": 0,
+      "listPriceTotal": 11000,
+      "discountAmount": 5640,
+      "payableAfterDiscount": 5360,
+      "eventNames": [
+        "Discovery Championships"
+      ],
+      "eventDates": [
+        "2026-03-13"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17582337098047",
+          "title": "Discovery Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Discovery Championships",
+          "eventDate": "2026-03-13T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Discovery Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 0,
+      "finalRate": 0,
+      "finalPointAmount": 0,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 0,
+      "fixedRateWithoutRank": 0,
+      "provisionalPointsWithoutRank": 0
+    },
+    {
+      "orderId": "gid://shopify/Order/7474288165183",
+      "orderNumber": "#8589",
+      "orderedAt": "2026-03-09T10:05:36.000Z",
+      "customerId": "gid://shopify/Customer/7619358032191",
+      "customerEmail": "akd_r@ybb.ne.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "G8",
+        "subscription-47742189887-plan:年間サブスクリプション",
+        "subscription-47742189887-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G8"
+      ],
+      "hasMembershipTag": true,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "loyaltyBalance": null,
+      "entryCount": 2,
+      "nCount": 20,
+      "nEarlyAll": 0,
+      "nEarlyAny": 0,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "eventNames": [
+        "West Tokyo Championships"
+      ],
+      "eventDates": [
+        "2026-04-03"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17582210842943",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17582210875711",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズアスリートモデル",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズアスリートモデル",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 20,
+      "finalRate": 5,
+      "finalPointAmount": 686,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 20,
+      "fixedRateWithoutRank": 5,
+      "provisionalPointsWithoutRank": 686
+    },
+    {
+      "orderId": "gid://shopify/Order/7474283446591",
+      "orderNumber": "#8588",
+      "orderedAt": "2026-03-09T09:59:42.000Z",
+      "customerId": "gid://shopify/Customer/9356268339519",
+      "customerEmail": "yototo0726@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47163441471-plan:年間サブスクリプション",
+        "subscription-47163441471-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "loyaltyBalance": null,
+      "entryCount": 2,
+      "nCount": 20,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 19800,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 11520,
+      "eventNames": [
+        "West Gate Open"
+      ],
+      "eventDates": [
+        "2026-04-18"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17582203371839",
+          "title": "West Gate Open 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "West Gate Open",
+          "eventDate": "2026-04-18T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Gate Open 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17582203404607",
+          "title": "West Gate Open 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 8800,
+          "eventName": "West Gate Open",
+          "eventDate": "2026-04-18T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Gate Open 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 921,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 921
+    },
+    {
+      "orderId": "gid://shopify/Order/7474261197119",
+      "orderNumber": "#8586",
+      "orderedAt": "2026-03-09T09:19:57.000Z",
+      "customerId": "gid://shopify/Customer/7619441819967",
+      "customerEmail": "skrillex-beats_by-dr.dre@ezweb.ne.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "G5",
+        "Login with Shop",
+        "Shop",
+        "subscription-46741061951-plan:年間サブスクリプション",
+        "subscription-46741061951-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G5"
+      ],
+      "hasMembershipTag": true,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "loyaltyBalance": null,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 0,
+      "nEarlyAny": 0,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "eventNames": [
+        "Discovery Championships"
+      ],
+      "eventDates": [
+        "2026-03-13"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17582163689791",
+          "title": "Discovery Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Discovery Championships",
+          "eventDate": "2026-03-13T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Discovery Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 0,
+      "finalRate": 0,
+      "finalPointAmount": 0,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 0,
+      "fixedRateWithoutRank": 0,
+      "provisionalPointsWithoutRank": 0
+    },
+    {
+      "orderId": "gid://shopify/Order/7473728848191",
+      "orderNumber": "#8582",
+      "orderedAt": "2026-03-09T04:09:12.000Z",
+      "customerId": "gid://shopify/Customer/7619317793087",
+      "customerEmail": "n-town0218@softbank.ne.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "FWJカード会員（次回更新停止中）",
+        "G9",
+        "subscription-47095021887-cancel:2026-03-09"
+      ],
+      "groupTags": [
+        "G9"
+      ],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 550,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "eventNames": [
+        "Sea of Japan Championships"
+      ],
+      "eventDates": [
+        "2026-05-15"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17581496074559",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 668,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 668
+    },
+    {
+      "orderId": "gid://shopify/Order/7473539940671",
+      "orderNumber": "#8579",
+      "orderedAt": "2026-03-09T00:37:21.000Z",
+      "customerId": "gid://shopify/Customer/10210231189823",
+      "customerEmail": "2daime_onoxile.89@ezweb.ne.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-46593671487-plan:年間サブスクリプション",
+        "subscription-46593671487-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "eventNames": [
+        "Rising Star Championships"
+      ],
+      "eventDates": [
+        "2026-05-29"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17581147947327",
+          "title": "RISING STAR CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Rising Star Championships",
+          "eventDate": "2026-05-29T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "RISING STAR CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 668,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 668
+    },
+    {
+      "orderId": "gid://shopify/Order/7473401102655",
+      "orderNumber": "#8578",
+      "orderedAt": "2026-03-08T22:22:12.000Z",
+      "customerId": "gid://shopify/Customer/10279039140159",
+      "customerEmail": "r.s-0405@ezweb.ne.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47727411519-plan:年間サブスクリプション",
+        "subscription-47727411519-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "eventNames": [
+        "Rising Star Championships"
+      ],
+      "eventDates": [
+        "2026-05-29"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17580894126399",
+          "title": "RISING STAR CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Rising Star Championships",
+          "eventDate": "2026-05-29T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "RISING STAR CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 668,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 668
+    },
+    {
+      "orderId": "gid://shopify/Order/7472737386815",
+      "orderNumber": "#8574",
+      "orderedAt": "2026-03-08T13:41:40.000Z",
+      "customerId": "gid://shopify/Customer/10278253068607",
+      "customerEmail": "kai65kai65@icloud.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47708733759-plan:年間サブスクリプション",
+        "subscription-47708733759-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 0,
+      "nEarlyAny": 0,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "eventNames": [
+        "West Tokyo Championships"
+      ],
+      "eventDates": [
+        "2026-04-03"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17579650810175",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 0,
+      "finalRate": 0,
+      "finalPointAmount": 0,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 0,
+      "fixedRateWithoutRank": 0,
+      "provisionalPointsWithoutRank": 0
+    },
+    {
+      "orderId": "gid://shopify/Order/7472728375615",
+      "orderNumber": "#8572",
+      "orderedAt": "2026-03-08T13:30:00.000Z",
+      "customerId": "gid://shopify/Customer/9227402117439",
+      "customerEmail": "yl.i.h.love.tyk@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47703654719-plan:年間サブスクリプション",
+        "subscription-47703654719-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "loyaltyBalance": null,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "eventNames": [
+        "Blaze Open"
+      ],
+      "eventDates": [
+        "2026-05-02"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17579635835199",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 668,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 668
+    },
+    {
+      "orderId": "gid://shopify/Order/7472725000511",
+      "orderNumber": "#8571",
+      "orderedAt": "2026-03-08T13:25:44.000Z",
+      "customerId": "gid://shopify/Customer/9227402117439",
+      "customerEmail": "yl.i.h.love.tyk@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47703654719-plan:年間サブスクリプション",
+        "subscription-47703654719-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "loyaltyBalance": null,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 11000,
+      "discountAmount": 5640,
+      "payableAfterDiscount": 5360,
+      "eventNames": [
+        "Blaze Open"
+      ],
+      "eventDates": [
+        "2026-05-02"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17579629707583",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 428,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 428
+    },
+    {
+      "orderId": "gid://shopify/Order/7472723689791",
+      "orderNumber": "#8570",
+      "orderedAt": "2026-03-08T13:23:39.000Z",
+      "customerId": "gid://shopify/Customer/7619333456191",
+      "customerEmail": "usui0795@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "G9",
+        "Login with Shop",
+        "Shop",
+        "subscription-46662549823-plan:年間サブスクリプション",
+        "subscription-46662549823-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G9"
+      ],
+      "hasMembershipTag": true,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "loyaltyBalance": null,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "eventNames": [
+        "Blaze Open"
+      ],
+      "eventDates": [
+        "2026-05-02"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17579627217215",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 668,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 668
+    },
+    {
+      "orderId": "gid://shopify/Order/7472641802559",
+      "orderNumber": "#8567",
+      "orderedAt": "2026-03-08T11:26:31.000Z",
+      "customerId": "gid://shopify/Customer/7619336208703",
+      "customerEmail": "hiroaki.no1@icloud.com",
+      "customerTags": [
+        "FWJカード会員",
+        "G9",
+        "subscription-47706308927-plan:年間サブスクリプション",
+        "subscription-47706308927-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G9"
+      ],
+      "hasMembershipTag": true,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "loyaltyBalance": null,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 0,
+      "nEarlyAny": 0,
+      "listPriceTotal": 11000,
+      "discountAmount": 5640,
+      "payableAfterDiscount": 5360,
+      "eventNames": [
+        "Discovery Championships"
+      ],
+      "eventDates": [
+        "2026-03-13"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17579490902335",
+          "title": "Discovery Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Discovery Championships",
+          "eventDate": "2026-03-13T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Discovery Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 0,
+      "finalRate": 0,
+      "finalPointAmount": 0,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 0,
+      "fixedRateWithoutRank": 0,
+      "provisionalPointsWithoutRank": 0
+    },
+    {
+      "orderId": "gid://shopify/Order/7472635543871",
+      "orderNumber": "#8565",
+      "orderedAt": "2026-03-08T11:16:37.000Z",
+      "customerId": "gid://shopify/Customer/7619336208703",
+      "customerEmail": "hiroaki.no1@icloud.com",
+      "customerTags": [
+        "FWJカード会員",
+        "G9",
+        "subscription-47706308927-plan:年間サブスクリプション",
+        "subscription-47706308927-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G9"
+      ],
+      "hasMembershipTag": true,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "loyaltyBalance": null,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 0,
+      "nEarlyAny": 0,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "eventNames": [
+        "Discovery Championships"
+      ],
+      "eventDates": [
+        "2026-03-13"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17579480973631",
+          "title": "Discovery Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Discovery Championships",
+          "eventDate": "2026-03-13T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Discovery Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 0,
+      "finalRate": 0,
+      "finalPointAmount": 0,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 0,
+      "fixedRateWithoutRank": 0,
+      "provisionalPointsWithoutRank": 0
+    },
+    {
+      "orderId": "gid://shopify/Order/7472096641343",
+      "orderNumber": "#8558",
+      "orderedAt": "2026-03-08T06:04:08.000Z",
+      "customerId": "gid://shopify/Customer/10277792416063",
+      "customerEmail": "lovechiori0529@icloud.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47703884095-plan:年間サブスクリプション",
+        "subscription-47703884095-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "eventNames": [
+        "Blaze Open"
+      ],
+      "eventDates": [
+        "2026-05-02"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17578850844991",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 668,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 668
+    },
+    {
+      "orderId": "gid://shopify/Order/7472090382655",
+      "orderNumber": "#8557",
+      "orderedAt": "2026-03-08T05:54:27.000Z",
+      "customerId": "gid://shopify/Customer/10277792416063",
+      "customerEmail": "lovechiori0529@icloud.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47703884095-plan:年間サブスクリプション",
+        "subscription-47703884095-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "eventNames": [
+        "Blaze Open"
+      ],
+      "eventDates": [
+        "2026-05-02"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17578839834943",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 668,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 668
+    },
+    {
+      "orderId": "gid://shopify/Order/7472015147327",
+      "orderNumber": "#8554",
+      "orderedAt": "2026-03-08T04:15:17.000Z",
+      "customerId": "gid://shopify/Customer/10210900574527",
+      "customerEmail": "t26202763@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-46605304127-plan:年間サブスクリプション",
+        "subscription-46605304127-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 0,
+      "nEarlyAny": 0,
+      "listPriceTotal": 11000,
+      "discountAmount": 5640,
+      "payableAfterDiscount": 5360,
+      "eventNames": [
+        "West Tokyo Championships"
+      ],
+      "eventDates": [
+        "2026-04-03"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17578714825023",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 0,
+      "finalRate": 0,
+      "finalPointAmount": 0,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 0,
+      "fixedRateWithoutRank": 0,
+      "provisionalPointsWithoutRank": 0
+    },
+    {
+      "orderId": "gid://shopify/Order/7472000663871",
+      "orderNumber": "#8553",
+      "orderedAt": "2026-03-08T03:55:27.000Z",
+      "customerId": "gid://shopify/Customer/10194993283391",
+      "customerEmail": "k08026725828@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "Shop",
+        "subscription-46304100671-plan:年間サブスクリプション",
+        "subscription-46304100671-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 700,
+      "entryCount": 2,
+      "nCount": 20,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "eventNames": [
+        "Rising Star Championships"
+      ],
+      "eventDates": [
+        "2026-05-29"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17578688512319",
+          "title": "RISING STAR CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Rising Star Championships",
+          "eventDate": "2026-05-29T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "RISING STAR CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17578688545087",
+          "title": "RISING STAR CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Rising Star Championships",
+          "eventDate": "2026-05-29T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "RISING STAR CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 1097,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 1097
+    },
+    {
+      "orderId": "gid://shopify/Order/7471978643775",
+      "orderNumber": "#8551",
+      "orderedAt": "2026-03-08T03:26:19.000Z",
+      "customerId": "gid://shopify/Customer/9163579228479",
+      "customerEmail": "kanatauchiumi@icloud.com",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "Shop",
+        "subscription-47701426495-plan:年間サブスクリプション",
+        "subscription-47701426495-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "loyaltyBalance": null,
+      "entryCount": 3,
+      "nCount": 30,
+      "nEarlyAll": 0,
+      "nEarlyAny": 0,
+      "listPriceTotal": 33000,
+      "discountAmount": 7920,
+      "payableAfterDiscount": 25080,
+      "eventNames": [
+        "Discovery Championships"
+      ],
+      "eventDates": [
+        "2026-03-13"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17578652729663",
+          "title": "Discovery Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Discovery Championships",
+          "eventDate": "2026-03-13T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Discovery Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17578652762431",
+          "title": "Discovery Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Discovery Championships",
+          "eventDate": "2026-03-13T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Discovery Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17578652795199",
+          "title": "Discovery Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Discovery Championships",
+          "eventDate": "2026-03-13T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Discovery Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 2006,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 2006
+    },
+    {
+      "orderId": "gid://shopify/Order/7470561886527",
+      "orderNumber": "#8542",
+      "orderedAt": "2026-03-07T05:18:39.000Z",
+      "customerId": "gid://shopify/Customer/10238268703039",
+      "customerEmail": "reflet0124@icloud.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47318565183-plan:年間サブスクリプション",
+        "subscription-47318565183-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 2,
+      "nCount": 20,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "eventNames": [
+        "Sea of Japan Championships"
+      ],
+      "eventDates": [
+        "2026-05-15"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17576038957375",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17576038990143",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 1097,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 1097
+    },
+    {
+      "orderId": "gid://shopify/Order/7470535967039",
+      "orderNumber": "#8540",
+      "orderedAt": "2026-03-07T04:49:34.000Z",
+      "customerId": "gid://shopify/Customer/7619441819967",
+      "customerEmail": "skrillex-beats_by-dr.dre@ezweb.ne.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "G5",
+        "Login with Shop",
+        "Shop",
+        "subscription-46741061951-plan:年間サブスクリプション",
+        "subscription-46741061951-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G5"
+      ],
+      "hasMembershipTag": true,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "loyaltyBalance": null,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 0,
+      "nEarlyAny": 0,
+      "listPriceTotal": 11000,
+      "discountAmount": 5640,
+      "payableAfterDiscount": 5360,
+      "eventNames": [
+        "Discovery Championships"
+      ],
+      "eventDates": [
+        "2026-03-13"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17575998161215",
+          "title": "Discovery Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Discovery Championships",
+          "eventDate": "2026-03-13T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Discovery Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 0,
+      "finalRate": 0,
+      "finalPointAmount": 0,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 0,
+      "fixedRateWithoutRank": 0,
+      "provisionalPointsWithoutRank": 0
+    },
+    {
+      "orderId": "gid://shopify/Order/7470512963903",
+      "orderNumber": "#8539",
+      "orderedAt": "2026-03-07T04:19:06.000Z",
+      "customerId": "gid://shopify/Customer/10238190256447",
+      "customerEmail": "lovepurplesd@icloud.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47057961279-plan:年間サブスクリプション",
+        "subscription-47057961279-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "eventNames": [
+        "Aprilis Championships"
+      ],
+      "eventDates": [
+        "2026-04-24"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17575956513087",
+          "title": "Aprilis Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Aprilis Championships",
+          "eventDate": "2026-04-24T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Aprilis Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 668,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 668
+    },
+    {
+      "orderId": "gid://shopify/Order/7470439366975",
+      "orderNumber": "#8538",
+      "orderedAt": "2026-03-07T02:51:43.000Z",
+      "customerId": "gid://shopify/Customer/10269689577791",
+      "customerEmail": "tiantianqingjie3@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "FWJカード会員（次回更新停止中）",
+        "subscription-47581692223-cancel:2026-03-04"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 2,
+      "nCount": 20,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "eventNames": [
+        "Rising Star Championships"
+      ],
+      "eventDates": [
+        "2026-05-29"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17575827145023",
+          "title": "RISING STAR CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Rising Star Championships",
+          "eventDate": "2026-05-29T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "RISING STAR CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17575827177791",
+          "title": "RISING STAR CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Rising Star Championships",
+          "eventDate": "2026-05-29T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "RISING STAR CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 1097,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 1097
+    },
+    {
+      "orderId": "gid://shopify/Order/7470424752447",
+      "orderNumber": "#8537",
+      "orderedAt": "2026-03-07T02:36:08.000Z",
+      "customerId": "gid://shopify/Customer/7619281387839",
+      "customerEmail": "daikonkoshihikarinappa@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "G10",
+        "subscription-47318401343-plan:年間サブスクリプション",
+        "subscription-47318401343-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G10"
+      ],
+      "hasMembershipTag": true,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "loyaltyBalance": null,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 11000,
+      "discountAmount": 5640,
+      "payableAfterDiscount": 5360,
+      "eventNames": [
+        "Sea of Japan Championships"
+      ],
+      "eventDates": [
+        "2026-05-15"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17575801225535",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 428,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 428
+    },
+    {
+      "orderId": "gid://shopify/Order/7470393131327",
+      "orderNumber": "#8536",
+      "orderedAt": "2026-03-07T02:03:30.000Z",
+      "customerId": "gid://shopify/Customer/10274638430527",
+      "customerEmail": "htmnts0501@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47663939903-plan:年間サブスクリプション",
+        "subscription-47663939903-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "eventNames": [
+        "Sea of Japan Championships"
+      ],
+      "eventDates": [
+        "2026-05-15"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17575744930111",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー ビキニモデル",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "Womens",
+            "コンテストエントリー",
+            "ビキニモデル",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 668,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 668
+    },
+    {
+      "orderId": "gid://shopify/Order/7469405700415",
+      "orderNumber": "#8532",
+      "orderedAt": "2026-03-06T14:32:22.000Z",
+      "customerId": "gid://shopify/Customer/10238678892863",
+      "customerEmail": "yossi.boxing.6728@iCloud.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47065006399-plan:年間サブスクリプション",
+        "subscription-47065006399-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 2,
+      "nCount": 20,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 22000,
+      "discountAmount": 5280,
+      "payableAfterDiscount": 16720,
+      "eventNames": [
+        "Rising Star Championships"
+      ],
+      "eventDates": [
+        "2026-05-29"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17573887639871",
+          "title": "RISING STAR CHAMPIONSHIPS 2026 コンテストエントリー メンズアスリートモデル",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Rising Star Championships",
+          "eventDate": "2026-05-29T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "RISING STAR CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズアスリートモデル",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17573887672639",
+          "title": "RISING STAR CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Rising Star Championships",
+          "eventDate": "2026-05-29T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "RISING STAR CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 1337,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 1337
+    },
+    {
+      "orderId": "gid://shopify/Order/7469303103807",
+      "orderNumber": "#8530",
+      "orderedAt": "2026-03-06T13:16:32.000Z",
+      "customerId": "gid://shopify/Customer/10185135554879",
+      "customerEmail": "softoball12345@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-46080262463-plan:年間サブスクリプション",
+        "subscription-46080262463-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 700,
+      "entryCount": 2,
+      "nCount": 20,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "eventNames": [
+        "Sea of Japan Championships"
+      ],
+      "eventDates": [
+        "2026-05-15"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17573732286783",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17573732319551",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 1097,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 1097
+    },
+    {
+      "orderId": "gid://shopify/Order/7469254541631",
+      "orderNumber": "#8529",
+      "orderedAt": "2026-03-06T12:43:15.000Z",
+      "customerId": "gid://shopify/Customer/10185134506303",
+      "customerEmail": "st.swim.6.7@icloud.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-46080229695-plan:年間サブスクリプション",
+        "subscription-46080229695-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 700,
+      "entryCount": 2,
+      "nCount": 20,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "eventNames": [
+        "Sea of Japan Championships"
+      ],
+      "eventDates": [
+        "2026-05-15"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17573661180223",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17573661212991",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 1097,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 1097
+    },
+    {
+      "orderId": "gid://shopify/Order/7468978241855",
+      "orderNumber": "#8526",
+      "orderedAt": "2026-03-06T09:06:42.000Z",
+      "customerId": "gid://shopify/Customer/10143999426879",
+      "customerEmail": "love89.0125@icloud.com",
+      "customerTags": [
+        "FWJカード会員",
+        "newsletter",
+        "subscription-47053078847-plan:年間サブスクリプション",
+        "subscription-47053078847-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 1000,
+      "entryCount": 2,
+      "nCount": 20,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "eventNames": [
+        "Rising Star Championships"
+      ],
+      "eventDates": [
+        "2026-05-29"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17573297094975",
+          "title": "RISING STAR CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Rising Star Championships",
+          "eventDate": "2026-05-29T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "RISING STAR CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17573297127743",
+          "title": "RISING STAR CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Rising Star Championships",
+          "eventDate": "2026-05-29T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "RISING STAR CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 1097,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 1097
+    },
+    {
+      "orderId": "gid://shopify/Order/7468975063359",
+      "orderNumber": "#8525",
+      "orderedAt": "2026-03-06T09:04:36.000Z",
+      "customerId": "gid://shopify/Customer/10245807112511",
+      "customerEmail": "fumiya_soccer0714@yahoo.co.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47201976639-plan:年間サブスクリプション",
+        "subscription-47201976639-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 11000,
+      "discountAmount": 5640,
+      "payableAfterDiscount": 5360,
+      "eventNames": [
+        "Blaze Open"
+      ],
+      "eventDates": [
+        "2026-05-02"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17573289951551",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 428,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 428
+    },
+    {
+      "orderId": "gid://shopify/Order/7468368036159",
+      "orderNumber": "#8521",
+      "orderedAt": "2026-03-05T21:54:49.000Z",
+      "customerId": "gid://shopify/Customer/10232487379263",
+      "customerEmail": "yf4684@yahoo.co.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47014936895-plan:年間サブスクリプション",
+        "subscription-47014936895-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 11000,
+      "discountAmount": 5640,
+      "payableAfterDiscount": 5360,
+      "eventNames": [
+        "Blaze Open"
+      ],
+      "eventDates": [
+        "2026-05-02"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17572184391999",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 428,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 428
+    },
+    {
+      "orderId": "gid://shopify/Order/7467679416639",
+      "orderNumber": "#8519",
+      "orderedAt": "2026-03-05T12:19:17.000Z",
+      "customerId": "gid://shopify/Customer/10271672795455",
+      "customerEmail": "kxiye871@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47611085119-plan:年間サブスクリプション",
+        "subscription-47611085119-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 2,
+      "nCount": 20,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 22000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "eventNames": [
+        "West Gate Open"
+      ],
+      "eventDates": [
+        "2026-04-18"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17570893726015",
+          "title": "West Gate Open 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 2,
+          "price": 11000,
+          "eventName": "West Gate Open",
+          "eventDate": "2026-04-18T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Gate Open 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 668,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 668
+    },
+    {
+      "orderId": "gid://shopify/Order/7467504861503",
+      "orderNumber": "#8514",
+      "orderedAt": "2026-03-05T07:58:03.000Z",
+      "customerId": "gid://shopify/Customer/10271388533055",
+      "customerEmail": "hana19760917@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47609053503-plan:年間サブスクリプション",
+        "subscription-47609053503-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 4,
+      "nCount": 40,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 44000,
+      "discountAmount": 14080,
+      "payableAfterDiscount": 29920,
+      "eventNames": [
+        "West Gate Open"
+      ],
+      "eventDates": [
+        "2026-04-18"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17570604679487",
+          "title": "West Gate Open 2026 コンテストエントリー ビキニ",
+          "quantity": 2,
+          "price": 11000,
+          "eventName": "West Gate Open",
+          "eventDate": "2026-04-18T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "no-easy-points",
+            "West Gate Open 2026",
+            "Womens",
+            "コンテストエントリー",
+            "ビキニ",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17570604712255",
+          "title": "West Gate Open 2026 コンテストエントリー ビキニ",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "West Gate Open",
+          "eventDate": "2026-04-18T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "no-easy-points",
+            "West Gate Open 2026",
+            "Womens",
+            "コンテストエントリー",
+            "ビキニ",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17570604745023",
+          "title": "West Gate Open 2026 コンテストエントリー ビキニ",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "West Gate Open",
+          "eventDate": "2026-04-18T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "no-easy-points",
+            "West Gate Open 2026",
+            "Womens",
+            "コンテストエントリー",
+            "ビキニ",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 40,
+      "finalRate": 12,
+      "finalPointAmount": 3590,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 40,
+      "fixedRateWithoutRank": 12,
+      "provisionalPointsWithoutRank": 3590
+    },
+    {
+      "orderId": "gid://shopify/Order/7467039949119",
+      "orderNumber": "#8509",
+      "orderedAt": "2026-03-05T00:47:29.000Z",
+      "customerId": "gid://shopify/Customer/8168160690495",
+      "customerEmail": "i.keigo516@rakumail.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-46665040191-plan:年間サブスクリプション",
+        "subscription-46665040191-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "loyaltyBalance": null,
+      "entryCount": 2,
+      "nCount": 20,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "eventNames": [
+        "Aprilis Championships"
+      ],
+      "eventDates": [
+        "2026-04-24"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17569877983551",
+          "title": "Aprilis Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Aprilis Championships",
+          "eventDate": "2026-04-24T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Aprilis Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17569878016319",
+          "title": "Aprilis Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Aprilis Championships",
+          "eventDate": "2026-04-24T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Aprilis Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 1097,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 1097
+    },
+    {
+      "orderId": "gid://shopify/Order/7466203119935",
+      "orderNumber": "#8505",
+      "orderedAt": "2026-03-04T12:48:00.000Z",
+      "customerId": "gid://shopify/Customer/7619309109567",
+      "customerEmail": "kazukazu.0317.gk@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "G9",
+        "subscription-47472574783-plan:年間サブスクリプション",
+        "subscription-47472574783-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G9"
+      ],
+      "hasMembershipTag": true,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "loyaltyBalance": null,
+      "entryCount": 3,
+      "nCount": 30,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 33000,
+      "discountAmount": 10920,
+      "payableAfterDiscount": 22080,
+      "eventNames": [
+        "Aprilis Championships"
+      ],
+      "eventDates": [
+        "2026-04-24"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17568309903679",
+          "title": "Aprilis Championships 2026 コンテストエントリー クラシックフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Aprilis Championships",
+          "eventDate": "2026-04-24T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Aprilis Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "クラシックフィジーク",
+            "コンテストエントリー",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17568309936447",
+          "title": "Aprilis Championships 2026 コンテストエントリー クラシックフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Aprilis Championships",
+          "eventDate": "2026-04-24T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Aprilis Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "クラシックフィジーク",
+            "コンテストエントリー",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17568309969215",
+          "title": "Aprilis Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Aprilis Championships",
+          "eventDate": "2026-04-24T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Aprilis Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 1766,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 1766
+    },
+    {
+      "orderId": "gid://shopify/Order/7465696461119",
+      "orderNumber": "#8501",
+      "orderedAt": "2026-03-04T05:04:13.000Z",
+      "customerId": "gid://shopify/Customer/10212367565119",
+      "customerEmail": "yama.karate.kendo@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-46744404287-plan:年間サブスクリプション",
+        "subscription-46744404287-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 3,
+      "nCount": 30,
+      "nEarlyAll": 0,
+      "nEarlyAny": 0,
+      "listPriceTotal": 33000,
+      "discountAmount": 7920,
+      "payableAfterDiscount": 25080,
+      "eventNames": [
+        "West Tokyo Championships"
+      ],
+      "eventDates": [
+        "2026-04-03"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17567601623359",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17567601656127",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズアスリートモデル",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズアスリートモデル",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17567601688895",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 30,
+      "finalRate": 8,
+      "finalPointAmount": 2006,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 30,
+      "fixedRateWithoutRank": 8,
+      "provisionalPointsWithoutRank": 2006
+    },
+    {
+      "orderId": "gid://shopify/Order/7463087571263",
+      "orderNumber": "#8490",
+      "orderedAt": "2026-03-02T13:23:03.000Z",
+      "customerId": "gid://shopify/Customer/10263482302783",
+      "customerEmail": "g_dos_santos17@yahoo.co.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "Shop",
+        "subscription-47483748671-plan:年間サブスクリプション",
+        "subscription-47483748671-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 2,
+      "nCount": 20,
+      "nEarlyAll": 0,
+      "nEarlyAny": 0,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "eventNames": [
+        "Discovery Championships"
+      ],
+      "eventDates": [
+        "2026-03-13"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17562836599103",
+          "title": "Discovery Championships 2026 コンテストエントリー メンズアスリートモデル",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Discovery Championships",
+          "eventDate": "2026-03-13T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Discovery Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズアスリートモデル",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17562836631871",
+          "title": "Discovery Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Discovery Championships",
+          "eventDate": "2026-03-13T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Discovery Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 20,
+      "finalRate": 5,
+      "finalPointAmount": 686,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 20,
+      "fixedRateWithoutRank": 5,
+      "provisionalPointsWithoutRank": 686
+    },
+    {
+      "orderId": "gid://shopify/Order/7462963216703",
+      "orderNumber": "#8489",
+      "orderedAt": "2026-03-02T10:24:18.000Z",
+      "customerId": "gid://shopify/Customer/10195413139775",
+      "customerEmail": "gps_injapan@yahoo.co.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47515664703-plan:年間サブスクリプション",
+        "subscription-47515664703-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 700,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 0,
+      "nEarlyAny": 0,
+      "listPriceTotal": 11000,
+      "discountAmount": 5640,
+      "payableAfterDiscount": 5360,
+      "eventNames": [
+        "Discovery Championships"
+      ],
+      "eventDates": [
+        "2026-03-13"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17562619773247",
+          "title": "Discovery Championships 2026 コンテストエントリー クラシックフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Discovery Championships",
+          "eventDate": "2026-03-13T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Discovery Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "クラシックフィジーク",
+            "コンテストエントリー",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 0,
+      "finalRate": 0,
+      "finalPointAmount": 0,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 0,
+      "fixedRateWithoutRank": 0,
+      "provisionalPointsWithoutRank": 0
+    },
+    {
+      "orderId": "gid://shopify/Order/7461943869759",
+      "orderNumber": "#8483",
+      "orderedAt": "2026-03-01T21:24:53.000Z",
+      "customerId": "gid://shopify/Customer/10212251599167",
+      "customerEmail": "waji0312lax@yahoo.co.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47439642943-plan:年間サブスクリプション",
+        "subscription-47439642943-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 2,
+      "nCount": 20,
+      "nEarlyAll": 0,
+      "nEarlyAny": 0,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "eventNames": [
+        "Discovery Championships"
+      ],
+      "eventDates": [
+        "2026-03-13"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17561047269695",
+          "title": "Discovery Championships 2026 コンテストエントリー メンズアスリートモデル",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Discovery Championships",
+          "eventDate": "2026-03-13T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Discovery Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズアスリートモデル",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17561047302463",
+          "title": "Discovery Championships 2026 コンテストエントリー メンズフィットネスモデル",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Discovery Championships",
+          "eventDate": "2026-03-13T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Discovery Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィットネスモデル",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 20,
+      "finalRate": 5,
+      "finalPointAmount": 686,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 20,
+      "fixedRateWithoutRank": 5,
+      "provisionalPointsWithoutRank": 686
+    },
+    {
+      "orderId": "gid://shopify/Order/7461365940543",
+      "orderNumber": "#8481",
+      "orderedAt": "2026-03-01T14:14:01.000Z",
+      "customerId": "gid://shopify/Customer/10167582851391",
+      "customerEmail": "tomoco1173@i.softbank.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "newsletter",
+        "subscription-47485059391-plan:年間サブスクリプション",
+        "subscription-47485059391-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 1000,
+      "entryCount": 2,
+      "nCount": 20,
+      "nEarlyAll": 0,
+      "nEarlyAny": 0,
+      "listPriceTotal": 22000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "eventNames": [
+        "Discovery Championships"
+      ],
+      "eventDates": [
+        "2026-03-13"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17559963369791",
+          "title": "Discovery Championships 2026 コンテストエントリー ビキニ",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Discovery Championships",
+          "eventDate": "2026-03-13T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Discovery Championships 2026",
+            "no-easy-points",
+            "Womens",
+            "コンテストエントリー",
+            "ビキニ",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17559963402559",
+          "title": "Discovery Championships 2026 コンテストエントリー ビキニ",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Discovery Championships",
+          "eventDate": "2026-03-13T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Discovery Championships 2026",
+            "no-easy-points",
+            "Womens",
+            "コンテストエントリー",
+            "ビキニ",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 20,
+      "finalRate": 5,
+      "finalPointAmount": 418,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 20,
+      "fixedRateWithoutRank": 5,
+      "provisionalPointsWithoutRank": 418
+    },
+    {
+      "orderId": "gid://shopify/Order/7461168120127",
+      "orderNumber": "#8477",
+      "orderedAt": "2026-03-01T10:02:43.000Z",
+      "customerId": "gid://shopify/Customer/10263212196159",
+      "customerEmail": "yasuoji33@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47476506943-plan:年間サブスクリプション",
+        "subscription-47476506943-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 0,
+      "entryCount": 4,
+      "nCount": 40,
+      "nEarlyAll": 30,
+      "nEarlyAny": 30,
+      "listPriceTotal": 44000,
+      "discountAmount": 14080,
+      "payableAfterDiscount": 29920,
+      "eventNames": [
+        "West Tokyo Championships"
+      ],
+      "eventDates": [
+        "2026-04-03"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17559637852479",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17559637885247",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17559637918015",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17559637950783",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 40,
+      "finalRate": 12,
+      "finalPointAmount": 3590,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 40,
+      "fixedRateWithoutRank": 12,
+      "provisionalPointsWithoutRank": 3590
+    },
+    {
+      "orderId": "gid://shopify/Order/7460699832639",
+      "orderNumber": "#8470",
+      "orderedAt": "2026-03-01T06:18:39.000Z",
+      "customerId": "gid://shopify/Customer/10182923125055",
+      "customerEmail": "t.k12_x@icloud.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-46046773567-plan:年間サブスクリプション",
+        "subscription-46046773567-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "hasMembershipTag": true,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "loyaltyBalance": 500,
+      "entryCount": 1,
+      "nCount": 0,
+      "nEarlyAll": 0,
+      "nEarlyAny": 0,
+      "listPriceTotal": 11000,
+      "discountAmount": 5640,
+      "payableAfterDiscount": 5360,
+      "eventNames": [
+        "Discovery Championships"
+      ],
+      "eventDates": [
+        "2026-03-13"
+      ],
+      "rewardItems": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17559060709695",
+          "title": "Discovery Championships 2026 コンテストエントリー メンズフィジーク",
+          "quantity": 1,
+          "price": 11000,
+          "eventName": "Discovery Championships",
+          "eventDate": "2026-03-13T15:00:00.000Z",
+          "productTags": [
+            "2026シーズン",
+            "Discovery Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "isRewardTarget": true,
+          "isNoEasyPoints": true,
+          "isContestEntry": true
+        }
+      ],
+      "manualMemberRank": null,
+      "manualMemberRate": null,
+      "memberN": 0,
+      "finalN": 0,
+      "finalRate": 0,
+      "finalPointAmount": 0,
+      "finalNBlockedReason": "member_rank_not_available_in_store_data",
+      "baselineNWithoutRank": 0,
+      "fixedRateWithoutRank": 0,
+      "provisionalPointsWithoutRank": 0
+    }
+  ],
+  "summaryByCustomer": [
+    {
+      "customerEmail": "hana19760917@gmail.com",
+      "customerId": "gid://shopify/Customer/10271388533055",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47609053503-plan:年間サブスクリプション",
+        "subscription-47609053503-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 44000,
+      "discountAmount": 14080,
+      "payableAfterDiscount": 29920,
+      "provisionalPointsWithoutRank": 3590,
+      "finalPointAmount": 3590,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8514"
+      ]
+    },
+    {
+      "customerEmail": "yasuoji33@gmail.com",
+      "customerId": "gid://shopify/Customer/10263212196159",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47476506943-plan:年間サブスクリプション",
+        "subscription-47476506943-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 44000,
+      "discountAmount": 14080,
+      "payableAfterDiscount": 29920,
+      "provisionalPointsWithoutRank": 3590,
+      "finalPointAmount": 3590,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8477"
+      ]
+    },
+    {
+      "customerEmail": "ankitpurohit80@gmail.com",
+      "customerId": "gid://shopify/Customer/10209101513023",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-46566506815-plan:年間サブスクリプション",
+        "subscription-46566506815-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 31320,
+      "provisionalPointsWithoutRank": 2505,
+      "finalPointAmount": 2505,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8622"
+      ]
+    },
+    {
+      "customerEmail": "keitomiyuu@icloud.com",
+      "customerId": "gid://shopify/Customer/10278106497343",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47706374463-plan:年間サブスクリプション",
+        "subscription-47706374463-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 33000,
+      "discountAmount": 7920,
+      "payableAfterDiscount": 25080,
+      "provisionalPointsWithoutRank": 2006,
+      "finalPointAmount": 2006,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8650"
+      ]
+    },
+    {
+      "customerEmail": "kanatauchiumi@icloud.com",
+      "customerId": "gid://shopify/Customer/9163579228479",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "Shop",
+        "subscription-47701426495-plan:年間サブスクリプション",
+        "subscription-47701426495-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 33000,
+      "discountAmount": 7920,
+      "payableAfterDiscount": 25080,
+      "provisionalPointsWithoutRank": 2006,
+      "finalPointAmount": 2006,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8551"
+      ]
+    },
+    {
+      "customerEmail": "yama.karate.kendo@gmail.com",
+      "customerId": "gid://shopify/Customer/10212367565119",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-46744404287-plan:年間サブスクリプション",
+        "subscription-46744404287-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 33000,
+      "discountAmount": 7920,
+      "payableAfterDiscount": 25080,
+      "provisionalPointsWithoutRank": 2006,
+      "finalPointAmount": 2006,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8501"
+      ]
+    },
+    {
+      "customerEmail": "87powersrrs@gmail.com",
+      "customerId": "gid://shopify/Customer/7619380019519",
+      "customerTags": [
+        "FWJカード会員",
+        "FWJカード会員（次回更新停止中）",
+        "G7",
+        "subscription-47125627199-cancel:2026-02-19"
+      ],
+      "groupTags": [
+        "G7"
+      ],
+      "orderCount": 1,
+      "listPriceTotal": 33000,
+      "discountAmount": 10920,
+      "payableAfterDiscount": 22080,
+      "provisionalPointsWithoutRank": 1766,
+      "finalPointAmount": 1766,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8662"
+      ]
+    },
+    {
+      "customerEmail": "bgfdfikkjt56@gmail.com",
+      "customerId": "gid://shopify/Customer/10261693989183",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47451668799-plan:年間サブスクリプション",
+        "subscription-47451668799-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 33000,
+      "discountAmount": 10920,
+      "payableAfterDiscount": 22080,
+      "provisionalPointsWithoutRank": 1766,
+      "finalPointAmount": 1766,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8614"
+      ]
+    },
+    {
+      "customerEmail": "kazukazu.0317.gk@gmail.com",
+      "customerId": "gid://shopify/Customer/7619309109567",
+      "customerTags": [
+        "FWJカード会員",
+        "G9",
+        "subscription-47472574783-plan:年間サブスクリプション",
+        "subscription-47472574783-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G9"
+      ],
+      "orderCount": 1,
+      "listPriceTotal": 33000,
+      "discountAmount": 10920,
+      "payableAfterDiscount": 22080,
+      "provisionalPointsWithoutRank": 1766,
+      "finalPointAmount": 1766,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8505"
+      ]
+    },
+    {
+      "customerEmail": "myouseiji.25@gmail.com",
+      "customerId": "gid://shopify/Customer/10144163103039",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "Shop",
+        "subscription-45372113215-plan:年間サブスクリプション",
+        "subscription-45372113215-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 22000,
+      "discountAmount": 5280,
+      "payableAfterDiscount": 21120,
+      "provisionalPointsWithoutRank": 1689,
+      "finalPointAmount": 1689,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8676"
+      ]
+    },
+    {
+      "customerEmail": "ogayu2456@yahoo.co.jp",
+      "customerId": "gid://shopify/Customer/7619335160127",
+      "customerTags": [
+        "FWJカード会員",
+        "G9",
+        "Login with Shop",
+        "Shop",
+        "subscription-47432237375-plan:年間サブスクリプション",
+        "subscription-47432237375-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G9"
+      ],
+      "orderCount": 1,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 20140,
+      "provisionalPointsWithoutRank": 1611,
+      "finalPointAmount": 1611,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8669"
+      ]
+    },
+    {
+      "customerEmail": "etigotakeru@gmail.com",
+      "customerId": "gid://shopify/Customer/7619306946879",
+      "customerTags": [
+        "FWJカード会員",
+        "G9",
+        "Login with Shop",
+        "Shop",
+        "subscription-46379270463-plan:年間サブスクリプション",
+        "subscription-46379270463-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G9"
+      ],
+      "orderCount": 1,
+      "listPriceTotal": 22000,
+      "discountAmount": 5280,
+      "payableAfterDiscount": 16720,
+      "provisionalPointsWithoutRank": 1337,
+      "finalPointAmount": 1337,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8663"
+      ]
+    },
+    {
+      "customerEmail": "vn_nv.emi@icloud.com",
+      "customerId": "gid://shopify/Customer/9566802149695",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "newsletter",
+        "Shop",
+        "subscription-45351043391-plan:年間サブスクリプション",
+        "subscription-45351043391-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 22000,
+      "discountAmount": 5280,
+      "payableAfterDiscount": 16720,
+      "provisionalPointsWithoutRank": 1337,
+      "finalPointAmount": 1337,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8602"
+      ]
+    },
+    {
+      "customerEmail": "yossi.boxing.6728@iCloud.com",
+      "customerId": "gid://shopify/Customer/10238678892863",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47065006399-plan:年間サブスクリプション",
+        "subscription-47065006399-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 22000,
+      "discountAmount": 5280,
+      "payableAfterDiscount": 16720,
+      "provisionalPointsWithoutRank": 1337,
+      "finalPointAmount": 1337,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8532"
+      ]
+    },
+    {
+      "customerEmail": "sea.1132agepp@docomo.ne.jp",
+      "customerId": "gid://shopify/Customer/7619232792895",
+      "customerTags": [
+        "FWJカード会員",
+        "G12",
+        "subscription-47745728831-plan:年間サブスクリプション",
+        "subscription-47745728831-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G12"
+      ],
+      "orderCount": 2,
+      "listPriceTotal": 22000,
+      "discountAmount": 5280,
+      "payableAfterDiscount": 16720,
+      "provisionalPointsWithoutRank": 1336,
+      "finalPointAmount": 1336,
+      "unresolvedOrders": 2,
+      "orders": [
+        "#8593",
+        "#8592"
+      ]
+    },
+    {
+      "customerEmail": "lovechiori0529@icloud.com",
+      "customerId": "gid://shopify/Customer/10277792416063",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47703884095-plan:年間サブスクリプション",
+        "subscription-47703884095-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 2,
+      "listPriceTotal": 22000,
+      "discountAmount": 5280,
+      "payableAfterDiscount": 16720,
+      "provisionalPointsWithoutRank": 1336,
+      "finalPointAmount": 1336,
+      "unresolvedOrders": 2,
+      "orders": [
+        "#8558",
+        "#8557"
+      ]
+    },
+    {
+      "customerEmail": "avaricious.spirit.taku.no23@gmail.com",
+      "customerId": "gid://shopify/Customer/7619352363327",
+      "customerTags": [
+        "FWJカード会員",
+        "G8",
+        "subscription-48001843519-plan:年間サブスクリプション",
+        "subscription-48001843519-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G8"
+      ],
+      "orderCount": 1,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 16060,
+      "provisionalPointsWithoutRank": 1284,
+      "finalPointAmount": 1284,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8633"
+      ]
+    },
+    {
+      "customerEmail": "kojima111110@gmail.com",
+      "customerId": "gid://shopify/Customer/10302384210239",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-48161685823-plan:年間サブスクリプション",
+        "subscription-48161685823-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "provisionalPointsWithoutRank": 1097,
+      "finalPointAmount": 1097,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8693"
+      ]
+    },
+    {
+      "customerEmail": "banchansoruto@gmail.com",
+      "customerId": "gid://shopify/Customer/10266952139071",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "Shop",
+        "subscription-47609020735-plan:年間サブスクリプション",
+        "subscription-47609020735-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "provisionalPointsWithoutRank": 1097,
+      "finalPointAmount": 1097,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8677"
+      ]
+    },
+    {
+      "customerEmail": "shananlian4@gmail.com",
+      "customerId": "gid://shopify/Customer/10256081879359",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "Shop",
+        "subscription-47383740735-plan:年間サブスクリプション",
+        "subscription-47383740735-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "provisionalPointsWithoutRank": 1097,
+      "finalPointAmount": 1097,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8675"
+      ]
+    },
+    {
+      "customerEmail": "r.taguchi_06@outlook.jp",
+      "customerId": "gid://shopify/Customer/10215112016191",
+      "customerTags": [
+        "FWJカード会員",
+        "FWJカード会員（次回更新停止中）",
+        "Login with Shop",
+        "Shop",
+        "subscription-48038117695-cancel:2026-03-14"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "provisionalPointsWithoutRank": 1097,
+      "finalPointAmount": 1097,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8649"
+      ]
+    },
+    {
+      "customerEmail": "gonsuke0703@gmail.com",
+      "customerId": "gid://shopify/Customer/10281563717951",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47773188415-plan:年間サブスクリプション",
+        "subscription-47773188415-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "provisionalPointsWithoutRank": 1097,
+      "finalPointAmount": 1097,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8634"
+      ]
+    },
+    {
+      "customerEmail": "k08026725828@gmail.com",
+      "customerId": "gid://shopify/Customer/10194993283391",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "Shop",
+        "subscription-46304100671-plan:年間サブスクリプション",
+        "subscription-46304100671-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "provisionalPointsWithoutRank": 1097,
+      "finalPointAmount": 1097,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8553"
+      ]
+    },
+    {
+      "customerEmail": "reflet0124@icloud.com",
+      "customerId": "gid://shopify/Customer/10238268703039",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47318565183-plan:年間サブスクリプション",
+        "subscription-47318565183-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "provisionalPointsWithoutRank": 1097,
+      "finalPointAmount": 1097,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8542"
+      ]
+    },
+    {
+      "customerEmail": "tiantianqingjie3@gmail.com",
+      "customerId": "gid://shopify/Customer/10269689577791",
+      "customerTags": [
+        "FWJカード会員",
+        "FWJカード会員（次回更新停止中）",
+        "subscription-47581692223-cancel:2026-03-04"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "provisionalPointsWithoutRank": 1097,
+      "finalPointAmount": 1097,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8538"
+      ]
+    },
+    {
+      "customerEmail": "softoball12345@gmail.com",
+      "customerId": "gid://shopify/Customer/10185135554879",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-46080262463-plan:年間サブスクリプション",
+        "subscription-46080262463-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "provisionalPointsWithoutRank": 1097,
+      "finalPointAmount": 1097,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8530"
+      ]
+    },
+    {
+      "customerEmail": "st.swim.6.7@icloud.com",
+      "customerId": "gid://shopify/Customer/10185134506303",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-46080229695-plan:年間サブスクリプション",
+        "subscription-46080229695-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "provisionalPointsWithoutRank": 1097,
+      "finalPointAmount": 1097,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8529"
+      ]
+    },
+    {
+      "customerEmail": "love89.0125@icloud.com",
+      "customerId": "gid://shopify/Customer/10143999426879",
+      "customerTags": [
+        "FWJカード会員",
+        "newsletter",
+        "subscription-47053078847-plan:年間サブスクリプション",
+        "subscription-47053078847-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "provisionalPointsWithoutRank": 1097,
+      "finalPointAmount": 1097,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8526"
+      ]
+    },
+    {
+      "customerEmail": "i.keigo516@rakumail.jp",
+      "customerId": "gid://shopify/Customer/8168160690495",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-46665040191-plan:年間サブスクリプション",
+        "subscription-46665040191-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "provisionalPointsWithoutRank": 1097,
+      "finalPointAmount": 1097,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8509"
+      ]
+    },
+    {
+      "customerEmail": "yl.i.h.love.tyk@gmail.com",
+      "customerId": "gid://shopify/Customer/9227402117439",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47703654719-plan:年間サブスクリプション",
+        "subscription-47703654719-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 2,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "provisionalPointsWithoutRank": 1096,
+      "finalPointAmount": 1096,
+      "unresolvedOrders": 2,
+      "orders": [
+        "#8572",
+        "#8571"
+      ]
+    },
+    {
+      "customerEmail": "yototo0726@gmail.com",
+      "customerId": "gid://shopify/Customer/9356268339519",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47163441471-plan:年間サブスクリプション",
+        "subscription-47163441471-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 19800,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 11520,
+      "provisionalPointsWithoutRank": 921,
+      "finalPointAmount": 921,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8588"
+      ]
+    },
+    {
+      "customerEmail": "buonafortuna0314@yahoo.co.jp",
+      "customerId": "gid://shopify/Customer/7619448406335",
+      "customerTags": [
+        "FWJカード会員",
+        "G5",
+        "subscription-48061776191-plan:年間サブスクリプション",
+        "subscription-48061776191-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G5"
+      ],
+      "orderCount": 1,
+      "listPriceTotal": 22000,
+      "discountAmount": 5280,
+      "payableAfterDiscount": 16720,
+      "provisionalPointsWithoutRank": 836,
+      "finalPointAmount": 836,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8655"
+      ]
+    },
+    {
+      "customerEmail": "akd_r@ybb.ne.jp",
+      "customerId": "gid://shopify/Customer/7619358032191",
+      "customerTags": [
+        "FWJカード会員",
+        "G8",
+        "subscription-47742189887-plan:年間サブスクリプション",
+        "subscription-47742189887-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G8"
+      ],
+      "orderCount": 1,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "provisionalPointsWithoutRank": 686,
+      "finalPointAmount": 686,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8589"
+      ]
+    },
+    {
+      "customerEmail": "g_dos_santos17@yahoo.co.jp",
+      "customerId": "gid://shopify/Customer/10263482302783",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "Shop",
+        "subscription-47483748671-plan:年間サブスクリプション",
+        "subscription-47483748671-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "provisionalPointsWithoutRank": 686,
+      "finalPointAmount": 686,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8490"
+      ]
+    },
+    {
+      "customerEmail": "waji0312lax@yahoo.co.jp",
+      "customerId": "gid://shopify/Customer/10212251599167",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47439642943-plan:年間サブスクリプション",
+        "subscription-47439642943-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "provisionalPointsWithoutRank": 686,
+      "finalPointAmount": 686,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8483"
+      ]
+    },
+    {
+      "customerEmail": "pomu2429dream@yahoo.co.jp",
+      "customerId": "gid://shopify/Customer/7619381920063",
+      "customerTags": [
+        "FWJカード会員",
+        "G7",
+        "Login with Shop",
+        "Shop",
+        "subscription-48015900991-plan:年間サブスクリプション",
+        "subscription-48015900991-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G7"
+      ],
+      "orderCount": 1,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "provisionalPointsWithoutRank": 668,
+      "finalPointAmount": 668,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8643"
+      ]
+    },
+    {
+      "customerEmail": "b_b88@ybb.ne.jp",
+      "customerId": "gid://shopify/Customer/10261379973439",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "Shop",
+        "subscription-47701524799-plan:年間サブスクリプション",
+        "subscription-47701524799-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "provisionalPointsWithoutRank": 668,
+      "finalPointAmount": 668,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8639"
+      ]
+    },
+    {
+      "customerEmail": "lifeyell.5791@gmail.com",
+      "customerId": "gid://shopify/Customer/7619313991999",
+      "customerTags": [
+        "FWJカード会員",
+        "G9",
+        "subscription-45759660351-plan:年間サブスクリプション",
+        "subscription-45759660351-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G9"
+      ],
+      "orderCount": 1,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "provisionalPointsWithoutRank": 668,
+      "finalPointAmount": 668,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8626"
+      ]
+    },
+    {
+      "customerEmail": "ys.301.vite@icloud.com",
+      "customerId": "gid://shopify/Customer/7619327557951",
+      "customerTags": [
+        "FWJカード会員",
+        "G9",
+        "subscription-47751725375-plan:年間サブスクリプション",
+        "subscription-47751725375-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G9"
+      ],
+      "orderCount": 1,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "provisionalPointsWithoutRank": 668,
+      "finalPointAmount": 668,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8596"
+      ]
+    },
+    {
+      "customerEmail": "n-town0218@softbank.ne.jp",
+      "customerId": "gid://shopify/Customer/7619317793087",
+      "customerTags": [
+        "FWJカード会員",
+        "FWJカード会員（次回更新停止中）",
+        "G9",
+        "subscription-47095021887-cancel:2026-03-09"
+      ],
+      "groupTags": [
+        "G9"
+      ],
+      "orderCount": 1,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "provisionalPointsWithoutRank": 668,
+      "finalPointAmount": 668,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8582"
+      ]
+    },
+    {
+      "customerEmail": "2daime_onoxile.89@ezweb.ne.jp",
+      "customerId": "gid://shopify/Customer/10210231189823",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-46593671487-plan:年間サブスクリプション",
+        "subscription-46593671487-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "provisionalPointsWithoutRank": 668,
+      "finalPointAmount": 668,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8579"
+      ]
+    },
+    {
+      "customerEmail": "r.s-0405@ezweb.ne.jp",
+      "customerId": "gid://shopify/Customer/10279039140159",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47727411519-plan:年間サブスクリプション",
+        "subscription-47727411519-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "provisionalPointsWithoutRank": 668,
+      "finalPointAmount": 668,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8578"
+      ]
+    },
+    {
+      "customerEmail": "usui0795@gmail.com",
+      "customerId": "gid://shopify/Customer/7619333456191",
+      "customerTags": [
+        "FWJカード会員",
+        "G9",
+        "Login with Shop",
+        "Shop",
+        "subscription-46662549823-plan:年間サブスクリプション",
+        "subscription-46662549823-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G9"
+      ],
+      "orderCount": 1,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "provisionalPointsWithoutRank": 668,
+      "finalPointAmount": 668,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8570"
+      ]
+    },
+    {
+      "customerEmail": "lovepurplesd@icloud.com",
+      "customerId": "gid://shopify/Customer/10238190256447",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47057961279-plan:年間サブスクリプション",
+        "subscription-47057961279-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "provisionalPointsWithoutRank": 668,
+      "finalPointAmount": 668,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8539"
+      ]
+    },
+    {
+      "customerEmail": "htmnts0501@gmail.com",
+      "customerId": "gid://shopify/Customer/10274638430527",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47663939903-plan:年間サブスクリプション",
+        "subscription-47663939903-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "provisionalPointsWithoutRank": 668,
+      "finalPointAmount": 668,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8536"
+      ]
+    },
+    {
+      "customerEmail": "kxiye871@gmail.com",
+      "customerId": "gid://shopify/Customer/10271672795455",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47611085119-plan:年間サブスクリプション",
+        "subscription-47611085119-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 22000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "provisionalPointsWithoutRank": 668,
+      "finalPointAmount": 668,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8519"
+      ]
+    },
+    {
+      "customerEmail": "okazaki619ab@ezweb.ne.jp",
+      "customerId": "gid://shopify/Customer/7619257958719",
+      "customerTags": [
+        "FWJカード会員",
+        "G11",
+        "newsletter",
+        "subscription-46639382847-plan:年間サブスクリプション",
+        "subscription-46639382847-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G11"
+      ],
+      "orderCount": 1,
+      "listPriceTotal": 11000,
+      "discountAmount": 5640,
+      "payableAfterDiscount": 5360,
+      "provisionalPointsWithoutRank": 428,
+      "finalPointAmount": 428,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8700"
+      ]
+    },
+    {
+      "customerEmail": "bita0813@i.softbank.jp",
+      "customerId": "gid://shopify/Customer/7619441393983",
+      "customerTags": [
+        "FWJカード会員",
+        "G5",
+        "Login with Shop",
+        "Shop",
+        "subscription-48168141119-plan:年間サブスクリプション",
+        "subscription-48168141119-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G5"
+      ],
+      "orderCount": 1,
+      "listPriceTotal": 11000,
+      "discountAmount": 5640,
+      "payableAfterDiscount": 5360,
+      "provisionalPointsWithoutRank": 428,
+      "finalPointAmount": 428,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8699"
+      ]
+    },
+    {
+      "customerEmail": "dragunv7.62mmr@icloud.com",
+      "customerId": "gid://shopify/Customer/10198549692735",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "Shop",
+        "subscription-47186903359-plan:年間サブスクリプション",
+        "subscription-47186903359-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 11000,
+      "discountAmount": 5640,
+      "payableAfterDiscount": 5360,
+      "provisionalPointsWithoutRank": 428,
+      "finalPointAmount": 428,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8685"
+      ]
+    },
+    {
+      "customerEmail": "s611119s@icloud.com",
+      "customerId": "gid://shopify/Customer/7695037301055",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "newsletter",
+        "Shop",
+        "subscription-48069968191-plan:年間サブスクリプション",
+        "subscription-48069968191-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 11000,
+      "discountAmount": 5640,
+      "payableAfterDiscount": 5360,
+      "provisionalPointsWithoutRank": 428,
+      "finalPointAmount": 428,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8665"
+      ]
+    },
+    {
+      "customerEmail": "daikonkoshihikarinappa@gmail.com",
+      "customerId": "gid://shopify/Customer/7619281387839",
+      "customerTags": [
+        "FWJカード会員",
+        "G10",
+        "subscription-47318401343-plan:年間サブスクリプション",
+        "subscription-47318401343-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G10"
+      ],
+      "orderCount": 1,
+      "listPriceTotal": 11000,
+      "discountAmount": 5640,
+      "payableAfterDiscount": 5360,
+      "provisionalPointsWithoutRank": 428,
+      "finalPointAmount": 428,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8537"
+      ]
+    },
+    {
+      "customerEmail": "fumiya_soccer0714@yahoo.co.jp",
+      "customerId": "gid://shopify/Customer/10245807112511",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47201976639-plan:年間サブスクリプション",
+        "subscription-47201976639-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 11000,
+      "discountAmount": 5640,
+      "payableAfterDiscount": 5360,
+      "provisionalPointsWithoutRank": 428,
+      "finalPointAmount": 428,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8525"
+      ]
+    },
+    {
+      "customerEmail": "yf4684@yahoo.co.jp",
+      "customerId": "gid://shopify/Customer/10232487379263",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47014936895-plan:年間サブスクリプション",
+        "subscription-47014936895-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 11000,
+      "discountAmount": 5640,
+      "payableAfterDiscount": 5360,
+      "provisionalPointsWithoutRank": 428,
+      "finalPointAmount": 428,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8521"
+      ]
+    },
+    {
+      "customerEmail": "tomoco1173@i.softbank.jp",
+      "customerId": "gid://shopify/Customer/10167582851391",
+      "customerTags": [
+        "FWJカード会員",
+        "newsletter",
+        "subscription-47485059391-plan:年間サブスクリプション",
+        "subscription-47485059391-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 22000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "provisionalPointsWithoutRank": 418,
+      "finalPointAmount": 418,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8481"
+      ]
+    },
+    {
+      "customerEmail": "moromiki123070@gmail.com",
+      "customerId": "gid://shopify/Customer/10210906079551",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-46605599039-plan:年間サブスクリプション",
+        "subscription-46605599039-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "provisionalPointsWithoutRank": 0,
+      "finalPointAmount": 0,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8658"
+      ]
+    },
+    {
+      "customerEmail": "suuya5477@gmail.com",
+      "customerId": "gid://shopify/Customer/10265804341567",
+      "customerTags": [
+        "FWJカード会員",
+        "FWJカード会員（次回更新停止中）",
+        "subscription-47575892287-cancel:2026-03-04"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "provisionalPointsWithoutRank": 0,
+      "finalPointAmount": 0,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8657"
+      ]
+    },
+    {
+      "customerEmail": "lucianosuguru26@gmail.com",
+      "customerId": "gid://shopify/Customer/10190256668991",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-46309081407-plan:年間サブスクリプション",
+        "subscription-46309081407-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 11000,
+      "discountAmount": 5640,
+      "payableAfterDiscount": 5360,
+      "provisionalPointsWithoutRank": 0,
+      "finalPointAmount": 0,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8590"
+      ]
+    },
+    {
+      "customerEmail": "skrillex-beats_by-dr.dre@ezweb.ne.jp",
+      "customerId": "gid://shopify/Customer/7619441819967",
+      "customerTags": [
+        "FWJカード会員",
+        "G5",
+        "Login with Shop",
+        "Shop",
+        "subscription-46741061951-plan:年間サブスクリプション",
+        "subscription-46741061951-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G5"
+      ],
+      "orderCount": 2,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "provisionalPointsWithoutRank": 0,
+      "finalPointAmount": 0,
+      "unresolvedOrders": 2,
+      "orders": [
+        "#8586",
+        "#8540"
+      ]
+    },
+    {
+      "customerEmail": "kai65kai65@icloud.com",
+      "customerId": "gid://shopify/Customer/10278253068607",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47708733759-plan:年間サブスクリプション",
+        "subscription-47708733759-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 11000,
+      "discountAmount": 2640,
+      "payableAfterDiscount": 8360,
+      "provisionalPointsWithoutRank": 0,
+      "finalPointAmount": 0,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8574"
+      ]
+    },
+    {
+      "customerEmail": "hiroaki.no1@icloud.com",
+      "customerId": "gid://shopify/Customer/7619336208703",
+      "customerTags": [
+        "FWJカード会員",
+        "G9",
+        "subscription-47706308927-plan:年間サブスクリプション",
+        "subscription-47706308927-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [
+        "G9"
+      ],
+      "orderCount": 2,
+      "listPriceTotal": 22000,
+      "discountAmount": 8280,
+      "payableAfterDiscount": 13720,
+      "provisionalPointsWithoutRank": 0,
+      "finalPointAmount": 0,
+      "unresolvedOrders": 2,
+      "orders": [
+        "#8567",
+        "#8565"
+      ]
+    },
+    {
+      "customerEmail": "t26202763@gmail.com",
+      "customerId": "gid://shopify/Customer/10210900574527",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-46605304127-plan:年間サブスクリプション",
+        "subscription-46605304127-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 11000,
+      "discountAmount": 5640,
+      "payableAfterDiscount": 5360,
+      "provisionalPointsWithoutRank": 0,
+      "finalPointAmount": 0,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8554"
+      ]
+    },
+    {
+      "customerEmail": "gps_injapan@yahoo.co.jp",
+      "customerId": "gid://shopify/Customer/10195413139775",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47515664703-plan:年間サブスクリプション",
+        "subscription-47515664703-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 11000,
+      "discountAmount": 5640,
+      "payableAfterDiscount": 5360,
+      "provisionalPointsWithoutRank": 0,
+      "finalPointAmount": 0,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8489"
+      ]
+    },
+    {
+      "customerEmail": "t.k12_x@icloud.com",
+      "customerId": "gid://shopify/Customer/10182923125055",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-46046773567-plan:年間サブスクリプション",
+        "subscription-46046773567-product:FWJカード会員申し込み"
+      ],
+      "groupTags": [],
+      "orderCount": 1,
+      "listPriceTotal": 11000,
+      "discountAmount": 5640,
+      "payableAfterDiscount": 5360,
+      "provisionalPointsWithoutRank": 0,
+      "finalPointAmount": 0,
+      "unresolvedOrders": 1,
+      "orders": [
+        "#8470"
+      ]
+    }
+  ]
+}

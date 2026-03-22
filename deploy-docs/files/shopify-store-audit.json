@@ -1,0 +1,2375 @@
+{
+  "generatedAt": "2026-03-18T16:47:13.638Z",
+  "shop": {
+    "id": "gid://shopify/Shop/82639421759",
+    "name": "Fitness World",
+    "myshopifyDomain": "fwj-store.myshopify.com",
+    "plan": "Shopify"
+  },
+  "counts": {
+    "sampledProducts": 8,
+    "sampledCustomers": 8,
+    "sampledOrders": 8
+  },
+  "topProductTags": [
+    {
+      "tag": "mini-sample",
+      "count": 8
+    },
+    {
+      "tag": "photo",
+      "count": 8
+    },
+    {
+      "tag": "ビキニ",
+      "count": 8
+    },
+    {
+      "tag": "マスターズ (40歳～)",
+      "count": 4
+    },
+    {
+      "tag": "ビギナー",
+      "count": 3
+    },
+    {
+      "tag": "オープン",
+      "count": 1
+    }
+  ],
+  "topCustomerTags": [
+    {
+      "tag": "FWJカード会員",
+      "count": 5
+    },
+    {
+      "tag": "FWJカード会員（次回更新停止中）",
+      "count": 2
+    },
+    {
+      "tag": "Login with Shop",
+      "count": 2
+    },
+    {
+      "tag": "Shop",
+      "count": 2
+    },
+    {
+      "tag": "G11",
+      "count": 1
+    },
+    {
+      "tag": "G5",
+      "count": 1
+    },
+    {
+      "tag": "G9",
+      "count": 1
+    },
+    {
+      "tag": "newsletter",
+      "count": 1
+    },
+    {
+      "tag": "subscription-46630207807-cancel:2026-02-07",
+      "count": 1
+    },
+    {
+      "tag": "subscription-46639382847-plan:年間サブスクリプション",
+      "count": 1
+    },
+    {
+      "tag": "subscription-46639382847-product:FWJカード会員申し込み",
+      "count": 1
+    },
+    {
+      "tag": "subscription-47095021887-cancel:2026-03-09",
+      "count": 1
+    },
+    {
+      "tag": "subscription-48167813439-plan:年間サブスクリプション",
+      "count": 1
+    },
+    {
+      "tag": "subscription-48167813439-product:FWJカード会員申し込み",
+      "count": 1
+    },
+    {
+      "tag": "subscription-48168141119-plan:年間サブスクリプション",
+      "count": 1
+    },
+    {
+      "tag": "subscription-48168141119-product:FWJカード会員申し込み",
+      "count": 1
+    }
+  ],
+  "rewardSignals": {
+    "productMetafields": [
+      {
+        "owner": "mini-sample-ビキニ-マスターズ (40歳～)-ゼッケンNo.7",
+        "namespace": "mm-google-shopping",
+        "key": "google_product_category",
+        "type": "string",
+        "value": "8"
+      },
+      {
+        "owner": "mini-sample-ビキニ-マスターズ (40歳～)-ゼッケンNo.7",
+        "namespace": "mc-facebook",
+        "key": "google_product_category",
+        "type": "string",
+        "value": "8"
+      },
+      {
+        "owner": "mini-sample-ビキニ-マスターズ (40歳～)-ゼッケンNo.7",
+        "namespace": "judgeme",
+        "key": "badge",
+        "type": "string",
+        "value": "<div style='display:none' class='jdgm-prev-badge' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0'> <span class='jdgm-prev-badge__stars' data-score='0.00' tabindex='0' aria-label='0.00 stars' role='button'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </span> <span class='jdgm-prev-badge__text'> No reviews </span> </div>"
+      },
+      {
+        "owner": "mini-sample-ビキニ-マスターズ (40歳～)-ゼッケンNo.7",
+        "namespace": "judgeme",
+        "key": "widget",
+        "type": "string",
+        "value": "<div class='jdgm-rev-widg' data-updated-at='2026-03-17T21:53:17Z' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0' data-image-url=''> <style class='jdgm-temp-hiding-style'>.jdgm-rev-widg{ display: none }</style> <div class='jdgm-rev-widg__header'> <h2 class='jdgm-rev-widg__title'>Customer Reviews</h2>  <div class='jdgm-rev-widg__summary'> <div class='jdgm-rev-widg__summary-stars' aria-label='Average rating is 0.00 stars' role='img'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </div> <div class='jdgm-rev-widg__summary-text'>Be the first to write a review</div> </div> <a style='display: none' href='#' class='jdgm-write-rev-link' role='button'>Write a review</a> <div class='jdgm-histogram jdgm-temp-hidden'>  <div class='jdgm-histogram__row' data-rating='5' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 5 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='4' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 4 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='3' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 3 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='2' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 2 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='1' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 1 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row jdgm-histogram__clear-filter' data-rating=null tabindex='0'></div> </div>     <div class='jdgm-rev-widg__sort-wrapper'></div> </div> <div class='jdgm-rev-widg__body'>  <div class='jdgm-rev-widg__reviews'></div> <div class='jdgm-paginate' data-per-page='5' data-url='https://api.judge.me/reviews/reviews_for_widget' style=\"display: none;\"></div>  </div> <div class='jdgm-rev-widg__paginate-spinner-wrapper'> <div class='jdgm-spinner'></div> </div> </div>"
+      },
+      {
+        "owner": "mini-sample-ビキニ-マスターズ (40歳～)-ゼッケンNo.4",
+        "namespace": "mm-google-shopping",
+        "key": "google_product_category",
+        "type": "string",
+        "value": "8"
+      },
+      {
+        "owner": "mini-sample-ビキニ-マスターズ (40歳～)-ゼッケンNo.4",
+        "namespace": "mc-facebook",
+        "key": "google_product_category",
+        "type": "string",
+        "value": "8"
+      },
+      {
+        "owner": "mini-sample-ビキニ-マスターズ (40歳～)-ゼッケンNo.4",
+        "namespace": "judgeme",
+        "key": "badge",
+        "type": "string",
+        "value": "<div style='display:none' class='jdgm-prev-badge' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0'> <span class='jdgm-prev-badge__stars' data-score='0.00' tabindex='0' aria-label='0.00 stars' role='button'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </span> <span class='jdgm-prev-badge__text'> No reviews </span> </div>"
+      },
+      {
+        "owner": "mini-sample-ビキニ-マスターズ (40歳～)-ゼッケンNo.4",
+        "namespace": "judgeme",
+        "key": "widget",
+        "type": "string",
+        "value": "<div class='jdgm-rev-widg' data-updated-at='2026-03-17T21:52:53Z' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0' data-image-url=''> <style class='jdgm-temp-hiding-style'>.jdgm-rev-widg{ display: none }</style> <div class='jdgm-rev-widg__header'> <h2 class='jdgm-rev-widg__title'>Customer Reviews</h2>  <div class='jdgm-rev-widg__summary'> <div class='jdgm-rev-widg__summary-stars' aria-label='Average rating is 0.00 stars' role='img'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </div> <div class='jdgm-rev-widg__summary-text'>Be the first to write a review</div> </div> <a style='display: none' href='#' class='jdgm-write-rev-link' role='button'>Write a review</a> <div class='jdgm-histogram jdgm-temp-hidden'>  <div class='jdgm-histogram__row' data-rating='5' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 5 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='4' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 4 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='3' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 3 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='2' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 2 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='1' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 1 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row jdgm-histogram__clear-filter' data-rating=null tabindex='0'></div> </div>     <div class='jdgm-rev-widg__sort-wrapper'></div> </div> <div class='jdgm-rev-widg__body'>  <div class='jdgm-rev-widg__reviews'></div> <div class='jdgm-paginate' data-per-page='5' data-url='https://api.judge.me/reviews/reviews_for_widget' style=\"display: none;\"></div>  </div> <div class='jdgm-rev-widg__paginate-spinner-wrapper'> <div class='jdgm-spinner'></div> </div> </div>"
+      },
+      {
+        "owner": "mini-sample-ビキニ-マスターズ (40歳～)-ゼッケンNo.5",
+        "namespace": "mm-google-shopping",
+        "key": "google_product_category",
+        "type": "string",
+        "value": "8"
+      },
+      {
+        "owner": "mini-sample-ビキニ-マスターズ (40歳～)-ゼッケンNo.5",
+        "namespace": "mc-facebook",
+        "key": "google_product_category",
+        "type": "string",
+        "value": "8"
+      },
+      {
+        "owner": "mini-sample-ビキニ-マスターズ (40歳～)-ゼッケンNo.5",
+        "namespace": "judgeme",
+        "key": "badge",
+        "type": "string",
+        "value": "<div style='display:none' class='jdgm-prev-badge' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0'> <span class='jdgm-prev-badge__stars' data-score='0.00' tabindex='0' aria-label='0.00 stars' role='button'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </span> <span class='jdgm-prev-badge__text'> No reviews </span> </div>"
+      },
+      {
+        "owner": "mini-sample-ビキニ-マスターズ (40歳～)-ゼッケンNo.5",
+        "namespace": "judgeme",
+        "key": "widget",
+        "type": "string",
+        "value": "<div class='jdgm-rev-widg' data-updated-at='2026-03-17T21:52:59Z' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0' data-image-url=''> <style class='jdgm-temp-hiding-style'>.jdgm-rev-widg{ display: none }</style> <div class='jdgm-rev-widg__header'> <h2 class='jdgm-rev-widg__title'>Customer Reviews</h2>  <div class='jdgm-rev-widg__summary'> <div class='jdgm-rev-widg__summary-stars' aria-label='Average rating is 0.00 stars' role='img'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </div> <div class='jdgm-rev-widg__summary-text'>Be the first to write a review</div> </div> <a style='display: none' href='#' class='jdgm-write-rev-link' role='button'>Write a review</a> <div class='jdgm-histogram jdgm-temp-hidden'>  <div class='jdgm-histogram__row' data-rating='5' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 5 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='4' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 4 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='3' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 3 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='2' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 2 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='1' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 1 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row jdgm-histogram__clear-filter' data-rating=null tabindex='0'></div> </div>     <div class='jdgm-rev-widg__sort-wrapper'></div> </div> <div class='jdgm-rev-widg__body'>  <div class='jdgm-rev-widg__reviews'></div> <div class='jdgm-paginate' data-per-page='5' data-url='https://api.judge.me/reviews/reviews_for_widget' style=\"display: none;\"></div>  </div> <div class='jdgm-rev-widg__paginate-spinner-wrapper'> <div class='jdgm-spinner'></div> </div> </div>"
+      },
+      {
+        "owner": "mini-sample-ビキニ-ビギナー-ゼッケンNo.2",
+        "namespace": "mm-google-shopping",
+        "key": "google_product_category",
+        "type": "string",
+        "value": "8"
+      },
+      {
+        "owner": "mini-sample-ビキニ-ビギナー-ゼッケンNo.2",
+        "namespace": "mc-facebook",
+        "key": "google_product_category",
+        "type": "string",
+        "value": "8"
+      },
+      {
+        "owner": "mini-sample-ビキニ-ビギナー-ゼッケンNo.2",
+        "namespace": "judgeme",
+        "key": "badge",
+        "type": "string",
+        "value": "<div style='display:none' class='jdgm-prev-badge' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0'> <span class='jdgm-prev-badge__stars' data-score='0.00' tabindex='0' aria-label='0.00 stars' role='button'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </span> <span class='jdgm-prev-badge__text'> No reviews </span> </div>"
+      },
+      {
+        "owner": "mini-sample-ビキニ-ビギナー-ゼッケンNo.2",
+        "namespace": "judgeme",
+        "key": "widget",
+        "type": "string",
+        "value": "<div class='jdgm-rev-widg' data-updated-at='2026-03-17T21:52:28Z' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0' data-image-url=''> <style class='jdgm-temp-hiding-style'>.jdgm-rev-widg{ display: none }</style> <div class='jdgm-rev-widg__header'> <h2 class='jdgm-rev-widg__title'>Customer Reviews</h2>  <div class='jdgm-rev-widg__summary'> <div class='jdgm-rev-widg__summary-stars' aria-label='Average rating is 0.00 stars' role='img'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </div> <div class='jdgm-rev-widg__summary-text'>Be the first to write a review</div> </div> <a style='display: none' href='#' class='jdgm-write-rev-link' role='button'>Write a review</a> <div class='jdgm-histogram jdgm-temp-hidden'>  <div class='jdgm-histogram__row' data-rating='5' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 5 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='4' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 4 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='3' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 3 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='2' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 2 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='1' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 1 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row jdgm-histogram__clear-filter' data-rating=null tabindex='0'></div> </div>     <div class='jdgm-rev-widg__sort-wrapper'></div> </div> <div class='jdgm-rev-widg__body'>  <div class='jdgm-rev-widg__reviews'></div> <div class='jdgm-paginate' data-per-page='5' data-url='https://api.judge.me/reviews/reviews_for_widget' style=\"display: none;\"></div>  </div> <div class='jdgm-rev-widg__paginate-spinner-wrapper'> <div class='jdgm-spinner'></div> </div> </div>"
+      },
+      {
+        "owner": "mini-sample-ビキニ-ビギナー-ゼッケンNo.1",
+        "namespace": "mm-google-shopping",
+        "key": "google_product_category",
+        "type": "string",
+        "value": "8"
+      },
+      {
+        "owner": "mini-sample-ビキニ-ビギナー-ゼッケンNo.1",
+        "namespace": "mc-facebook",
+        "key": "google_product_category",
+        "type": "string",
+        "value": "8"
+      },
+      {
+        "owner": "mini-sample-ビキニ-ビギナー-ゼッケンNo.1",
+        "namespace": "judgeme",
+        "key": "badge",
+        "type": "string",
+        "value": "<div style='display:none' class='jdgm-prev-badge' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0'> <span class='jdgm-prev-badge__stars' data-score='0.00' tabindex='0' aria-label='0.00 stars' role='button'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </span> <span class='jdgm-prev-badge__text'> No reviews </span> </div>"
+      },
+      {
+        "owner": "mini-sample-ビキニ-ビギナー-ゼッケンNo.1",
+        "namespace": "judgeme",
+        "key": "widget",
+        "type": "string",
+        "value": "<div class='jdgm-rev-widg' data-updated-at='2026-03-17T21:52:17Z' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0' data-image-url=''> <style class='jdgm-temp-hiding-style'>.jdgm-rev-widg{ display: none }</style> <div class='jdgm-rev-widg__header'> <h2 class='jdgm-rev-widg__title'>Customer Reviews</h2>  <div class='jdgm-rev-widg__summary'> <div class='jdgm-rev-widg__summary-stars' aria-label='Average rating is 0.00 stars' role='img'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </div> <div class='jdgm-rev-widg__summary-text'>Be the first to write a review</div> </div> <a style='display: none' href='#' class='jdgm-write-rev-link' role='button'>Write a review</a> <div class='jdgm-histogram jdgm-temp-hidden'>  <div class='jdgm-histogram__row' data-rating='5' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 5 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='4' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 4 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='3' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 3 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='2' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 2 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='1' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 1 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row jdgm-histogram__clear-filter' data-rating=null tabindex='0'></div> </div>     <div class='jdgm-rev-widg__sort-wrapper'></div> </div> <div class='jdgm-rev-widg__body'>  <div class='jdgm-rev-widg__reviews'></div> <div class='jdgm-paginate' data-per-page='5' data-url='https://api.judge.me/reviews/reviews_for_widget' style=\"display: none;\"></div>  </div> <div class='jdgm-rev-widg__paginate-spinner-wrapper'> <div class='jdgm-spinner'></div> </div> </div>"
+      },
+      {
+        "owner": "mini-sample-ビキニ-ビギナー-ゼッケンNo.3",
+        "namespace": "mm-google-shopping",
+        "key": "google_product_category",
+        "type": "string",
+        "value": "8"
+      },
+      {
+        "owner": "mini-sample-ビキニ-ビギナー-ゼッケンNo.3",
+        "namespace": "mc-facebook",
+        "key": "google_product_category",
+        "type": "string",
+        "value": "8"
+      },
+      {
+        "owner": "mini-sample-ビキニ-ビギナー-ゼッケンNo.3",
+        "namespace": "judgeme",
+        "key": "badge",
+        "type": "string",
+        "value": "<div style='display:none' class='jdgm-prev-badge' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0'> <span class='jdgm-prev-badge__stars' data-score='0.00' tabindex='0' aria-label='0.00 stars' role='button'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </span> <span class='jdgm-prev-badge__text'> No reviews </span> </div>"
+      },
+      {
+        "owner": "mini-sample-ビキニ-ビギナー-ゼッケンNo.3",
+        "namespace": "judgeme",
+        "key": "widget",
+        "type": "string",
+        "value": "<div class='jdgm-rev-widg' data-updated-at='2026-03-17T21:52:44Z' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0' data-image-url=''> <style class='jdgm-temp-hiding-style'>.jdgm-rev-widg{ display: none }</style> <div class='jdgm-rev-widg__header'> <h2 class='jdgm-rev-widg__title'>Customer Reviews</h2>  <div class='jdgm-rev-widg__summary'> <div class='jdgm-rev-widg__summary-stars' aria-label='Average rating is 0.00 stars' role='img'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </div> <div class='jdgm-rev-widg__summary-text'>Be the first to write a review</div> </div> <a style='display: none' href='#' class='jdgm-write-rev-link' role='button'>Write a review</a> <div class='jdgm-histogram jdgm-temp-hidden'>  <div class='jdgm-histogram__row' data-rating='5' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 5 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='4' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 4 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='3' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 3 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='2' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 2 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='1' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 1 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row jdgm-histogram__clear-filter' data-rating=null tabindex='0'></div> </div>     <div class='jdgm-rev-widg__sort-wrapper'></div> </div> <div class='jdgm-rev-widg__body'>  <div class='jdgm-rev-widg__reviews'></div> <div class='jdgm-paginate' data-per-page='5' data-url='https://api.judge.me/reviews/reviews_for_widget' style=\"display: none;\"></div>  </div> <div class='jdgm-rev-widg__paginate-spinner-wrapper'> <div class='jdgm-spinner'></div> </div> </div>"
+      },
+      {
+        "owner": "mini-sample-ビキニ-マスターズ (40歳～)-ゼッケンNo.6",
+        "namespace": "mm-google-shopping",
+        "key": "google_product_category",
+        "type": "string",
+        "value": "8"
+      },
+      {
+        "owner": "mini-sample-ビキニ-マスターズ (40歳～)-ゼッケンNo.6",
+        "namespace": "mc-facebook",
+        "key": "google_product_category",
+        "type": "string",
+        "value": "8"
+      },
+      {
+        "owner": "mini-sample-ビキニ-マスターズ (40歳～)-ゼッケンNo.6",
+        "namespace": "judgeme",
+        "key": "badge",
+        "type": "string",
+        "value": "<div style='display:none' class='jdgm-prev-badge' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0'> <span class='jdgm-prev-badge__stars' data-score='0.00' tabindex='0' aria-label='0.00 stars' role='button'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </span> <span class='jdgm-prev-badge__text'> No reviews </span> </div>"
+      },
+      {
+        "owner": "mini-sample-ビキニ-マスターズ (40歳～)-ゼッケンNo.6",
+        "namespace": "judgeme",
+        "key": "widget",
+        "type": "string",
+        "value": "<div class='jdgm-rev-widg' data-updated-at='2026-03-17T21:53:08Z' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0' data-image-url=''> <style class='jdgm-temp-hiding-style'>.jdgm-rev-widg{ display: none }</style> <div class='jdgm-rev-widg__header'> <h2 class='jdgm-rev-widg__title'>Customer Reviews</h2>  <div class='jdgm-rev-widg__summary'> <div class='jdgm-rev-widg__summary-stars' aria-label='Average rating is 0.00 stars' role='img'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </div> <div class='jdgm-rev-widg__summary-text'>Be the first to write a review</div> </div> <a style='display: none' href='#' class='jdgm-write-rev-link' role='button'>Write a review</a> <div class='jdgm-histogram jdgm-temp-hidden'>  <div class='jdgm-histogram__row' data-rating='5' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 5 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='4' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 4 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='3' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 3 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='2' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 2 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='1' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 1 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row jdgm-histogram__clear-filter' data-rating=null tabindex='0'></div> </div>     <div class='jdgm-rev-widg__sort-wrapper'></div> </div> <div class='jdgm-rev-widg__body'>  <div class='jdgm-rev-widg__reviews'></div> <div class='jdgm-paginate' data-per-page='5' data-url='https://api.judge.me/reviews/reviews_for_widget' style=\"display: none;\"></div>  </div> <div class='jdgm-rev-widg__paginate-spinner-wrapper'> <div class='jdgm-spinner'></div> </div> </div>"
+      },
+      {
+        "owner": "mini-sample-ビキニ-オープン",
+        "namespace": "mm-google-shopping",
+        "key": "google_product_category",
+        "type": "string",
+        "value": "8"
+      },
+      {
+        "owner": "mini-sample-ビキニ-オープン",
+        "namespace": "mc-facebook",
+        "key": "google_product_category",
+        "type": "string",
+        "value": "8"
+      },
+      {
+        "owner": "mini-sample-ビキニ-オープン",
+        "namespace": "judgeme",
+        "key": "badge",
+        "type": "string",
+        "value": "<div style='display:none' class='jdgm-prev-badge' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0'> <span class='jdgm-prev-badge__stars' data-score='0.00' tabindex='0' aria-label='0.00 stars' role='button'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </span> <span class='jdgm-prev-badge__text'> No reviews </span> </div>"
+      },
+      {
+        "owner": "mini-sample-ビキニ-オープン",
+        "namespace": "judgeme",
+        "key": "widget",
+        "type": "string",
+        "value": "<div class='jdgm-rev-widg' data-updated-at='2026-03-17T21:53:23Z' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0' data-image-url=''> <style class='jdgm-temp-hiding-style'>.jdgm-rev-widg{ display: none }</style> <div class='jdgm-rev-widg__header'> <h2 class='jdgm-rev-widg__title'>Customer Reviews</h2>  <div class='jdgm-rev-widg__summary'> <div class='jdgm-rev-widg__summary-stars' aria-label='Average rating is 0.00 stars' role='img'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </div> <div class='jdgm-rev-widg__summary-text'>Be the first to write a review</div> </div> <a style='display: none' href='#' class='jdgm-write-rev-link' role='button'>Write a review</a> <div class='jdgm-histogram jdgm-temp-hidden'>  <div class='jdgm-histogram__row' data-rating='5' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 5 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='4' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 4 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='3' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 3 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='2' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 2 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='1' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 1 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row jdgm-histogram__clear-filter' data-rating=null tabindex='0'></div> </div>     <div class='jdgm-rev-widg__sort-wrapper'></div> </div> <div class='jdgm-rev-widg__body'>  <div class='jdgm-rev-widg__reviews'></div> <div class='jdgm-paginate' data-per-page='5' data-url='https://api.judge.me/reviews/reviews_for_widget' style=\"display: none;\"></div>  </div> <div class='jdgm-rev-widg__paginate-spinner-wrapper'> <div class='jdgm-spinner'></div> </div> </div>"
+      }
+    ],
+    "customerMetafields": [
+      {
+        "owner": "manato20001205@gmail.com",
+        "namespace": "loyalty",
+        "key": "skip_next_tier_check",
+        "type": "boolean",
+        "value": "false"
+      },
+      {
+        "owner": "manato20001205@gmail.com",
+        "namespace": "loyalty",
+        "key": "tier_uid",
+        "type": "single_line_text_field",
+        "value": "6522277d-cd52-42bd-9042-9d11e5d272b0"
+      },
+      {
+        "owner": "manato20001205@gmail.com",
+        "namespace": "loyalty",
+        "key": "tier_maintenance_spend",
+        "type": "number_integer",
+        "value": "0"
+      },
+      {
+        "owner": "manato20001205@gmail.com",
+        "namespace": "loyalty",
+        "key": "easypoints_referral_count",
+        "type": "number_integer",
+        "value": "0"
+      },
+      {
+        "owner": "manato20001205@gmail.com",
+        "namespace": "loyalty",
+        "key": "tier_advancement_spend",
+        "type": "number_integer",
+        "value": "0"
+      },
+      {
+        "owner": "manato20001205@gmail.com",
+        "namespace": "loyalty",
+        "key": "balance",
+        "type": "number_integer",
+        "value": "0"
+      },
+      {
+        "owner": "okazaki619ab@ezweb.ne.jp",
+        "namespace": "custom",
+        "key": "fwj_effectivedate",
+        "type": "date",
+        "value": "2027-02-07"
+      },
+      {
+        "owner": "okazaki619ab@ezweb.ne.jp",
+        "namespace": "custom",
+        "key": "fwj_lastname",
+        "type": "single_line_text_field",
+        "value": "岡崎"
+      },
+      {
+        "owner": "okazaki619ab@ezweb.ne.jp",
+        "namespace": "custom",
+        "key": "fwj_firstname",
+        "type": "single_line_text_field",
+        "value": "欣也"
+      },
+      {
+        "owner": "okazaki619ab@ezweb.ne.jp",
+        "namespace": "custom",
+        "key": "fwj_hight",
+        "type": "number_decimal",
+        "value": "0.0"
+      },
+      {
+        "owner": "okazaki619ab@ezweb.ne.jp",
+        "namespace": "custom",
+        "key": "fwj_sex",
+        "type": "single_line_text_field",
+        "value": "Male"
+      },
+      {
+        "owner": "okazaki619ab@ezweb.ne.jp",
+        "namespace": "custom",
+        "key": "fwj_nationality",
+        "type": "single_line_text_field",
+        "value": "Japan"
+      },
+      {
+        "owner": "bita0813@i.softbank.jp",
+        "namespace": "custom",
+        "key": "fwj_effectivedate",
+        "type": "date",
+        "value": "2027-03-18"
+      },
+      {
+        "owner": "bita0813@i.softbank.jp",
+        "namespace": "custom",
+        "key": "fwj_lastname",
+        "type": "single_line_text_field",
+        "value": "飛田"
+      },
+      {
+        "owner": "bita0813@i.softbank.jp",
+        "namespace": "custom",
+        "key": "fwj_firstname",
+        "type": "single_line_text_field",
+        "value": "秀樹"
+      },
+      {
+        "owner": "bita0813@i.softbank.jp",
+        "namespace": "custom",
+        "key": "fwj_hight",
+        "type": "number_decimal",
+        "value": "0.0"
+      },
+      {
+        "owner": "bita0813@i.softbank.jp",
+        "namespace": "custom",
+        "key": "fwj_sex",
+        "type": "single_line_text_field",
+        "value": "Male"
+      },
+      {
+        "owner": "bita0813@i.softbank.jp",
+        "namespace": "custom",
+        "key": "fwj_nationality",
+        "type": "single_line_text_field",
+        "value": "Japan"
+      },
+      {
+        "owner": "n-town0218@softbank.ne.jp",
+        "namespace": "loyalty",
+        "key": "easy_points_attributes",
+        "type": "json",
+        "value": "{\"tier\":\"Default\",\"balance\":550,\"tier_uid\":\"6522277d-cd52-42bd-9042-9d11e5d272b0\",\"tier_maintenance_data\":{\"maintenance_data\":{\"currency\":\"JPY\",\"deadline\":null,\"amount\":\"0\",\"spent_requirement\":{\"currency\":\"JPY\",\"amount\":null,\"raw_amount\":null},\"raw_amount\":0},\"advancement_data\":{\"currency\":\"JPY\",\"tiers\":[{\"name\":\"Default\",\"currency\":\"JPY\",\"uid\":\"6522277d-cd52-42bd-9042-9d11e5d272b0\",\"amount\":\"0\",\"ratio\":0.01,\"spent_requirement\":{\"currency\":\"JPY\",\"amount\":\"0\",\"raw_amount\":0},\"raw_amount\":0}],\"deadline\":\"2026-02-01T00:00:00+09:00\",\"amount\":\"0\",\"tier_uid\":\"6522277d-cd52-42bd-9042-9d11e5d272b0\",\"tier_name\":\"Default\",\"spent_requirement\":{\"currency\":\"JPY\",\"amount\":\"0\",\"raw_amount\":0},\"raw_amount\":0}},\"point_value\":1,\"currency_value\":100,\"percentage\":1.0,\"tier_name\":\"Default\",\"include_tax\":true,\"expiration_date\":\"2027-01-13T23:59:59+09:00\"}"
+      },
+      {
+        "owner": "n-town0218@softbank.ne.jp",
+        "namespace": "loyalty",
+        "key": "balance",
+        "type": "number_integer",
+        "value": "550"
+      },
+      {
+        "owner": "n-town0218@softbank.ne.jp",
+        "namespace": "loyalty",
+        "key": "expires_at",
+        "type": "date_time",
+        "value": "2027-01-13T14:59:59+00:00"
+      },
+      {
+        "owner": "n-town0218@softbank.ne.jp",
+        "namespace": "custom",
+        "key": "fwj_hight",
+        "type": "number_decimal",
+        "value": "0.0"
+      },
+      {
+        "owner": "n-town0218@softbank.ne.jp",
+        "namespace": "custom",
+        "key": "fwj_lastname",
+        "type": "single_line_text_field",
+        "value": "五十嵐"
+      },
+      {
+        "owner": "n-town0218@softbank.ne.jp",
+        "namespace": "custom",
+        "key": "fwj_sex",
+        "type": "single_line_text_field",
+        "value": "Male"
+      },
+      {
+        "owner": "oma.ne.jp@gmail.com",
+        "namespace": "loyalty",
+        "key": "easy_points_attributes",
+        "type": "json",
+        "value": "{\"tier\":\"Default\",\"balance\":0,\"tier_uid\":\"6522277d-cd52-42bd-9042-9d11e5d272b0\",\"point_value\":1,\"tier_maintenance_data\":{\"maintenance_data\":{\"currency\":\"JPY\",\"deadline\":null,\"amount\":\"0\",\"spent_requirement\":{\"currency\":\"JPY\",\"amount\":null,\"raw_amount\":null},\"raw_amount\":0},\"advancement_data\":{\"currency\":\"JPY\",\"tiers\":[{\"name\":\"Default\",\"currency\":\"JPY\",\"uid\":\"6522277d-cd52-42bd-9042-9d11e5d272b0\",\"amount\":\"0\",\"ratio\":0.01,\"spent_requirement\":{\"currency\":\"JPY\",\"amount\":\"0\",\"raw_amount\":0},\"raw_amount\":0}],\"deadline\":\"2026-04-01T00:00:00+09:00\",\"amount\":\"0\",\"tier_uid\":\"6522277d-cd52-42bd-9042-9d11e5d272b0\",\"tier_name\":\"Default\",\"spent_requirement\":{\"currency\":\"JPY\",\"amount\":\"0\",\"raw_amount\":0},\"raw_amount\":0}},\"currency_value\":100,\"expiration_date\":null,\"percentage\":1.0,\"tier_name\":\"Default\",\"include_tax\":true}"
+      },
+      {
+        "owner": "oma.ne.jp@gmail.com",
+        "namespace": "loyalty",
+        "key": "tier_advancement_spend",
+        "type": "number_integer",
+        "value": "0"
+      },
+      {
+        "owner": "oma.ne.jp@gmail.com",
+        "namespace": "loyalty",
+        "key": "easypoints_referral_count",
+        "type": "number_integer",
+        "value": "0"
+      },
+      {
+        "owner": "oma.ne.jp@gmail.com",
+        "namespace": "loyalty",
+        "key": "tier_maintenance_spend",
+        "type": "number_integer",
+        "value": "0"
+      },
+      {
+        "owner": "oma.ne.jp@gmail.com",
+        "namespace": "loyalty",
+        "key": "balance",
+        "type": "number_integer",
+        "value": "0"
+      },
+      {
+        "owner": "oma.ne.jp@gmail.com",
+        "namespace": "loyalty",
+        "key": "tier_uid",
+        "type": "single_line_text_field",
+        "value": "6522277d-cd52-42bd-9042-9d11e5d272b0"
+      },
+      {
+        "owner": "taku-luffy@ezweb.ne.jp",
+        "namespace": "loyalty",
+        "key": "skip_next_tier_check",
+        "type": "boolean",
+        "value": "false"
+      },
+      {
+        "owner": "taku-luffy@ezweb.ne.jp",
+        "namespace": "loyalty",
+        "key": "tier_maintenance_spend",
+        "type": "number_integer",
+        "value": "0"
+      },
+      {
+        "owner": "taku-luffy@ezweb.ne.jp",
+        "namespace": "loyalty",
+        "key": "tier_advancement_spend",
+        "type": "number_integer",
+        "value": "0"
+      },
+      {
+        "owner": "taku-luffy@ezweb.ne.jp",
+        "namespace": "loyalty",
+        "key": "easy_points_attributes",
+        "type": "json",
+        "value": "{\"tier\":\"Default\",\"balance\":700,\"tier_uid\":\"6522277d-cd52-42bd-9042-9d11e5d272b0\",\"currency_value\":100,\"point_value\":1,\"include_tax\":true,\"percentage\":1.0,\"tier_maintenance_data\":{\"maintenance_data\":{\"currency\":\"JPY\",\"deadline\":null,\"amount\":\"0\",\"spent_requirement\":{\"currency\":\"JPY\",\"amount\":null,\"raw_amount\":null},\"raw_amount\":0},\"advancement_data\":{\"currency\":\"JPY\",\"tiers\":[{\"name\":\"Default\",\"currency\":\"JPY\",\"uid\":\"6522277d-cd52-42bd-9042-9d11e5d272b0\",\"amount\":\"0\",\"ratio\":0.01,\"spent_requirement\":{\"currency\":\"JPY\",\"amount\":\"0\",\"raw_amount\":0},\"raw_amount\":0}],\"deadline\":\"2026-02-01T00:00:00+09:00\",\"amount\":\"0\",\"tier_uid\":\"6522277d-cd52-42bd-9042-9d11e5d272b0\",\"tier_name\":\"Default\",\"spent_requirement\":{\"currency\":\"JPY\",\"amount\":\"0\",\"raw_amount\":0},\"raw_amount\":0}},\"tier_name\":\"Default\",\"expiration_date\":\"2027-01-28T23:59:59+09:00\"}"
+      },
+      {
+        "owner": "taku-luffy@ezweb.ne.jp",
+        "namespace": "loyalty",
+        "key": "balance",
+        "type": "number_integer",
+        "value": "700"
+      },
+      {
+        "owner": "taku-luffy@ezweb.ne.jp",
+        "namespace": "loyalty",
+        "key": "tier_advancement_uid",
+        "type": "single_line_text_field",
+        "value": "6522277d-cd52-42bd-9042-9d11e5d272b0"
+      },
+      {
+        "owner": "accessline.no1@gmail.com",
+        "namespace": "loyalty",
+        "key": "skip_next_tier_check",
+        "type": "boolean",
+        "value": "false"
+      },
+      {
+        "owner": "accessline.no1@gmail.com",
+        "namespace": "loyalty",
+        "key": "balance",
+        "type": "number_integer",
+        "value": "0"
+      },
+      {
+        "owner": "accessline.no1@gmail.com",
+        "namespace": "loyalty",
+        "key": "gift_balance",
+        "type": "json",
+        "value": "{\"gift_balance\":0,\"expiries\":[]}"
+      },
+      {
+        "owner": "accessline.no1@gmail.com",
+        "namespace": "loyalty",
+        "key": "easypoints_referral_count",
+        "type": "number_integer",
+        "value": "0"
+      },
+      {
+        "owner": "accessline.no1@gmail.com",
+        "namespace": "loyalty",
+        "key": "tier_uid",
+        "type": "single_line_text_field",
+        "value": "6522277d-cd52-42bd-9042-9d11e5d272b0"
+      },
+      {
+        "owner": "accessline.no1@gmail.com",
+        "namespace": "loyalty",
+        "key": "easy_points_attributes",
+        "type": "json",
+        "value": "{\"tier\":\"Default\",\"balance\":0,\"tier_name\":\"Default\",\"point_value\":1,\"tier_uid\":\"6522277d-cd52-42bd-9042-9d11e5d272b0\",\"currency_value\":100,\"include_tax\":true,\"percentage\":1.0,\"tier_maintenance_data\":{\"maintenance_data\":{\"currency\":\"JPY\",\"deadline\":null,\"amount\":\"0\",\"spent_requirement\":{\"currency\":\"JPY\",\"amount\":null,\"raw_amount\":null},\"raw_amount\":0},\"advancement_data\":{\"currency\":\"JPY\",\"tiers\":[{\"name\":\"Default\",\"currency\":\"JPY\",\"uid\":\"6522277d-cd52-42bd-9042-9d11e5d272b0\",\"amount\":\"0\",\"ratio\":0.01,\"spent_requirement\":{\"currency\":\"JPY\",\"amount\":\"0\",\"raw_amount\":0},\"raw_amount\":0}],\"deadline\":\"2026-03-01T00:00:00+09:00\",\"amount\":\"0\",\"tier_name\":\"Default\",\"tier_uid\":\"6522277d-cd52-42bd-9042-9d11e5d272b0\",\"spent_requirement\":{\"currency\":\"JPY\",\"amount\":\"0\",\"raw_amount\":0},\"raw_amount\":0}},\"expiration_date\":null}"
+      }
+    ],
+    "discountedOrders": [
+      {
+        "name": "#8700",
+        "createdAt": "2026-03-18T13:35:05Z",
+        "customer": "okazaki619ab@ezweb.ne.jp",
+        "subtotal": "5360.0",
+        "discounts": "5640.0",
+        "total": "5360.0",
+        "discountCodes": [
+          "spoint3000"
+        ],
+        "lineItems": [
+          {
+            "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+            "quantity": 1,
+            "unitPrice": "11000.0",
+            "productTitle": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+            "productTags": [
+              "2026シーズン",
+              "BLAZE OPEN 2026",
+              "Mens",
+              "no-easy-points",
+              "コンテストエントリー",
+              "メンズフィジーク",
+              "還元対象"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "#8699",
+        "createdAt": "2026-03-18T13:25:10Z",
+        "customer": "bita0813@i.softbank.jp",
+        "subtotal": "5360.0",
+        "discounts": "5640.0",
+        "total": "5360.0",
+        "discountCodes": [
+          "spoint3000"
+        ],
+        "lineItems": [
+          {
+            "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+            "quantity": 1,
+            "unitPrice": "11000.0",
+            "productTitle": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+            "productTags": [
+              "2026シーズン",
+              "BLAZE OPEN 2026",
+              "Mens",
+              "no-easy-points",
+              "コンテストエントリー",
+              "メンズフィジーク",
+              "還元対象"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "#8669",
+        "createdAt": "2026-03-15T23:23:04Z",
+        "customer": "ogayu2456@yahoo.co.jp",
+        "subtotal": "20140.0",
+        "discounts": "2640.0",
+        "total": "20140.0",
+        "discountCodes": [],
+        "lineItems": [
+          {
+            "title": "Aprilis Championships 2026 観戦チケット",
+            "quantity": 1,
+            "unitPrice": "5500.0",
+            "productTitle": "Aprilis Championships 2026 観戦チケット",
+            "productTags": [
+              "2026シーズン",
+              "Aprilis Championships 2026",
+              "観戦チケット"
+            ]
+          },
+          {
+            "title": "Aprilis Championships 2026 コンテストエントリー クラシックフィジーク",
+            "quantity": 1,
+            "unitPrice": "11000.0",
+            "productTitle": "Aprilis Championships 2026 コンテストエントリー クラシックフィジーク",
+            "productTags": [
+              "2026シーズン",
+              "Aprilis Championships 2026",
+              "Mens",
+              "no-easy-points",
+              "クラシックフィジーク",
+              "コンテストエントリー",
+              "還元対象"
+            ]
+          },
+          {
+            "title": "FWJクラシックフィジークショーツ",
+            "quantity": 1,
+            "unitPrice": "6280.0",
+            "productTitle": "FWJクラシックフィジークショーツ",
+            "productTags": [
+              "FWJ",
+              "ウェア・服",
+              "ショーツ・ハーフパンツ",
+              "フィジークショーツ",
+              "メンズ"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "samples": {
+    "products": [
+      {
+        "id": "gid://shopify/Product/10285065371967",
+        "title": "mini-sample-ビキニ-マスターズ (40歳～)-ゼッケンNo.7",
+        "handle": "mini-sample-ビキニ-マスターズ-40歳-ゼッケンno-7",
+        "productType": "photo",
+        "status": "UNLISTED",
+        "tags": [
+          "mini-sample",
+          "photo",
+          "ビキニ",
+          "マスターズ (40歳～)"
+        ],
+        "updatedAt": "2026-03-18T16:24:00Z",
+        "metafields": [
+          {
+            "namespace": "mm-google-shopping",
+            "key": "google_product_category",
+            "type": "string",
+            "value": "8"
+          },
+          {
+            "namespace": "mc-facebook",
+            "key": "google_product_category",
+            "type": "string",
+            "value": "8"
+          },
+          {
+            "namespace": "judgeme",
+            "key": "badge",
+            "type": "string",
+            "value": "<div style='display:none' class='jdgm-prev-badge' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0'> <span class='jdgm-prev-badge__stars' data-score='0.00' tabindex='0' aria-label='0.00 stars' role='button'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </span> <span class='jdgm-prev-badge__text'> No reviews </span> </div>"
+          },
+          {
+            "namespace": "judgeme",
+            "key": "widget",
+            "type": "string",
+            "value": "<div class='jdgm-rev-widg' data-updated-at='2026-03-17T21:53:17Z' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0' data-image-url=''> <style class='jdgm-temp-hiding-style'>.jdgm-rev-widg{ display: none }</style> <div class='jdgm-rev-widg__header'> <h2 class='jdgm-rev-widg__title'>Customer Reviews</h2>  <div class='jdgm-rev-widg__summary'> <div class='jdgm-rev-widg__summary-stars' aria-label='Average rating is 0.00 stars' role='img'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </div> <div class='jdgm-rev-widg__summary-text'>Be the first to write a review</div> </div> <a style='display: none' href='#' class='jdgm-write-rev-link' role='button'>Write a review</a> <div class='jdgm-histogram jdgm-temp-hidden'>  <div class='jdgm-histogram__row' data-rating='5' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 5 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='4' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 4 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='3' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 3 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='2' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 2 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='1' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 1 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row jdgm-histogram__clear-filter' data-rating=null tabindex='0'></div> </div>     <div class='jdgm-rev-widg__sort-wrapper'></div> </div> <div class='jdgm-rev-widg__body'>  <div class='jdgm-rev-widg__reviews'></div> <div class='jdgm-paginate' data-per-page='5' data-url='https://api.judge.me/reviews/reviews_for_widget' style=\"display: none;\"></div>  </div> <div class='jdgm-rev-widg__paginate-spinner-wrapper'> <div class='jdgm-spinner'></div> </div> </div>"
+          }
+        ],
+        "variants": [
+          {
+            "id": "gid://shopify/ProductVariant/52429705707839",
+            "title": "セット",
+            "sku": "set-7x5uUxs8UqssHHYpXzlH-7",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429705740607",
+            "title": "TEST00459.jpg",
+            "sku": "07158801-7bd8-4607-9d3c-201f431889ea",
+            "metafields": []
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/10285065208127",
+        "title": "mini-sample-ビキニ-マスターズ (40歳～)-ゼッケンNo.4",
+        "handle": "mini-sample-ビキニ-マスターズ-40歳-ゼッケンno-4",
+        "productType": "photo",
+        "status": "UNLISTED",
+        "tags": [
+          "mini-sample",
+          "photo",
+          "ビキニ",
+          "マスターズ (40歳～)"
+        ],
+        "updatedAt": "2026-03-18T16:23:36Z",
+        "metafields": [
+          {
+            "namespace": "mm-google-shopping",
+            "key": "google_product_category",
+            "type": "string",
+            "value": "8"
+          },
+          {
+            "namespace": "mc-facebook",
+            "key": "google_product_category",
+            "type": "string",
+            "value": "8"
+          },
+          {
+            "namespace": "judgeme",
+            "key": "badge",
+            "type": "string",
+            "value": "<div style='display:none' class='jdgm-prev-badge' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0'> <span class='jdgm-prev-badge__stars' data-score='0.00' tabindex='0' aria-label='0.00 stars' role='button'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </span> <span class='jdgm-prev-badge__text'> No reviews </span> </div>"
+          },
+          {
+            "namespace": "judgeme",
+            "key": "widget",
+            "type": "string",
+            "value": "<div class='jdgm-rev-widg' data-updated-at='2026-03-17T21:52:53Z' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0' data-image-url=''> <style class='jdgm-temp-hiding-style'>.jdgm-rev-widg{ display: none }</style> <div class='jdgm-rev-widg__header'> <h2 class='jdgm-rev-widg__title'>Customer Reviews</h2>  <div class='jdgm-rev-widg__summary'> <div class='jdgm-rev-widg__summary-stars' aria-label='Average rating is 0.00 stars' role='img'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </div> <div class='jdgm-rev-widg__summary-text'>Be the first to write a review</div> </div> <a style='display: none' href='#' class='jdgm-write-rev-link' role='button'>Write a review</a> <div class='jdgm-histogram jdgm-temp-hidden'>  <div class='jdgm-histogram__row' data-rating='5' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 5 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='4' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 4 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='3' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 3 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='2' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 2 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='1' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 1 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row jdgm-histogram__clear-filter' data-rating=null tabindex='0'></div> </div>     <div class='jdgm-rev-widg__sort-wrapper'></div> </div> <div class='jdgm-rev-widg__body'>  <div class='jdgm-rev-widg__reviews'></div> <div class='jdgm-paginate' data-per-page='5' data-url='https://api.judge.me/reviews/reviews_for_widget' style=\"display: none;\"></div>  </div> <div class='jdgm-rev-widg__paginate-spinner-wrapper'> <div class='jdgm-spinner'></div> </div> </div>"
+          }
+        ],
+        "variants": [
+          {
+            "id": "gid://shopify/ProductVariant/52429705216319",
+            "title": "セット",
+            "sku": "set-7x5uUxs8UqssHHYpXzlH-4",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429705249087",
+            "title": "TEST00451.jpg",
+            "sku": "ce2fb83b-9c4d-4dd0-b509-4c1cbfa59733",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429705281855",
+            "title": "TEST00452.jpg",
+            "sku": "b49bb72c-870d-4d26-94cf-f751cc116593",
+            "metafields": []
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/10285065273663",
+        "title": "mini-sample-ビキニ-マスターズ (40歳～)-ゼッケンNo.5",
+        "handle": "mini-sample-ビキニ-マスターズ-40歳-ゼッケンno-5",
+        "productType": "photo",
+        "status": "UNLISTED",
+        "tags": [
+          "mini-sample",
+          "photo",
+          "ビキニ",
+          "マスターズ (40歳～)"
+        ],
+        "updatedAt": "2026-03-18T16:18:26Z",
+        "metafields": [
+          {
+            "namespace": "mm-google-shopping",
+            "key": "google_product_category",
+            "type": "string",
+            "value": "8"
+          },
+          {
+            "namespace": "mc-facebook",
+            "key": "google_product_category",
+            "type": "string",
+            "value": "8"
+          },
+          {
+            "namespace": "judgeme",
+            "key": "badge",
+            "type": "string",
+            "value": "<div style='display:none' class='jdgm-prev-badge' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0'> <span class='jdgm-prev-badge__stars' data-score='0.00' tabindex='0' aria-label='0.00 stars' role='button'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </span> <span class='jdgm-prev-badge__text'> No reviews </span> </div>"
+          },
+          {
+            "namespace": "judgeme",
+            "key": "widget",
+            "type": "string",
+            "value": "<div class='jdgm-rev-widg' data-updated-at='2026-03-17T21:52:59Z' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0' data-image-url=''> <style class='jdgm-temp-hiding-style'>.jdgm-rev-widg{ display: none }</style> <div class='jdgm-rev-widg__header'> <h2 class='jdgm-rev-widg__title'>Customer Reviews</h2>  <div class='jdgm-rev-widg__summary'> <div class='jdgm-rev-widg__summary-stars' aria-label='Average rating is 0.00 stars' role='img'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </div> <div class='jdgm-rev-widg__summary-text'>Be the first to write a review</div> </div> <a style='display: none' href='#' class='jdgm-write-rev-link' role='button'>Write a review</a> <div class='jdgm-histogram jdgm-temp-hidden'>  <div class='jdgm-histogram__row' data-rating='5' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 5 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='4' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 4 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='3' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 3 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='2' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 2 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='1' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 1 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row jdgm-histogram__clear-filter' data-rating=null tabindex='0'></div> </div>     <div class='jdgm-rev-widg__sort-wrapper'></div> </div> <div class='jdgm-rev-widg__body'>  <div class='jdgm-rev-widg__reviews'></div> <div class='jdgm-paginate' data-per-page='5' data-url='https://api.judge.me/reviews/reviews_for_widget' style=\"display: none;\"></div>  </div> <div class='jdgm-rev-widg__paginate-spinner-wrapper'> <div class='jdgm-spinner'></div> </div> </div>"
+          }
+        ],
+        "variants": [
+          {
+            "id": "gid://shopify/ProductVariant/52429705347391",
+            "title": "セット",
+            "sku": "set-7x5uUxs8UqssHHYpXzlH-5",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429705380159",
+            "title": "TEST00453.jpg",
+            "sku": "28583c13-9e1f-492b-b132-59f2e7db853c",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429705412927",
+            "title": "TEST00454.jpg",
+            "sku": "a495afb9-a247-49ef-b944-dee508874a34",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429705445695",
+            "title": "TEST00455.jpg",
+            "sku": "8c412637-90eb-44b1-afe9-7656a6b2c7d8",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429705478463",
+            "title": "TEST00456.jpg",
+            "sku": "50f88214-51ab-406f-b375-f7cc6920d395",
+            "metafields": []
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/10285065077055",
+        "title": "mini-sample-ビキニ-ビギナー-ゼッケンNo.2",
+        "handle": "mini-sample-ビキニ-ビギナー-ゼッケンno-2",
+        "productType": "photo",
+        "status": "UNLISTED",
+        "tags": [
+          "mini-sample",
+          "photo",
+          "ビキニ",
+          "ビギナー"
+        ],
+        "updatedAt": "2026-03-18T16:17:58Z",
+        "metafields": [
+          {
+            "namespace": "mm-google-shopping",
+            "key": "google_product_category",
+            "type": "string",
+            "value": "8"
+          },
+          {
+            "namespace": "mc-facebook",
+            "key": "google_product_category",
+            "type": "string",
+            "value": "8"
+          },
+          {
+            "namespace": "judgeme",
+            "key": "badge",
+            "type": "string",
+            "value": "<div style='display:none' class='jdgm-prev-badge' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0'> <span class='jdgm-prev-badge__stars' data-score='0.00' tabindex='0' aria-label='0.00 stars' role='button'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </span> <span class='jdgm-prev-badge__text'> No reviews </span> </div>"
+          },
+          {
+            "namespace": "judgeme",
+            "key": "widget",
+            "type": "string",
+            "value": "<div class='jdgm-rev-widg' data-updated-at='2026-03-17T21:52:28Z' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0' data-image-url=''> <style class='jdgm-temp-hiding-style'>.jdgm-rev-widg{ display: none }</style> <div class='jdgm-rev-widg__header'> <h2 class='jdgm-rev-widg__title'>Customer Reviews</h2>  <div class='jdgm-rev-widg__summary'> <div class='jdgm-rev-widg__summary-stars' aria-label='Average rating is 0.00 stars' role='img'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </div> <div class='jdgm-rev-widg__summary-text'>Be the first to write a review</div> </div> <a style='display: none' href='#' class='jdgm-write-rev-link' role='button'>Write a review</a> <div class='jdgm-histogram jdgm-temp-hidden'>  <div class='jdgm-histogram__row' data-rating='5' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 5 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='4' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 4 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='3' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 3 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='2' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 2 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='1' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 1 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row jdgm-histogram__clear-filter' data-rating=null tabindex='0'></div> </div>     <div class='jdgm-rev-widg__sort-wrapper'></div> </div> <div class='jdgm-rev-widg__body'>  <div class='jdgm-rev-widg__reviews'></div> <div class='jdgm-paginate' data-per-page='5' data-url='https://api.judge.me/reviews/reviews_for_widget' style=\"display: none;\"></div>  </div> <div class='jdgm-rev-widg__paginate-spinner-wrapper'> <div class='jdgm-spinner'></div> </div> </div>"
+          }
+        ],
+        "variants": [
+          {
+            "id": "gid://shopify/ProductVariant/52429700989247",
+            "title": "セット",
+            "sku": "set-nyir5MmVnuOs5d116zSF-2",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429701022015",
+            "title": "TEST00351.jpg",
+            "sku": "0b656570-6502-469f-91e4-9109d0d9e5c1",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429701054783",
+            "title": "TEST00352.jpg",
+            "sku": "b3ff8226-91d5-4ff2-af6e-889d083e8422",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429701087551",
+            "title": "TEST00353.jpg",
+            "sku": "fa929f87-c7fe-4480-8d88-2f122c884561",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429701120319",
+            "title": "TEST00354.jpg",
+            "sku": "4365120a-a1db-4f1a-927a-288f42eab4fb",
+            "metafields": []
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/10285065044287",
+        "title": "mini-sample-ビキニ-ビギナー-ゼッケンNo.1",
+        "handle": "mini-sample-ビキニ-ビギナー-ゼッケンno-1",
+        "productType": "photo",
+        "status": "UNLISTED",
+        "tags": [
+          "mini-sample",
+          "photo",
+          "ビキニ",
+          "ビギナー"
+        ],
+        "updatedAt": "2026-03-18T16:17:44Z",
+        "metafields": [
+          {
+            "namespace": "mm-google-shopping",
+            "key": "google_product_category",
+            "type": "string",
+            "value": "8"
+          },
+          {
+            "namespace": "mc-facebook",
+            "key": "google_product_category",
+            "type": "string",
+            "value": "8"
+          },
+          {
+            "namespace": "judgeme",
+            "key": "badge",
+            "type": "string",
+            "value": "<div style='display:none' class='jdgm-prev-badge' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0'> <span class='jdgm-prev-badge__stars' data-score='0.00' tabindex='0' aria-label='0.00 stars' role='button'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </span> <span class='jdgm-prev-badge__text'> No reviews </span> </div>"
+          },
+          {
+            "namespace": "judgeme",
+            "key": "widget",
+            "type": "string",
+            "value": "<div class='jdgm-rev-widg' data-updated-at='2026-03-17T21:52:17Z' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0' data-image-url=''> <style class='jdgm-temp-hiding-style'>.jdgm-rev-widg{ display: none }</style> <div class='jdgm-rev-widg__header'> <h2 class='jdgm-rev-widg__title'>Customer Reviews</h2>  <div class='jdgm-rev-widg__summary'> <div class='jdgm-rev-widg__summary-stars' aria-label='Average rating is 0.00 stars' role='img'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </div> <div class='jdgm-rev-widg__summary-text'>Be the first to write a review</div> </div> <a style='display: none' href='#' class='jdgm-write-rev-link' role='button'>Write a review</a> <div class='jdgm-histogram jdgm-temp-hidden'>  <div class='jdgm-histogram__row' data-rating='5' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 5 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='4' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 4 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='3' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 3 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='2' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 2 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='1' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 1 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row jdgm-histogram__clear-filter' data-rating=null tabindex='0'></div> </div>     <div class='jdgm-rev-widg__sort-wrapper'></div> </div> <div class='jdgm-rev-widg__body'>  <div class='jdgm-rev-widg__reviews'></div> <div class='jdgm-paginate' data-per-page='5' data-url='https://api.judge.me/reviews/reviews_for_widget' style=\"display: none;\"></div>  </div> <div class='jdgm-rev-widg__paginate-spinner-wrapper'> <div class='jdgm-spinner'></div> </div> </div>"
+          }
+        ],
+        "variants": [
+          {
+            "id": "gid://shopify/ProductVariant/52429700792639",
+            "title": "セット",
+            "sku": "set-nyir5MmVnuOs5d116zSF-1",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429700825407",
+            "title": "TEST00351.jpg",
+            "sku": "0b656570-6502-469f-91e4-9109d0d9e5c1",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429700858175",
+            "title": "TEST00352.jpg",
+            "sku": "b3ff8226-91d5-4ff2-af6e-889d083e8422",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429700890943",
+            "title": "TEST00353.jpg",
+            "sku": "fa929f87-c7fe-4480-8d88-2f122c884561",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429700923711",
+            "title": "TEST00354.jpg",
+            "sku": "4365120a-a1db-4f1a-927a-288f42eab4fb",
+            "metafields": []
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/10285065142591",
+        "title": "mini-sample-ビキニ-ビギナー-ゼッケンNo.3",
+        "handle": "mini-sample-ビキニ-ビギナー-ゼッケンno-3",
+        "productType": "photo",
+        "status": "UNLISTED",
+        "tags": [
+          "mini-sample",
+          "photo",
+          "ビキニ",
+          "ビギナー"
+        ],
+        "updatedAt": "2026-03-18T16:16:41Z",
+        "metafields": [
+          {
+            "namespace": "mm-google-shopping",
+            "key": "google_product_category",
+            "type": "string",
+            "value": "8"
+          },
+          {
+            "namespace": "mc-facebook",
+            "key": "google_product_category",
+            "type": "string",
+            "value": "8"
+          },
+          {
+            "namespace": "judgeme",
+            "key": "badge",
+            "type": "string",
+            "value": "<div style='display:none' class='jdgm-prev-badge' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0'> <span class='jdgm-prev-badge__stars' data-score='0.00' tabindex='0' aria-label='0.00 stars' role='button'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </span> <span class='jdgm-prev-badge__text'> No reviews </span> </div>"
+          },
+          {
+            "namespace": "judgeme",
+            "key": "widget",
+            "type": "string",
+            "value": "<div class='jdgm-rev-widg' data-updated-at='2026-03-17T21:52:44Z' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0' data-image-url=''> <style class='jdgm-temp-hiding-style'>.jdgm-rev-widg{ display: none }</style> <div class='jdgm-rev-widg__header'> <h2 class='jdgm-rev-widg__title'>Customer Reviews</h2>  <div class='jdgm-rev-widg__summary'> <div class='jdgm-rev-widg__summary-stars' aria-label='Average rating is 0.00 stars' role='img'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </div> <div class='jdgm-rev-widg__summary-text'>Be the first to write a review</div> </div> <a style='display: none' href='#' class='jdgm-write-rev-link' role='button'>Write a review</a> <div class='jdgm-histogram jdgm-temp-hidden'>  <div class='jdgm-histogram__row' data-rating='5' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 5 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='4' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 4 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='3' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 3 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='2' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 2 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='1' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 1 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row jdgm-histogram__clear-filter' data-rating=null tabindex='0'></div> </div>     <div class='jdgm-rev-widg__sort-wrapper'></div> </div> <div class='jdgm-rev-widg__body'>  <div class='jdgm-rev-widg__reviews'></div> <div class='jdgm-paginate' data-per-page='5' data-url='https://api.judge.me/reviews/reviews_for_widget' style=\"display: none;\"></div>  </div> <div class='jdgm-rev-widg__paginate-spinner-wrapper'> <div class='jdgm-spinner'></div> </div> </div>"
+          }
+        ],
+        "variants": [
+          {
+            "id": "gid://shopify/ProductVariant/52429705019711",
+            "title": "セット",
+            "sku": "set-nyir5MmVnuOs5d116zSF-3",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429705052479",
+            "title": "TEST00357.jpg",
+            "sku": "31ec5029-ab59-4bf9-82fc-6a0220622be3",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429705085247",
+            "title": "TEST00358.jpg",
+            "sku": "6df4ec22-91b4-443c-9af3-fb0c6abb772d",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429705118015",
+            "title": "TEST00359.jpg",
+            "sku": "add9144c-23e4-421b-bf8c-91687fde022b",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429705150783",
+            "title": "TEST00360.jpg",
+            "sku": "ee4aa9cf-7b56-4a70-b250-785e544c606e",
+            "metafields": []
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/10285065306431",
+        "title": "mini-sample-ビキニ-マスターズ (40歳～)-ゼッケンNo.6",
+        "handle": "mini-sample-ビキニ-マスターズ-40歳-ゼッケンno-6",
+        "productType": "photo",
+        "status": "UNLISTED",
+        "tags": [
+          "mini-sample",
+          "photo",
+          "ビキニ",
+          "マスターズ (40歳～)"
+        ],
+        "updatedAt": "2026-03-18T16:15:58Z",
+        "metafields": [
+          {
+            "namespace": "mm-google-shopping",
+            "key": "google_product_category",
+            "type": "string",
+            "value": "8"
+          },
+          {
+            "namespace": "mc-facebook",
+            "key": "google_product_category",
+            "type": "string",
+            "value": "8"
+          },
+          {
+            "namespace": "judgeme",
+            "key": "badge",
+            "type": "string",
+            "value": "<div style='display:none' class='jdgm-prev-badge' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0'> <span class='jdgm-prev-badge__stars' data-score='0.00' tabindex='0' aria-label='0.00 stars' role='button'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </span> <span class='jdgm-prev-badge__text'> No reviews </span> </div>"
+          },
+          {
+            "namespace": "judgeme",
+            "key": "widget",
+            "type": "string",
+            "value": "<div class='jdgm-rev-widg' data-updated-at='2026-03-17T21:53:08Z' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0' data-image-url=''> <style class='jdgm-temp-hiding-style'>.jdgm-rev-widg{ display: none }</style> <div class='jdgm-rev-widg__header'> <h2 class='jdgm-rev-widg__title'>Customer Reviews</h2>  <div class='jdgm-rev-widg__summary'> <div class='jdgm-rev-widg__summary-stars' aria-label='Average rating is 0.00 stars' role='img'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </div> <div class='jdgm-rev-widg__summary-text'>Be the first to write a review</div> </div> <a style='display: none' href='#' class='jdgm-write-rev-link' role='button'>Write a review</a> <div class='jdgm-histogram jdgm-temp-hidden'>  <div class='jdgm-histogram__row' data-rating='5' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 5 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='4' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 4 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='3' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 3 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='2' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 2 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='1' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 1 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row jdgm-histogram__clear-filter' data-rating=null tabindex='0'></div> </div>     <div class='jdgm-rev-widg__sort-wrapper'></div> </div> <div class='jdgm-rev-widg__body'>  <div class='jdgm-rev-widg__reviews'></div> <div class='jdgm-paginate' data-per-page='5' data-url='https://api.judge.me/reviews/reviews_for_widget' style=\"display: none;\"></div>  </div> <div class='jdgm-rev-widg__paginate-spinner-wrapper'> <div class='jdgm-spinner'></div> </div> </div>"
+          }
+        ],
+        "variants": [
+          {
+            "id": "gid://shopify/ProductVariant/52429705511231",
+            "title": "セット",
+            "sku": "set-7x5uUxs8UqssHHYpXzlH-6",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429705543999",
+            "title": "TEST00455.jpg",
+            "sku": "8c412637-90eb-44b1-afe9-7656a6b2c7d8",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429705576767",
+            "title": "TEST00456.jpg",
+            "sku": "50f88214-51ab-406f-b375-f7cc6920d395",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429705609535",
+            "title": "TEST00457.jpg",
+            "sku": "a3489ddb-3274-4193-a442-e02bfa662676",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429705642303",
+            "title": "TEST00458.jpg",
+            "sku": "a733e487-89df-452d-ad37-2ac52f4710fd",
+            "metafields": []
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/Product/10285065404735",
+        "title": "mini-sample-ビキニ-オープン",
+        "handle": "mini-sample-ビキニ-オープン",
+        "productType": "photo",
+        "status": "UNLISTED",
+        "tags": [
+          "mini-sample",
+          "photo",
+          "オープン",
+          "ビキニ"
+        ],
+        "updatedAt": "2026-03-18T16:09:59Z",
+        "metafields": [
+          {
+            "namespace": "mm-google-shopping",
+            "key": "google_product_category",
+            "type": "string",
+            "value": "8"
+          },
+          {
+            "namespace": "mc-facebook",
+            "key": "google_product_category",
+            "type": "string",
+            "value": "8"
+          },
+          {
+            "namespace": "judgeme",
+            "key": "badge",
+            "type": "string",
+            "value": "<div style='display:none' class='jdgm-prev-badge' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0'> <span class='jdgm-prev-badge__stars' data-score='0.00' tabindex='0' aria-label='0.00 stars' role='button'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </span> <span class='jdgm-prev-badge__text'> No reviews </span> </div>"
+          },
+          {
+            "namespace": "judgeme",
+            "key": "widget",
+            "type": "string",
+            "value": "<div class='jdgm-rev-widg' data-updated-at='2026-03-17T21:53:23Z' data-average-rating='0.00' data-number-of-reviews='0' data-number-of-questions='0' data-image-url=''> <style class='jdgm-temp-hiding-style'>.jdgm-rev-widg{ display: none }</style> <div class='jdgm-rev-widg__header'> <h2 class='jdgm-rev-widg__title'>Customer Reviews</h2>  <div class='jdgm-rev-widg__summary'> <div class='jdgm-rev-widg__summary-stars' aria-label='Average rating is 0.00 stars' role='img'> <span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span> </div> <div class='jdgm-rev-widg__summary-text'>Be the first to write a review</div> </div> <a style='display: none' href='#' class='jdgm-write-rev-link' role='button'>Write a review</a> <div class='jdgm-histogram jdgm-temp-hidden'>  <div class='jdgm-histogram__row' data-rating='5' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 5 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='4' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 4 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='3' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 3 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='2' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 2 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row' data-rating='1' data-frequency='0' data-percentage='0'>  <div class='jdgm-histogram__star' role='button' aria-label=\"0% (0) reviews with 1 star rating\"  tabindex='0' ><span class='jdgm-star jdgm--on'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span><span class='jdgm-star jdgm--off'></span></div> <div class='jdgm-histogram__bar'> <div class='jdgm-histogram__bar-content' style='width: 0%;'> </div> </div> <div class='jdgm-histogram__percentage'>0%</div> <div class='jdgm-histogram__frequency'>(0)</div> </div>  <div class='jdgm-histogram__row jdgm-histogram__clear-filter' data-rating=null tabindex='0'></div> </div>     <div class='jdgm-rev-widg__sort-wrapper'></div> </div> <div class='jdgm-rev-widg__body'>  <div class='jdgm-rev-widg__reviews'></div> <div class='jdgm-paginate' data-per-page='5' data-url='https://api.judge.me/reviews/reviews_for_widget' style=\"display: none;\"></div>  </div> <div class='jdgm-rev-widg__paginate-spinner-wrapper'> <div class='jdgm-spinner'></div> </div> </div>"
+          }
+        ],
+        "variants": [
+          {
+            "id": "gid://shopify/ProductVariant/52429705806143",
+            "title": "セット",
+            "sku": "set-PlFulRBMgax2ob1aq7cw",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429705838911",
+            "title": "TEST00501.jpg",
+            "sku": "f5f9e93c-0296-420b-bf5d-9e4f9c0fba3c",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429705871679",
+            "title": "TEST00502.jpg",
+            "sku": "71514212-52b1-431d-b264-3f0a3afc14cc",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429705904447",
+            "title": "TEST00503.jpg",
+            "sku": "948d15bf-65e4-4514-9e4e-25f9c2b6e0cf",
+            "metafields": []
+          },
+          {
+            "id": "gid://shopify/ProductVariant/52429705937215",
+            "title": "TEST00504.jpg",
+            "sku": "893b7a38-7bb2-4b13-beb1-629ae412b7c8",
+            "metafields": []
+          }
+        ]
+      }
+    ],
+    "customers": [
+      {
+        "id": "gid://shopify/Customer/10303267733823",
+        "email": "manato20001205@gmail.com",
+        "firstName": "MANATO",
+        "lastName": "NAKASATO",
+        "state": "ENABLED",
+        "tags": [
+          "Login with Shop",
+          "Shop"
+        ],
+        "updatedAt": "2026-03-18T16:20:35Z",
+        "metafields": [
+          {
+            "namespace": "loyalty",
+            "key": "skip_next_tier_check",
+            "type": "boolean",
+            "value": "false"
+          },
+          {
+            "namespace": "loyalty",
+            "key": "tier_uid",
+            "type": "single_line_text_field",
+            "value": "6522277d-cd52-42bd-9042-9d11e5d272b0"
+          },
+          {
+            "namespace": "loyalty",
+            "key": "tier_maintenance_spend",
+            "type": "number_integer",
+            "value": "0"
+          },
+          {
+            "namespace": "loyalty",
+            "key": "easypoints_referral_count",
+            "type": "number_integer",
+            "value": "0"
+          },
+          {
+            "namespace": "loyalty",
+            "key": "tier_advancement_spend",
+            "type": "number_integer",
+            "value": "0"
+          },
+          {
+            "namespace": "loyalty",
+            "key": "balance",
+            "type": "number_integer",
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/Customer/7619257958719",
+        "email": "okazaki619ab@ezweb.ne.jp",
+        "firstName": "欣也",
+        "lastName": "岡崎",
+        "state": "ENABLED",
+        "tags": [
+          "FWJカード会員",
+          "G11",
+          "newsletter",
+          "subscription-46639382847-plan:年間サブスクリプション",
+          "subscription-46639382847-product:FWJカード会員申し込み"
+        ],
+        "updatedAt": "2026-03-18T13:35:06Z",
+        "metafields": [
+          {
+            "namespace": "custom",
+            "key": "fwj_effectivedate",
+            "type": "date",
+            "value": "2027-02-07"
+          },
+          {
+            "namespace": "custom",
+            "key": "fwj_lastname",
+            "type": "single_line_text_field",
+            "value": "岡崎"
+          },
+          {
+            "namespace": "custom",
+            "key": "fwj_firstname",
+            "type": "single_line_text_field",
+            "value": "欣也"
+          },
+          {
+            "namespace": "custom",
+            "key": "fwj_hight",
+            "type": "number_decimal",
+            "value": "0.0"
+          },
+          {
+            "namespace": "custom",
+            "key": "fwj_sex",
+            "type": "single_line_text_field",
+            "value": "Male"
+          },
+          {
+            "namespace": "custom",
+            "key": "fwj_nationality",
+            "type": "single_line_text_field",
+            "value": "Japan"
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/Customer/7619441393983",
+        "email": "bita0813@i.softbank.jp",
+        "firstName": "秀樹",
+        "lastName": "飛田",
+        "state": "ENABLED",
+        "tags": [
+          "FWJカード会員",
+          "G5",
+          "Login with Shop",
+          "Shop",
+          "subscription-48168141119-plan:年間サブスクリプション",
+          "subscription-48168141119-product:FWJカード会員申し込み"
+        ],
+        "updatedAt": "2026-03-18T13:25:10Z",
+        "metafields": [
+          {
+            "namespace": "custom",
+            "key": "fwj_effectivedate",
+            "type": "date",
+            "value": "2027-03-18"
+          },
+          {
+            "namespace": "custom",
+            "key": "fwj_lastname",
+            "type": "single_line_text_field",
+            "value": "飛田"
+          },
+          {
+            "namespace": "custom",
+            "key": "fwj_firstname",
+            "type": "single_line_text_field",
+            "value": "秀樹"
+          },
+          {
+            "namespace": "custom",
+            "key": "fwj_hight",
+            "type": "number_decimal",
+            "value": "0.0"
+          },
+          {
+            "namespace": "custom",
+            "key": "fwj_sex",
+            "type": "single_line_text_field",
+            "value": "Male"
+          },
+          {
+            "namespace": "custom",
+            "key": "fwj_nationality",
+            "type": "single_line_text_field",
+            "value": "Japan"
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/Customer/7619317793087",
+        "email": "n-town0218@softbank.ne.jp",
+        "firstName": "純平",
+        "lastName": "五十嵐",
+        "state": "ENABLED",
+        "tags": [
+          "FWJカード会員",
+          "FWJカード会員（次回更新停止中）",
+          "G9",
+          "subscription-47095021887-cancel:2026-03-09"
+        ],
+        "updatedAt": "2026-03-18T13:05:37Z",
+        "metafields": [
+          {
+            "namespace": "loyalty",
+            "key": "easy_points_attributes",
+            "type": "json",
+            "value": "{\"tier\":\"Default\",\"balance\":550,\"tier_uid\":\"6522277d-cd52-42bd-9042-9d11e5d272b0\",\"tier_maintenance_data\":{\"maintenance_data\":{\"currency\":\"JPY\",\"deadline\":null,\"amount\":\"0\",\"spent_requirement\":{\"currency\":\"JPY\",\"amount\":null,\"raw_amount\":null},\"raw_amount\":0},\"advancement_data\":{\"currency\":\"JPY\",\"tiers\":[{\"name\":\"Default\",\"currency\":\"JPY\",\"uid\":\"6522277d-cd52-42bd-9042-9d11e5d272b0\",\"amount\":\"0\",\"ratio\":0.01,\"spent_requirement\":{\"currency\":\"JPY\",\"amount\":\"0\",\"raw_amount\":0},\"raw_amount\":0}],\"deadline\":\"2026-02-01T00:00:00+09:00\",\"amount\":\"0\",\"tier_uid\":\"6522277d-cd52-42bd-9042-9d11e5d272b0\",\"tier_name\":\"Default\",\"spent_requirement\":{\"currency\":\"JPY\",\"amount\":\"0\",\"raw_amount\":0},\"raw_amount\":0}},\"point_value\":1,\"currency_value\":100,\"percentage\":1.0,\"tier_name\":\"Default\",\"include_tax\":true,\"expiration_date\":\"2027-01-13T23:59:59+09:00\"}"
+          },
+          {
+            "namespace": "loyalty",
+            "key": "balance",
+            "type": "number_integer",
+            "value": "550"
+          },
+          {
+            "namespace": "loyalty",
+            "key": "expires_at",
+            "type": "date_time",
+            "value": "2027-01-13T14:59:59+00:00"
+          },
+          {
+            "namespace": "custom",
+            "key": "fwj_hight",
+            "type": "number_decimal",
+            "value": "0.0"
+          },
+          {
+            "namespace": "custom",
+            "key": "fwj_lastname",
+            "type": "single_line_text_field",
+            "value": "五十嵐"
+          },
+          {
+            "namespace": "custom",
+            "key": "fwj_sex",
+            "type": "single_line_text_field",
+            "value": "Male"
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/Customer/10302908531007",
+        "email": "oma.ne.jp@gmail.com",
+        "firstName": "龍河",
+        "lastName": "尾曲",
+        "state": "ENABLED",
+        "tags": [
+          "FWJカード会員",
+          "subscription-48167813439-plan:年間サブスクリプション",
+          "subscription-48167813439-product:FWJカード会員申し込み"
+        ],
+        "updatedAt": "2026-03-18T12:17:55Z",
+        "metafields": [
+          {
+            "namespace": "loyalty",
+            "key": "easy_points_attributes",
+            "type": "json",
+            "value": "{\"tier\":\"Default\",\"balance\":0,\"tier_uid\":\"6522277d-cd52-42bd-9042-9d11e5d272b0\",\"point_value\":1,\"tier_maintenance_data\":{\"maintenance_data\":{\"currency\":\"JPY\",\"deadline\":null,\"amount\":\"0\",\"spent_requirement\":{\"currency\":\"JPY\",\"amount\":null,\"raw_amount\":null},\"raw_amount\":0},\"advancement_data\":{\"currency\":\"JPY\",\"tiers\":[{\"name\":\"Default\",\"currency\":\"JPY\",\"uid\":\"6522277d-cd52-42bd-9042-9d11e5d272b0\",\"amount\":\"0\",\"ratio\":0.01,\"spent_requirement\":{\"currency\":\"JPY\",\"amount\":\"0\",\"raw_amount\":0},\"raw_amount\":0}],\"deadline\":\"2026-04-01T00:00:00+09:00\",\"amount\":\"0\",\"tier_uid\":\"6522277d-cd52-42bd-9042-9d11e5d272b0\",\"tier_name\":\"Default\",\"spent_requirement\":{\"currency\":\"JPY\",\"amount\":\"0\",\"raw_amount\":0},\"raw_amount\":0}},\"currency_value\":100,\"expiration_date\":null,\"percentage\":1.0,\"tier_name\":\"Default\",\"include_tax\":true}"
+          },
+          {
+            "namespace": "loyalty",
+            "key": "tier_advancement_spend",
+            "type": "number_integer",
+            "value": "0"
+          },
+          {
+            "namespace": "loyalty",
+            "key": "easypoints_referral_count",
+            "type": "number_integer",
+            "value": "0"
+          },
+          {
+            "namespace": "loyalty",
+            "key": "tier_maintenance_spend",
+            "type": "number_integer",
+            "value": "0"
+          },
+          {
+            "namespace": "loyalty",
+            "key": "balance",
+            "type": "number_integer",
+            "value": "0"
+          },
+          {
+            "namespace": "loyalty",
+            "key": "tier_uid",
+            "type": "single_line_text_field",
+            "value": "6522277d-cd52-42bd-9042-9d11e5d272b0"
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/Customer/10193543004479",
+        "email": "taku-luffy@ezweb.ne.jp",
+        "firstName": "拓実",
+        "lastName": "根本",
+        "state": "ENABLED",
+        "tags": [],
+        "updatedAt": "2026-03-18T11:57:04Z",
+        "metafields": [
+          {
+            "namespace": "loyalty",
+            "key": "skip_next_tier_check",
+            "type": "boolean",
+            "value": "false"
+          },
+          {
+            "namespace": "loyalty",
+            "key": "tier_maintenance_spend",
+            "type": "number_integer",
+            "value": "0"
+          },
+          {
+            "namespace": "loyalty",
+            "key": "tier_advancement_spend",
+            "type": "number_integer",
+            "value": "0"
+          },
+          {
+            "namespace": "loyalty",
+            "key": "easy_points_attributes",
+            "type": "json",
+            "value": "{\"tier\":\"Default\",\"balance\":700,\"tier_uid\":\"6522277d-cd52-42bd-9042-9d11e5d272b0\",\"currency_value\":100,\"point_value\":1,\"include_tax\":true,\"percentage\":1.0,\"tier_maintenance_data\":{\"maintenance_data\":{\"currency\":\"JPY\",\"deadline\":null,\"amount\":\"0\",\"spent_requirement\":{\"currency\":\"JPY\",\"amount\":null,\"raw_amount\":null},\"raw_amount\":0},\"advancement_data\":{\"currency\":\"JPY\",\"tiers\":[{\"name\":\"Default\",\"currency\":\"JPY\",\"uid\":\"6522277d-cd52-42bd-9042-9d11e5d272b0\",\"amount\":\"0\",\"ratio\":0.01,\"spent_requirement\":{\"currency\":\"JPY\",\"amount\":\"0\",\"raw_amount\":0},\"raw_amount\":0}],\"deadline\":\"2026-02-01T00:00:00+09:00\",\"amount\":\"0\",\"tier_uid\":\"6522277d-cd52-42bd-9042-9d11e5d272b0\",\"tier_name\":\"Default\",\"spent_requirement\":{\"currency\":\"JPY\",\"amount\":\"0\",\"raw_amount\":0},\"raw_amount\":0}},\"tier_name\":\"Default\",\"expiration_date\":\"2027-01-28T23:59:59+09:00\"}"
+          },
+          {
+            "namespace": "loyalty",
+            "key": "balance",
+            "type": "number_integer",
+            "value": "700"
+          },
+          {
+            "namespace": "loyalty",
+            "key": "tier_advancement_uid",
+            "type": "single_line_text_field",
+            "value": "6522277d-cd52-42bd-9042-9d11e5d272b0"
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/Customer/9010245828927",
+        "email": "mayarou@icloud.com",
+        "firstName": "麻夜",
+        "lastName": "昆",
+        "state": "ENABLED",
+        "tags": [],
+        "updatedAt": "2026-03-18T08:44:16Z",
+        "metafields": []
+      },
+      {
+        "id": "gid://shopify/Customer/10211866870079",
+        "email": "accessline.no1@gmail.com",
+        "firstName": "芳光",
+        "lastName": "中小路",
+        "state": "ENABLED",
+        "tags": [
+          "FWJカード会員",
+          "FWJカード会員（次回更新停止中）",
+          "subscription-46630207807-cancel:2026-02-07"
+        ],
+        "updatedAt": "2026-03-18T07:08:05Z",
+        "metafields": [
+          {
+            "namespace": "loyalty",
+            "key": "skip_next_tier_check",
+            "type": "boolean",
+            "value": "false"
+          },
+          {
+            "namespace": "loyalty",
+            "key": "balance",
+            "type": "number_integer",
+            "value": "0"
+          },
+          {
+            "namespace": "loyalty",
+            "key": "gift_balance",
+            "type": "json",
+            "value": "{\"gift_balance\":0,\"expiries\":[]}"
+          },
+          {
+            "namespace": "loyalty",
+            "key": "easypoints_referral_count",
+            "type": "number_integer",
+            "value": "0"
+          },
+          {
+            "namespace": "loyalty",
+            "key": "tier_uid",
+            "type": "single_line_text_field",
+            "value": "6522277d-cd52-42bd-9042-9d11e5d272b0"
+          },
+          {
+            "namespace": "loyalty",
+            "key": "easy_points_attributes",
+            "type": "json",
+            "value": "{\"tier\":\"Default\",\"balance\":0,\"tier_name\":\"Default\",\"point_value\":1,\"tier_uid\":\"6522277d-cd52-42bd-9042-9d11e5d272b0\",\"currency_value\":100,\"include_tax\":true,\"percentage\":1.0,\"tier_maintenance_data\":{\"maintenance_data\":{\"currency\":\"JPY\",\"deadline\":null,\"amount\":\"0\",\"spent_requirement\":{\"currency\":\"JPY\",\"amount\":null,\"raw_amount\":null},\"raw_amount\":0},\"advancement_data\":{\"currency\":\"JPY\",\"tiers\":[{\"name\":\"Default\",\"currency\":\"JPY\",\"uid\":\"6522277d-cd52-42bd-9042-9d11e5d272b0\",\"amount\":\"0\",\"ratio\":0.01,\"spent_requirement\":{\"currency\":\"JPY\",\"amount\":\"0\",\"raw_amount\":0},\"raw_amount\":0}],\"deadline\":\"2026-03-01T00:00:00+09:00\",\"amount\":\"0\",\"tier_name\":\"Default\",\"tier_uid\":\"6522277d-cd52-42bd-9042-9d11e5d272b0\",\"spent_requirement\":{\"currency\":\"JPY\",\"amount\":\"0\",\"raw_amount\":0},\"raw_amount\":0}},\"expiration_date\":null}"
+          }
+        ]
+      }
+    ],
+    "orders": [
+      {
+        "id": "gid://shopify/Order/7489471840575",
+        "name": "#8700",
+        "createdAt": "2026-03-18T13:35:05Z",
+        "updatedAt": "2026-03-18T13:35:19Z",
+        "processedAt": "2026-03-18T13:35:04Z",
+        "cancelledAt": null,
+        "cancelReason": null,
+        "displayFinancialStatus": "PAID",
+        "displayFulfillmentStatus": "UNFULFILLED",
+        "currencyCode": "JPY",
+        "discountCodes": [
+          "spoint3000"
+        ],
+        "currentSubtotalPriceSet": {
+          "shopMoney": {
+            "amount": "5360.0",
+            "currencyCode": "JPY"
+          }
+        },
+        "currentTotalDiscountsSet": {
+          "shopMoney": {
+            "amount": "5640.0",
+            "currencyCode": "JPY"
+          }
+        },
+        "currentTotalPriceSet": {
+          "shopMoney": {
+            "amount": "5360.0",
+            "currencyCode": "JPY"
+          }
+        },
+        "customer": {
+          "id": "gid://shopify/Customer/7619257958719",
+          "email": "okazaki619ab@ezweb.ne.jp",
+          "displayName": "欣也 岡崎"
+        },
+        "lineItems": [
+          {
+            "id": "gid://shopify/LineItem/17608470757695",
+            "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+            "quantity": 1,
+            "sku": null,
+            "customAttributes": [
+              {
+                "key": "職業",
+                "value": "会社員"
+              },
+              {
+                "key": "プロフィール",
+                "value": ""
+              },
+              {
+                "key": "バックステージパス購入予定",
+                "value": "0枚"
+              }
+            ],
+            "originalUnitPriceSet": {
+              "shopMoney": {
+                "amount": "11000.0",
+                "currencyCode": "JPY"
+              }
+            },
+            "variant": {
+              "id": "gid://shopify/ProductVariant/52357164990783",
+              "title": "メンズフィジーク - マスターズ (50歳～)",
+              "product": {
+                "id": "gid://shopify/Product/10265332777279",
+                "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+                "tags": [
+                  "2026シーズン",
+                  "BLAZE OPEN 2026",
+                  "Mens",
+                  "no-easy-points",
+                  "コンテストエントリー",
+                  "メンズフィジーク",
+                  "還元対象"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/Order/7489463124287",
+        "name": "#8699",
+        "createdAt": "2026-03-18T13:25:10Z",
+        "updatedAt": "2026-03-18T13:25:18Z",
+        "processedAt": "2026-03-18T13:25:07Z",
+        "cancelledAt": null,
+        "cancelReason": null,
+        "displayFinancialStatus": "PAID",
+        "displayFulfillmentStatus": "UNFULFILLED",
+        "currencyCode": "JPY",
+        "discountCodes": [
+          "spoint3000"
+        ],
+        "currentSubtotalPriceSet": {
+          "shopMoney": {
+            "amount": "5360.0",
+            "currencyCode": "JPY"
+          }
+        },
+        "currentTotalDiscountsSet": {
+          "shopMoney": {
+            "amount": "5640.0",
+            "currencyCode": "JPY"
+          }
+        },
+        "currentTotalPriceSet": {
+          "shopMoney": {
+            "amount": "5360.0",
+            "currencyCode": "JPY"
+          }
+        },
+        "customer": {
+          "id": "gid://shopify/Customer/7619441393983",
+          "email": "bita0813@i.softbank.jp",
+          "displayName": "秀樹 飛田"
+        },
+        "lineItems": [
+          {
+            "id": "gid://shopify/LineItem/17608455225663",
+            "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+            "quantity": 1,
+            "sku": null,
+            "customAttributes": [
+              {
+                "key": "職業",
+                "value": ""
+              },
+              {
+                "key": "プロフィール",
+                "value": ""
+              },
+              {
+                "key": "バックステージパス購入予定",
+                "value": "1枚"
+              }
+            ],
+            "originalUnitPriceSet": {
+              "shopMoney": {
+                "amount": "11000.0",
+                "currencyCode": "JPY"
+              }
+            },
+            "variant": {
+              "id": "gid://shopify/ProductVariant/52357165056319",
+              "title": "メンズフィジーク - ファーストチャレンジ",
+              "product": {
+                "id": "gid://shopify/Product/10265332777279",
+                "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+                "tags": [
+                  "2026シーズン",
+                  "BLAZE OPEN 2026",
+                  "Mens",
+                  "no-easy-points",
+                  "コンテストエントリー",
+                  "メンズフィジーク",
+                  "還元対象"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/Order/7489421639999",
+        "name": "#8698",
+        "createdAt": "2026-03-18T12:37:07Z",
+        "updatedAt": "2026-03-18T12:37:13Z",
+        "processedAt": "2026-03-18T12:37:06Z",
+        "cancelledAt": null,
+        "cancelReason": null,
+        "displayFinancialStatus": "PAID",
+        "displayFulfillmentStatus": "UNFULFILLED",
+        "currencyCode": "JPY",
+        "discountCodes": [],
+        "currentSubtotalPriceSet": {
+          "shopMoney": {
+            "amount": "11000.0",
+            "currencyCode": "JPY"
+          }
+        },
+        "currentTotalDiscountsSet": {
+          "shopMoney": {
+            "amount": "0.0",
+            "currencyCode": "JPY"
+          }
+        },
+        "currentTotalPriceSet": {
+          "shopMoney": {
+            "amount": "11000.0",
+            "currencyCode": "JPY"
+          }
+        },
+        "customer": {
+          "id": "gid://shopify/Customer/7619441393983",
+          "email": "bita0813@i.softbank.jp",
+          "displayName": "秀樹 飛田"
+        },
+        "lineItems": [
+          {
+            "id": "gid://shopify/LineItem/17608381595967",
+            "title": "FWJカード会員申し込み",
+            "quantity": 1,
+            "sku": null,
+            "customAttributes": [
+              {
+                "key": "fwj_lastname",
+                "value": "飛田"
+              },
+              {
+                "key": "fwj_firstname",
+                "value": "秀樹"
+              },
+              {
+                "key": "fwj_kanalastname",
+                "value": "トビタ"
+              },
+              {
+                "key": "fwj_kanafirstname",
+                "value": "ヒデキ"
+              },
+              {
+                "key": "fwj_sex",
+                "value": "Male"
+              },
+              {
+                "key": "fwj_nationality",
+                "value": "Japan"
+              },
+              {
+                "key": "fwj_height",
+                "value": "171"
+              },
+              {
+                "key": "fwj_weight",
+                "value": "65"
+              },
+              {
+                "key": "fwj_card_no",
+                "value": ""
+              },
+              {
+                "key": "fwj_birthday",
+                "value": "1994-08-13"
+              },
+              {
+                "key": "is_fwj_membership",
+                "value": "true"
+              }
+            ],
+            "originalUnitPriceSet": {
+              "shopMoney": {
+                "amount": "11000.0",
+                "currencyCode": "JPY"
+              }
+            },
+            "variant": {
+              "id": "gid://shopify/ProductVariant/51654442385727",
+              "title": "Default Title",
+              "product": {
+                "id": "gid://shopify/Product/10183058030911",
+                "title": "FWJカード会員申し込み",
+                "tags": [
+                  "FWJカード",
+                  "FWJカード会員",
+                  "no-easy-discount"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/Order/7489406435647",
+        "name": "#8697",
+        "createdAt": "2026-03-18T12:17:46Z",
+        "updatedAt": "2026-03-18T12:17:53Z",
+        "processedAt": "2026-03-18T12:17:43Z",
+        "cancelledAt": null,
+        "cancelReason": null,
+        "displayFinancialStatus": "PAID",
+        "displayFulfillmentStatus": "UNFULFILLED",
+        "currencyCode": "JPY",
+        "discountCodes": [],
+        "currentSubtotalPriceSet": {
+          "shopMoney": {
+            "amount": "11000.0",
+            "currencyCode": "JPY"
+          }
+        },
+        "currentTotalDiscountsSet": {
+          "shopMoney": {
+            "amount": "0.0",
+            "currencyCode": "JPY"
+          }
+        },
+        "currentTotalPriceSet": {
+          "shopMoney": {
+            "amount": "11000.0",
+            "currencyCode": "JPY"
+          }
+        },
+        "customer": {
+          "id": "gid://shopify/Customer/10302908531007",
+          "email": "oma.ne.jp@gmail.com",
+          "displayName": "龍河 尾曲"
+        },
+        "lineItems": [
+          {
+            "id": "gid://shopify/LineItem/17608357249343",
+            "title": "FWJカード会員申し込み",
+            "quantity": 1,
+            "sku": null,
+            "customAttributes": [
+              {
+                "key": "fwj_lastname",
+                "value": "尾曲"
+              },
+              {
+                "key": "fwj_firstname",
+                "value": "龍河"
+              },
+              {
+                "key": "fwj_kanalastname",
+                "value": "オマガリ"
+              },
+              {
+                "key": "fwj_kanafirstname",
+                "value": "リュウガ"
+              },
+              {
+                "key": "fwj_sex",
+                "value": "Male"
+              },
+              {
+                "key": "fwj_nationality",
+                "value": "Japan"
+              },
+              {
+                "key": "fwj_height",
+                "value": "168.5"
+              },
+              {
+                "key": "fwj_weight",
+                "value": "70"
+              },
+              {
+                "key": "fwj_card_no",
+                "value": ""
+              },
+              {
+                "key": "fwj_birthday",
+                "value": "1994-09-24"
+              },
+              {
+                "key": "is_fwj_membership",
+                "value": "true"
+              }
+            ],
+            "originalUnitPriceSet": {
+              "shopMoney": {
+                "amount": "11000.0",
+                "currencyCode": "JPY"
+              }
+            },
+            "variant": {
+              "id": "gid://shopify/ProductVariant/51654442385727",
+              "title": "Default Title",
+              "product": {
+                "id": "gid://shopify/Product/10183058030911",
+                "title": "FWJカード会員申し込み",
+                "tags": [
+                  "FWJカード",
+                  "FWJカード会員",
+                  "no-easy-discount"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/Order/7489224343871",
+        "name": "#8696",
+        "createdAt": "2026-03-18T07:08:04Z",
+        "updatedAt": "2026-03-18T07:08:13Z",
+        "processedAt": "2026-03-18T07:08:02Z",
+        "cancelledAt": null,
+        "cancelReason": null,
+        "displayFinancialStatus": "PAID",
+        "displayFulfillmentStatus": "UNFULFILLED",
+        "currencyCode": "JPY",
+        "discountCodes": [],
+        "currentSubtotalPriceSet": {
+          "shopMoney": {
+            "amount": "5500.0",
+            "currencyCode": "JPY"
+          }
+        },
+        "currentTotalDiscountsSet": {
+          "shopMoney": {
+            "amount": "0.0",
+            "currencyCode": "JPY"
+          }
+        },
+        "currentTotalPriceSet": {
+          "shopMoney": {
+            "amount": "5500.0",
+            "currencyCode": "JPY"
+          }
+        },
+        "customer": {
+          "id": "gid://shopify/Customer/10211866870079",
+          "email": "accessline.no1@gmail.com",
+          "displayName": "芳光 中小路"
+        },
+        "lineItems": [
+          {
+            "id": "gid://shopify/LineItem/17608039629119",
+            "title": "West Gate Open 2026 観戦チケット",
+            "quantity": 1,
+            "sku": null,
+            "customAttributes": [],
+            "originalUnitPriceSet": {
+              "shopMoney": {
+                "amount": "5500.0",
+                "currencyCode": "JPY"
+              }
+            },
+            "variant": {
+              "id": "gid://shopify/ProductVariant/52242566447423",
+              "title": "A席",
+              "product": {
+                "id": "gid://shopify/Product/10245453119807",
+                "title": "West Gate Open 2026 観戦チケット",
+                "tags": [
+                  "2026シーズン",
+                  "West Gate Open 2026",
+                  "観戦チケット"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/Order/7485676126527",
+        "name": "#8669",
+        "createdAt": "2026-03-15T23:23:04Z",
+        "updatedAt": "2026-03-18T05:34:06Z",
+        "processedAt": "2026-03-15T23:22:59Z",
+        "cancelledAt": null,
+        "cancelReason": null,
+        "displayFinancialStatus": "PAID",
+        "displayFulfillmentStatus": "PARTIALLY_FULFILLED",
+        "currencyCode": "JPY",
+        "discountCodes": [],
+        "currentSubtotalPriceSet": {
+          "shopMoney": {
+            "amount": "20140.0",
+            "currencyCode": "JPY"
+          }
+        },
+        "currentTotalDiscountsSet": {
+          "shopMoney": {
+            "amount": "2640.0",
+            "currencyCode": "JPY"
+          }
+        },
+        "currentTotalPriceSet": {
+          "shopMoney": {
+            "amount": "20140.0",
+            "currencyCode": "JPY"
+          }
+        },
+        "customer": {
+          "id": "gid://shopify/Customer/7619335160127",
+          "email": "ogayu2456@yahoo.co.jp",
+          "displayName": "雄一 小川"
+        },
+        "lineItems": [
+          {
+            "id": "gid://shopify/LineItem/17601817248063",
+            "title": "Aprilis Championships 2026 観戦チケット",
+            "quantity": 1,
+            "sku": null,
+            "customAttributes": [],
+            "originalUnitPriceSet": {
+              "shopMoney": {
+                "amount": "5500.0",
+                "currencyCode": "JPY"
+              }
+            },
+            "variant": {
+              "id": "gid://shopify/ProductVariant/52268311839039",
+              "title": "A席",
+              "product": {
+                "id": "gid://shopify/Product/10255457550655",
+                "title": "Aprilis Championships 2026 観戦チケット",
+                "tags": [
+                  "2026シーズン",
+                  "Aprilis Championships 2026",
+                  "観戦チケット"
+                ]
+              }
+            }
+          },
+          {
+            "id": "gid://shopify/LineItem/17601817280831",
+            "title": "Aprilis Championships 2026 コンテストエントリー クラシックフィジーク",
+            "quantity": 1,
+            "sku": null,
+            "customAttributes": [
+              {
+                "key": "職業",
+                "value": "医師"
+              },
+              {
+                "key": "プロフィール",
+                "value": "憧れ目標とする師と出会い\r\nその指導下で準備して今シーズンより\r\nクラシックフィジークに移行参戦\r\n追い掛け応えるために今後も全力で挑みます"
+              },
+              {
+                "key": "バックステージパス購入予定",
+                "value": "1枚"
+              }
+            ],
+            "originalUnitPriceSet": {
+              "shopMoney": {
+                "amount": "11000.0",
+                "currencyCode": "JPY"
+              }
+            },
+            "variant": {
+              "id": "gid://shopify/ProductVariant/52221371154751",
+              "title": "クラシックフィジーク - ビギナー",
+              "product": {
+                "id": "gid://shopify/Product/10239179718975",
+                "title": "Aprilis Championships 2026 コンテストエントリー クラシックフィジーク",
+                "tags": [
+                  "2026シーズン",
+                  "Aprilis Championships 2026",
+                  "Mens",
+                  "no-easy-points",
+                  "クラシックフィジーク",
+                  "コンテストエントリー",
+                  "還元対象"
+                ]
+              }
+            }
+          },
+          {
+            "id": "gid://shopify/LineItem/17601817313599",
+            "title": "FWJクラシックフィジークショーツ",
+            "quantity": 1,
+            "sku": "FJ2502PS01-06-BK",
+            "customAttributes": [],
+            "originalUnitPriceSet": {
+              "shopMoney": {
+                "amount": "6280.0",
+                "currencyCode": "JPY"
+              }
+            },
+            "variant": {
+              "id": "gid://shopify/ProductVariant/50268083487039",
+              "title": "L",
+              "product": {
+                "id": "gid://shopify/Product/9864874131775",
+                "title": "FWJクラシックフィジークショーツ",
+                "tags": [
+                  "FWJ",
+                  "ウェア・服",
+                  "ショーツ・ハーフパンツ",
+                  "フィジークショーツ",
+                  "メンズ"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/Order/7489028129087",
+        "name": "#8695",
+        "createdAt": "2026-03-18T04:22:33Z",
+        "updatedAt": "2026-03-18T04:22:35Z",
+        "processedAt": "2026-03-18T04:22:32Z",
+        "cancelledAt": null,
+        "cancelReason": null,
+        "displayFinancialStatus": "PAID",
+        "displayFulfillmentStatus": "UNFULFILLED",
+        "currencyCode": "JPY",
+        "discountCodes": [],
+        "currentSubtotalPriceSet": {
+          "shopMoney": {
+            "amount": "3000.0",
+            "currencyCode": "JPY"
+          }
+        },
+        "currentTotalDiscountsSet": {
+          "shopMoney": {
+            "amount": "0.0",
+            "currencyCode": "JPY"
+          }
+        },
+        "currentTotalPriceSet": {
+          "shopMoney": {
+            "amount": "3000.0",
+            "currencyCode": "JPY"
+          }
+        },
+        "customer": {
+          "id": "gid://shopify/Customer/7915415830847",
+          "email": "ry-emi._.friend@docomo.ne.jp",
+          "displayName": "恵美 岩下"
+        },
+        "lineItems": [
+          {
+            "id": "gid://shopify/LineItem/17607774372159",
+            "title": "4/5 [大阪開催] FWJコンテスト対策ポージングセミナー(1部：メンズ＆2部ウィメンズ）",
+            "quantity": 1,
+            "sku": null,
+            "customAttributes": [],
+            "originalUnitPriceSet": {
+              "shopMoney": {
+                "amount": "3000.0",
+                "currencyCode": "JPY"
+              }
+            },
+            "variant": {
+              "id": "gid://shopify/ProductVariant/52363357815103",
+              "title": "⑥ウィメンズ2部　公認講師講習会の参加登録者",
+              "product": {
+                "id": "gid://shopify/Product/10266803044671",
+                "title": "4/5 [大阪開催] FWJコンテスト対策ポージングセミナー(1部：メンズ＆2部ウィメンズ）",
+                "tags": [
+                  "FWJ",
+                  "no-easy-discount",
+                  "no-easy-points",
+                  "Official",
+                  "Seminar"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "gid://shopify/Order/7489008271679",
+        "name": "#8694",
+        "createdAt": "2026-03-18T03:57:21Z",
+        "updatedAt": "2026-03-18T03:57:22Z",
+        "processedAt": "2026-03-18T03:57:20Z",
+        "cancelledAt": null,
+        "cancelReason": null,
+        "displayFinancialStatus": "PAID",
+        "displayFulfillmentStatus": "UNFULFILLED",
+        "currencyCode": "JPY",
+        "discountCodes": [],
+        "currentSubtotalPriceSet": {
+          "shopMoney": {
+            "amount": "6280.0",
+            "currencyCode": "JPY"
+          }
+        },
+        "currentTotalDiscountsSet": {
+          "shopMoney": {
+            "amount": "0.0",
+            "currencyCode": "JPY"
+          }
+        },
+        "currentTotalPriceSet": {
+          "shopMoney": {
+            "amount": "6500.0",
+            "currencyCode": "JPY"
+          }
+        },
+        "customer": {
+          "id": "gid://shopify/Customer/10302384210239",
+          "email": "kojima111110@gmail.com",
+          "displayName": "尚也 小島"
+        },
+        "lineItems": [
+          {
+            "id": "gid://shopify/LineItem/17607739048255",
+            "title": "FWJクラシックフィジークショーツ",
+            "quantity": 1,
+            "sku": "FJ2502PS01-02-BK",
+            "customAttributes": [],
+            "originalUnitPriceSet": {
+              "shopMoney": {
+                "amount": "6280.0",
+                "currencyCode": "JPY"
+              }
+            },
+            "variant": {
+              "id": "gid://shopify/ProductVariant/50268083421503",
+              "title": "S",
+              "product": {
+                "id": "gid://shopify/Product/9864874131775",
+                "title": "FWJクラシックフィジークショーツ",
+                "tags": [
+                  "FWJ",
+                  "ウェア・服",
+                  "ショーツ・ハーフパンツ",
+                  "フィジークショーツ",
+                  "メンズ"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

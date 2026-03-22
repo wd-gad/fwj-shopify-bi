@@ -1,0 +1,254 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum ProductClassification {
+  membership
+  event_entry
+  normal_product
+  ignore
+}
+
+enum MembershipStatus {
+  active
+  expired
+  refunded
+  cancelled
+}
+
+enum EntryStatus {
+  applied
+  refunded
+  cancelled
+}
+
+enum SyncStatus {
+  running
+  succeeded
+  failed
+}
+
+model ShopifyCustomer {
+  id                 String             @id @map("shopify_customer_id")
+  email              String?
+  firstName          String?            @map("first_name")
+  lastName           String?            @map("last_name")
+  phone              String?
+  tags               String?
+  state              String?
+  defaultAddressJson Json?              @map("default_address_json")
+  rawJson            Json               @map("raw_json")
+  createdAt          DateTime?          @map("created_at")
+  updatedAt          DateTime?          @map("updated_at")
+  syncedAt           DateTime           @default(now()) @map("synced_at")
+  orders             ShopifyOrder[]
+  memberProfiles     MemberProfile[]
+
+  @@index([email])
+  @@map("shopify_customers")
+}
+
+model ShopifyOrder {
+  id                String               @id @map("shopify_order_id")
+  customerId        String?              @map("shopify_customer_id")
+  orderNumber       String?              @map("order_number")
+  email             String?
+  financialStatus   String?              @map("financial_status")
+  fulfillmentStatus String?              @map("fulfillment_status")
+  currency          String?
+  subtotalPrice     Decimal?             @db.Decimal(12, 2) @map("subtotal_price")
+  totalPrice        Decimal?             @db.Decimal(12, 2) @map("total_price")
+  orderedAt         DateTime?            @map("ordered_at")
+  rawJson           Json                 @map("raw_json")
+  syncedAt          DateTime             @default(now()) @map("synced_at")
+  customer          ShopifyCustomer?     @relation(fields: [customerId], references: [id])
+  items             ShopifyOrderItem[]
+  firstMembershipForProfiles MemberProfile[] @relation("member_first_membership_order")
+  membershipPurchases MembershipPurchase[]
+  eventEntries      EventEntry[]
+
+  @@index([customerId, orderedAt])
+  @@map("shopify_orders")
+}
+
+model ShopifyOrderItem {
+  id                 String          @id @map("shopify_order_item_id")
+  orderId            String          @map("shopify_order_id")
+  productId          String?         @map("product_id")
+  variantId          String?         @map("variant_id")
+  sku                String?
+  title              String
+  variantTitle       String?         @map("variant_title")
+  quantity           Int             @default(1)
+  price              Decimal?        @db.Decimal(12, 2)
+  vendor             String?
+  productType        String?         @map("product_type")
+  rawJson            Json            @map("raw_json")
+  order              ShopifyOrder    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  product            ShopifyProduct? @relation(fields: [productId], references: [id])
+  membershipPurchases MembershipPurchase[]
+  eventEntries       EventEntry[]
+
+  @@index([orderId])
+  @@index([productId])
+  @@map("shopify_order_items")
+}
+
+model ShopifyProduct {
+  id                 String                 @id @map("shopify_product_id")
+  title              String
+  handle             String?
+  productType        String?                @map("product_type")
+  tags               String?
+  status             String?
+  rawJson            Json                   @map("raw_json")
+  updatedAt          DateTime?              @map("updated_at")
+  syncedAt           DateTime               @default(now()) @map("synced_at")
+  orderItems         ShopifyOrderItem[]
+  classification     ProductClassificationRule?
+
+  @@index([title])
+  @@map("shopify_products")
+}
+
+model ProductClassificationRule {
+  productId           String                @id @map("shopify_product_id")
+  classification      ProductClassification
+  eventName           String?               @map("event_name")
+  eventDate           DateTime?             @map("event_date")
+  eventCategory       String?               @map("event_category")
+  eventVenueName      String?               @map("event_venue_name")
+  eventAddress        String?               @map("event_address")
+  membershipPlanName  String?               @map("membership_plan_name")
+  isActive            Boolean               @default(true) @map("is_active")
+  notes               String?
+  createdAt           DateTime              @default(now()) @map("created_at")
+  updatedAt           DateTime              @updatedAt @map("updated_at")
+  product             ShopifyProduct        @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@map("product_classifications")
+}
+
+model MemberProfile {
+  id                        String                  @id @default(cuid()) @map("member_id")
+  shopifyCustomerId         String?                 @map("shopify_customer_id")
+  email                     String?
+  fullName                  String?                 @map("full_name")
+  gender                    String?
+  birthDate                 DateTime?               @map("birth_date")
+  ageBand                   String?                 @map("age_band")
+  prefecture                String?
+  region                    String?
+  profileAttributesJson     Json?                   @map("profile_attributes_json")
+  joinedAt                  DateTime?               @map("joined_at")
+  firstMembershipOrderId    String?                 @map("first_membership_order_id")
+  currentMembershipStatus   MembershipStatus?       @map("current_membership_status")
+  lastMembershipExpiresAt   DateTime?               @map("last_membership_expires_at")
+  createdAt                 DateTime                @default(now()) @map("created_at")
+  updatedAt                 DateTime                @updatedAt @map("updated_at")
+  shopifyCustomer           ShopifyCustomer?        @relation(fields: [shopifyCustomerId], references: [id])
+  firstMembershipOrder      ShopifyOrder?           @relation("member_first_membership_order", fields: [firstMembershipOrderId], references: [id])
+  membershipPurchases       MembershipPurchase[]
+  eventEntries              EventEntry[]
+  attributeOverride         MemberAttributeOverride?
+
+  @@unique([shopifyCustomerId])
+  @@index([email])
+  @@index([joinedAt])
+  @@index([prefecture, ageBand, gender])
+  @@map("member_profiles")
+}
+
+model MembershipPurchase {
+  id                 String           @id @default(cuid()) @map("membership_purchase_id")
+  memberId           String           @map("member_id")
+  orderId            String           @map("shopify_order_id")
+  orderItemId        String           @map("shopify_order_item_id")
+  membershipPlanName String?          @map("membership_plan_name")
+  purchasedAt        DateTime         @map("purchased_at")
+  startsAt           DateTime?        @map("starts_at")
+  expiresAt          DateTime?        @map("expires_at")
+  status             MembershipStatus
+  member             MemberProfile    @relation(fields: [memberId], references: [id], onDelete: Cascade)
+  order              ShopifyOrder     @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  orderItem          ShopifyOrderItem @relation(fields: [orderItemId], references: [id], onDelete: Cascade)
+
+  @@unique([orderItemId])
+  @@index([memberId, purchasedAt])
+  @@map("membership_purchases")
+}
+
+model EventEntry {
+  id          String           @id @default(cuid()) @map("event_entry_id")
+  memberId    String           @map("member_id")
+  orderId     String           @map("shopify_order_id")
+  orderItemId String           @map("shopify_order_item_id")
+  eventName   String           @map("event_name")
+  eventDate   DateTime?        @map("event_date")
+  eventCategory String?        @map("event_category")
+  eventVenueName String?       @map("event_venue_name")
+  eventAddress String?         @map("event_address")
+  appliedAt   DateTime         @map("applied_at")
+  quantity    Int              @default(1)
+  status      EntryStatus
+  member      MemberProfile    @relation(fields: [memberId], references: [id], onDelete: Cascade)
+  order       ShopifyOrder     @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  orderItem   ShopifyOrderItem @relation(fields: [orderItemId], references: [id], onDelete: Cascade)
+
+  @@unique([orderItemId])
+  @@index([memberId, appliedAt])
+  @@index([eventName, eventDate])
+  @@map("event_entries")
+}
+
+model ContestSchedule {
+  id                String    @id @default(cuid()) @map("contest_schedule_id")
+  eventDate         DateTime  @map("event_date")
+  contestName       String    @map("contest_name")
+  venueName         String?   @map("venue_name")
+  nearestStation    String?   @map("nearest_station")
+  oneWayFare        String?   @map("one_way_fare")
+  travelMode        String?   @map("travel_mode")
+  travelTime        String?   @map("travel_time")
+  requiresHotel     Boolean?  @map("requires_hotel")
+  preTravelDate     DateTime? @map("pre_travel_date")
+  travelDescription String?   @map("travel_description")
+  address           String?   @map("address")
+  phoneNumber       String?   @map("phone_number")
+  createdAt         DateTime  @default(now()) @map("created_at")
+  updatedAt         DateTime  @updatedAt @map("updated_at")
+
+  @@unique([contestName, eventDate])
+  @@index([contestName])
+  @@map("contest_schedules")
+}
+
+model MemberAttributeOverride {
+  memberId          String       @id @map("member_id")
+  genderOverride    String?      @map("gender_override")
+  birthDateOverride DateTime?    @map("birth_date_override")
+  prefectureOverride String?     @map("prefecture_override")
+  notes             String?
+  updatedAt         DateTime     @updatedAt @map("updated_at")
+  member            MemberProfile @relation(fields: [memberId], references: [id], onDelete: Cascade)
+
+  @@map("member_attribute_overrides")
+}
+
+model SyncRun {
+  id             String      @id @default(cuid()) @map("sync_run_id")
+  target         String
+  status         SyncStatus
+  startedAt      DateTime    @default(now()) @map("started_at")
+  finishedAt     DateTime?   @map("finished_at")
+  recordsFetched Int         @default(0) @map("records_fetched")
+  errorMessage   String?     @map("error_message")
+
+  @@index([target, startedAt])
+  @@map("sync_runs")
+}

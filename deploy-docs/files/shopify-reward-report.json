@@ -1,0 +1,4500 @@
+{
+  "generatedAt": "2026-03-18T16:52:53.049Z",
+  "period": {
+    "start": "2026-03-01T00:00:00.000Z",
+    "end": null
+  },
+  "totals": {
+    "allOrders": 236,
+    "contestOrders": 73,
+    "rewardTargetOrders": 68,
+    "noEasyPointsOrders": 68,
+    "discountedContestOrders": 68,
+    "undiscountedRewardTargetOrders": 0
+  },
+  "topDiscountCodes": [
+    {
+      "key": "spoint3000",
+      "count": 35
+    }
+  ],
+  "topContestTags": [
+    {
+      "key": "2026シーズン",
+      "count": 119
+    },
+    {
+      "key": "コンテストエントリー",
+      "count": 116
+    },
+    {
+      "key": "no-easy-points",
+      "count": 110
+    },
+    {
+      "key": "還元対象",
+      "count": 108
+    },
+    {
+      "key": "Mens",
+      "count": 106
+    },
+    {
+      "key": "メンズフィジーク",
+      "count": 84
+    },
+    {
+      "key": "SEA OF JAPAN CHAMPIONSHIPS 2026",
+      "count": 24
+    },
+    {
+      "key": "BLAZE OPEN 2026",
+      "count": 19
+    },
+    {
+      "key": "West Tokyo Championships 2026",
+      "count": 18
+    },
+    {
+      "key": "Aprilis Championships 2026",
+      "count": 16
+    },
+    {
+      "key": "Discovery Championships 2026",
+      "count": 16
+    },
+    {
+      "key": "RISING STAR CHAMPIONSHIPS 2026",
+      "count": 12
+    },
+    {
+      "key": "West Gate Open 2026",
+      "count": 8
+    },
+    {
+      "key": "Womens",
+      "count": 8
+    },
+    {
+      "key": "ビキニ",
+      "count": 7
+    },
+    {
+      "key": "Test Championships 2026",
+      "count": 6
+    },
+    {
+      "key": "クラシックフィジーク",
+      "count": 5
+    },
+    {
+      "key": "メンズアスリートモデル",
+      "count": 5
+    },
+    {
+      "key": "ボディビルディング",
+      "count": 3
+    },
+    {
+      "key": "観戦チケット",
+      "count": 3
+    },
+    {
+      "key": "Others",
+      "count": 2
+    },
+    {
+      "key": "メンズフィットネスモデル",
+      "count": 2
+    },
+    {
+      "key": "FWJ",
+      "count": 1
+    },
+    {
+      "key": "SEA OF JAPAN CHANPIONSHIPS 2026",
+      "count": 1
+    },
+    {
+      "key": "ウェア・服",
+      "count": 1
+    },
+    {
+      "key": "キッズフィジーク",
+      "count": 1
+    },
+    {
+      "key": "クラシックスタイリッシュモデル",
+      "count": 1
+    },
+    {
+      "key": "ショーツ・ハーフパンツ",
+      "count": 1
+    },
+    {
+      "key": "バックステージパス",
+      "count": 1
+    },
+    {
+      "key": "ビキニモデル",
+      "count": 1
+    }
+  ],
+  "loyaltyPercentages": [
+    {
+      "key": 1,
+      "count": 52
+    }
+  ],
+  "sampleDiscountedContestOrders": [
+    {
+      "orderId": "gid://shopify/Order/7489471840575",
+      "orderNumber": "#8700",
+      "orderedAt": "2026-03-18T13:35:04.000Z",
+      "customerId": "gid://shopify/Customer/7619257958719",
+      "customerEmail": "okazaki619ab@ezweb.ne.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "G11",
+        "newsletter",
+        "subscription-46639382847-plan:年間サブスクリプション",
+        "subscription-46639382847-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": null,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "subtotalAmount": 5360,
+      "totalAmount": 5360,
+      "discountAmount": 5640,
+      "hasDiscount": true,
+      "discountCodes": [
+        "spoint3000"
+      ],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "1エントリー割引",
+          "description": null,
+          "applicable": null
+        },
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ALL",
+          "targetType": "LINE_ITEM",
+          "code": "spoint3000",
+          "title": null,
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17608470757695",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - マスターズ (50歳～)",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265332777279",
+          "productTitle": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "会社員"
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7489463124287",
+      "orderNumber": "#8699",
+      "orderedAt": "2026-03-18T13:25:07.000Z",
+      "customerId": "gid://shopify/Customer/7619441393983",
+      "customerEmail": "bita0813@i.softbank.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "G5",
+        "Login with Shop",
+        "Shop",
+        "subscription-48168141119-plan:年間サブスクリプション",
+        "subscription-48168141119-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": null,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "subtotalAmount": 5360,
+      "totalAmount": 5360,
+      "discountAmount": 5640,
+      "hasDiscount": true,
+      "discountCodes": [
+        "spoint3000"
+      ],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "1エントリー割引",
+          "description": null,
+          "applicable": null
+        },
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ALL",
+          "targetType": "LINE_ITEM",
+          "code": "spoint3000",
+          "title": null,
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17608455225663",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - ファーストチャレンジ",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265332777279",
+          "productTitle": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": ""
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "1枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7488987889983",
+      "orderNumber": "#8693",
+      "orderedAt": "2026-03-18T03:27:57.000Z",
+      "customerId": "gid://shopify/Customer/10302384210239",
+      "customerEmail": "kojima111110@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-48161685823-plan:年間サブスクリプション",
+        "subscription-48161685823-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": 0,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 13720,
+      "totalAmount": 13720,
+      "discountAmount": 8280,
+      "hasDiscount": true,
+      "discountCodes": [
+        "spoint3000"
+      ],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "2エントリー割引",
+          "description": null,
+          "applicable": null
+        },
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ALL",
+          "targetType": "LINE_ITEM",
+          "code": "spoint3000",
+          "title": null,
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17607700775231",
+          "title": "Aprilis Championships 2026 コンテストエントリー ボディビルディング",
+          "variantTitle": "ビギナー",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10239179751743",
+          "productTitle": "Aprilis Championships 2026 コンテストエントリー ボディビルディング",
+          "productTags": [
+            "2026シーズン",
+            "Aprilis Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "ボディビルディング",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Aprilis Championships",
+          "eventDate": "2026-04-24T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": ""
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17607700807999",
+          "title": "Aprilis Championships 2026 コンテストエントリー クラシックフィジーク",
+          "variantTitle": "クラシックフィジーク - ビギナー",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10239179718975",
+          "productTitle": "Aprilis Championships 2026 コンテストエントリー クラシックフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Aprilis Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "クラシックフィジーク",
+            "コンテストエントリー",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Aprilis Championships",
+          "eventDate": "2026-04-24T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": ""
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7487916900671",
+      "orderNumber": "#8685",
+      "orderedAt": "2026-03-17T10:12:46.000Z",
+      "customerId": "gid://shopify/Customer/10198549692735",
+      "customerEmail": "dragunv7.62mmr@icloud.com",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "Shop",
+        "subscription-47186903359-plan:年間サブスクリプション",
+        "subscription-47186903359-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": 700,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 5360,
+      "totalAmount": 5360,
+      "discountAmount": 5640,
+      "hasDiscount": true,
+      "discountCodes": [
+        "spoint3000"
+      ],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "1エントリー割引",
+          "description": null,
+          "applicable": null
+        },
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ALL",
+          "targetType": "LINE_ITEM",
+          "code": "spoint3000",
+          "title": null,
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17605590581567",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - ファーストチャレンジ",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265332777279",
+          "productTitle": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "調理師"
+            },
+            {
+              "key": "プロフィール",
+              "value": "トレーニング歴3年！\r\n目標は入賞！\r\n"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "1枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7486715625791",
+      "orderNumber": "#8677",
+      "orderedAt": "2026-03-16T14:10:08.000Z",
+      "customerId": "gid://shopify/Customer/10266952139071",
+      "customerEmail": "banchansoruto@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "Shop",
+        "subscription-47609020735-plan:年間サブスクリプション",
+        "subscription-47609020735-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": 0,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 13720,
+      "totalAmount": 13720,
+      "discountAmount": 8280,
+      "hasDiscount": true,
+      "discountCodes": [
+        "spoint3000"
+      ],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "2エントリー割引",
+          "description": null,
+          "applicable": null
+        },
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ALL",
+          "targetType": "LINE_ITEM",
+          "code": "spoint3000",
+          "title": null,
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17603434348863",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - ファーストチャレンジ",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265332777279",
+          "productTitle": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "学生"
+            },
+            {
+              "key": "プロフィール",
+              "value": "ここまで支えてくれた方々に結果で恩返ししたいと思います！"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17603434381631",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - オープン",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265332777279",
+          "productTitle": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "学生"
+            },
+            {
+              "key": "プロフィール",
+              "value": "勝つために本気で取り組んできました！応援よろしくお願いします！"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "1枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7486575903039",
+      "orderNumber": "#8676",
+      "orderedAt": "2026-03-16T12:12:23.000Z",
+      "customerId": "gid://shopify/Customer/10144163103039",
+      "customerEmail": "myouseiji.25@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "Shop",
+        "subscription-45372113215-plan:年間サブスクリプション",
+        "subscription-45372113215-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": 1000,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 21120,
+      "totalAmount": 21120,
+      "discountAmount": 5280,
+      "hasDiscount": true,
+      "discountCodes": [],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "2エントリー割引",
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17603111420223",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー キッズフィジーク",
+          "variantTitle": "キッズフィジーク",
+          "quantity": 1,
+          "price": 4400,
+          "productId": "gid://shopify/Product/10265333530943",
+          "productTitle": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー キッズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "no-easy-points",
+            "Others",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "キッズフィジーク",
+            "コンテストエントリー"
+          ],
+          "classification": "event_entry",
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": false,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "小学校4年生"
+            },
+            {
+              "key": "プロフィール",
+              "value": "毎日のようにサッカーで鍛えてます！細マッチョになりたい！"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17603111452991",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - マスターズ (40歳～)",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265333203263",
+          "productTitle": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": ""
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "1枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17603111485759",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - ファーストチャレンジ",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265333203263",
+          "productTitle": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "自営業"
+            },
+            {
+              "key": "プロフィール",
+              "value": "今日のため、日々精進してきました。全力で楽しんでいきたいと思います。"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "1枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7486507352383",
+      "orderNumber": "#8675",
+      "orderedAt": "2026-03-16T10:16:33.000Z",
+      "customerId": "gid://shopify/Customer/10256081879359",
+      "customerEmail": "shananlian4@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "Shop",
+        "subscription-47383740735-plan:年間サブスクリプション",
+        "subscription-47383740735-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": 0,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 13720,
+      "totalAmount": 13720,
+      "discountAmount": 8280,
+      "hasDiscount": true,
+      "discountCodes": [
+        "spoint3000"
+      ],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "2エントリー割引",
+          "description": null,
+          "applicable": null
+        },
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ALL",
+          "targetType": "LINE_ITEM",
+          "code": "spoint3000",
+          "title": null,
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17602993881407",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - オープン",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265333203263",
+          "productTitle": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "会社員"
+            },
+            {
+              "key": "プロフィール",
+              "value": "上位入賞を目指して精進しできたので、積み上げてきたものを発揮できるようなステージにしたいと思います。"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17602993914175",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - ファーストチャレンジ",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265333203263",
+          "productTitle": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": ""
+            },
+            {
+              "key": "プロフィール",
+              "value": "FWJは初挑戦です。日々の成果を発揮できるステージにします。"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7485676126527",
+      "orderNumber": "#8669",
+      "orderedAt": "2026-03-15T23:22:59.000Z",
+      "customerId": "gid://shopify/Customer/7619335160127",
+      "customerEmail": "ogayu2456@yahoo.co.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "G9",
+        "Login with Shop",
+        "Shop",
+        "subscription-47432237375-plan:年間サブスクリプション",
+        "subscription-47432237375-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": null,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "subtotalAmount": 20140,
+      "totalAmount": 20140,
+      "discountAmount": 2640,
+      "hasDiscount": true,
+      "discountCodes": [],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "1エントリー割引",
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17601817248063",
+          "title": "Aprilis Championships 2026 観戦チケット",
+          "variantTitle": "A席",
+          "quantity": 1,
+          "price": 5500,
+          "productId": "gid://shopify/Product/10255457550655",
+          "productTitle": "Aprilis Championships 2026 観戦チケット",
+          "productTags": [
+            "2026シーズン",
+            "Aprilis Championships 2026",
+            "観戦チケット"
+          ],
+          "classification": "normal_product",
+          "eventName": null,
+          "eventDate": null,
+          "isContestEntryByTag": false,
+          "isRewardTargetByTag": false,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": false,
+          "customAttributes": []
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17601817280831",
+          "title": "Aprilis Championships 2026 コンテストエントリー クラシックフィジーク",
+          "variantTitle": "クラシックフィジーク - ビギナー",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10239179718975",
+          "productTitle": "Aprilis Championships 2026 コンテストエントリー クラシックフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Aprilis Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "クラシックフィジーク",
+            "コンテストエントリー",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Aprilis Championships",
+          "eventDate": "2026-04-24T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "医師"
+            },
+            {
+              "key": "プロフィール",
+              "value": "憧れ目標とする師と出会い\r\nその指導下で準備して今シーズンより\r\nクラシックフィジークに移行参戦\r\n追い掛け応えるために今後も全力で挑みます"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "1枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17601817313599",
+          "title": "FWJクラシックフィジークショーツ",
+          "variantTitle": "L",
+          "quantity": 1,
+          "price": 6280,
+          "productId": "gid://shopify/Product/9864874131775",
+          "productTitle": "FWJクラシックフィジークショーツ",
+          "productTags": [
+            "FWJ",
+            "ウェア・服",
+            "ショーツ・ハーフパンツ",
+            "フィジークショーツ",
+            "メンズ"
+          ],
+          "classification": "normal_product",
+          "eventName": null,
+          "eventDate": null,
+          "isContestEntryByTag": false,
+          "isRewardTargetByTag": false,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": false,
+          "customAttributes": []
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7484848570687",
+      "orderNumber": "#8665",
+      "orderedAt": "2026-03-15T09:54:13.000Z",
+      "customerId": "gid://shopify/Customer/7695037301055",
+      "customerEmail": "s611119s@icloud.com",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "newsletter",
+        "Shop",
+        "subscription-48069968191-plan:年間サブスクリプション",
+        "subscription-48069968191-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": 40,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 5360,
+      "totalAmount": 5360,
+      "discountAmount": 5640,
+      "hasDiscount": true,
+      "discountCodes": [
+        "spoint3000"
+      ],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "1エントリー割引",
+          "description": null,
+          "applicable": null
+        },
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ALL",
+          "targetType": "LINE_ITEM",
+          "code": "spoint3000",
+          "title": null,
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17600277578047",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー クラシックスタイリッシュモデル",
+          "variantTitle": "クラシックスタイリッシュモデル - オープン",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265818825023",
+          "productTitle": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー クラシックスタイリッシュモデル",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "SEA OF JAPAN CHANPIONSHIPS 2026",
+            "クラシックスタイリッシュモデル",
+            "コンテストエントリー",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": ""
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7484718383423",
+      "orderNumber": "#8663",
+      "orderedAt": "2026-03-15T07:11:15.000Z",
+      "customerId": "gid://shopify/Customer/7619306946879",
+      "customerEmail": "etigotakeru@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "G9",
+        "Login with Shop",
+        "Shop",
+        "subscription-46379270463-plan:年間サブスクリプション",
+        "subscription-46379270463-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": 516,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 16720,
+      "totalAmount": 16720,
+      "discountAmount": 5280,
+      "hasDiscount": true,
+      "discountCodes": [],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "2エントリー割引",
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17600084214079",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - ファーストチャレンジ",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265332777279",
+          "productTitle": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "公務員"
+            },
+            {
+              "key": "プロフィール",
+              "value": "全力で頑張ります"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17600084246847",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - オープン",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265332777279",
+          "productTitle": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "公務員"
+            },
+            {
+              "key": "プロフィール",
+              "value": "全力で頑張ります"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "1枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7484708421951",
+      "orderNumber": "#8662",
+      "orderedAt": "2026-03-15T07:08:14.000Z",
+      "customerId": "gid://shopify/Customer/7619380019519",
+      "customerEmail": "87powersrrs@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "FWJカード会員（次回更新停止中）",
+        "G7",
+        "subscription-47125627199-cancel:2026-02-19"
+      ],
+      "loyaltyBalance": null,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "subtotalAmount": 22080,
+      "totalAmount": 22080,
+      "discountAmount": 10920,
+      "hasDiscount": true,
+      "discountCodes": [
+        "spoint3000"
+      ],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "3エントリー割引",
+          "description": null,
+          "applicable": null
+        },
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ALL",
+          "targetType": "LINE_ITEM",
+          "code": "spoint3000",
+          "title": null,
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17600073302335",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - マスターズ (40歳～)",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10239182012735",
+          "productTitle": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": ""
+            },
+            {
+              "key": "プロフィール",
+              "value": "３年ぶりの大会です！"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17600073335103",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - リーン",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10239182012735",
+          "productTitle": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": ""
+            },
+            {
+              "key": "プロフィール",
+              "value": "３年ぶりの大会です！"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17600073367871",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - オープン",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10239182012735",
+          "productTitle": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": ""
+            },
+            {
+              "key": "プロフィール",
+              "value": "３年ぶりの大会です！"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7484082815295",
+      "orderNumber": "#8658",
+      "orderedAt": "2026-03-15T04:01:54.000Z",
+      "customerId": "gid://shopify/Customer/10210906079551",
+      "customerEmail": "moromiki123070@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-46605599039-plan:年間サブスクリプション",
+        "subscription-46605599039-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": 0,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 8360,
+      "totalAmount": 8360,
+      "discountAmount": 2640,
+      "hasDiscount": true,
+      "discountCodes": [],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "1エントリー割引",
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17599538921791",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - リーン",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10239182012735",
+          "productTitle": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": ""
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7483989066047",
+      "orderNumber": "#8657",
+      "orderedAt": "2026-03-15T01:55:25.000Z",
+      "customerId": "gid://shopify/Customer/10265804341567",
+      "customerEmail": "suuya5477@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "FWJカード会員（次回更新停止中）",
+        "subscription-47575892287-cancel:2026-03-04"
+      ],
+      "loyaltyBalance": 0,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 8360,
+      "totalAmount": 8360,
+      "discountAmount": 2640,
+      "hasDiscount": true,
+      "discountCodes": [],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "1エントリー割引",
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17599377473855",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - ビギナー",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10239182012735",
+          "productTitle": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "パーソナルトレーナー"
+            },
+            {
+              "key": "プロフィール",
+              "value": "約6年ぶりの出場。楽しんでステージに立ちたいと思います！"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7483927429439",
+      "orderNumber": "#8655",
+      "orderedAt": "2026-03-15T00:46:33.000Z",
+      "customerId": "gid://shopify/Customer/7619448406335",
+      "customerEmail": "buonafortuna0314@yahoo.co.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "G5",
+        "subscription-48061776191-plan:年間サブスクリプション",
+        "subscription-48061776191-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": 500,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 16720,
+      "totalAmount": 16720,
+      "discountAmount": 5280,
+      "hasDiscount": true,
+      "discountCodes": [],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "2エントリー割引",
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17599268487487",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - リーン",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10239182012735",
+          "productTitle": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": ""
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17599268520255",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - オープン",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10239182012735",
+          "productTitle": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "パーソナルトレーナー"
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7482952941887",
+      "orderNumber": "#8650",
+      "orderedAt": "2026-03-14T11:55:26.000Z",
+      "customerId": "gid://shopify/Customer/10278106497343",
+      "customerEmail": "keitomiyuu@icloud.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47706374463-plan:年間サブスクリプション",
+        "subscription-47706374463-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": 0,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 25080,
+      "totalAmount": 25080,
+      "discountAmount": 7920,
+      "hasDiscount": true,
+      "discountCodes": [],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "3エントリー割引",
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17597390717247",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - リーン",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265333203263",
+          "productTitle": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "会社員"
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "1枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17597390750015",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - ビギナー",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265333203263",
+          "productTitle": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "会社員"
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "1枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17597390782783",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - ファーストチャレンジ",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265333203263",
+          "productTitle": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "会社員"
+            },
+            {
+              "key": "プロフィール",
+              "value": "普段から応援してくださった、友達、家族、恋人、職場の上司など皆様に感謝しながら全力で頑張ります！"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "1枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7482774323519",
+      "orderNumber": "#8649",
+      "orderedAt": "2026-03-14T06:49:12.000Z",
+      "customerId": "gid://shopify/Customer/10215112016191",
+      "customerEmail": "r.taguchi_06@outlook.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "FWJカード会員（次回更新停止中）",
+        "Login with Shop",
+        "Shop",
+        "subscription-48038117695-cancel:2026-03-14"
+      ],
+      "loyaltyBalance": 0,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 13720,
+      "totalAmount": 13720,
+      "discountAmount": 8280,
+      "hasDiscount": true,
+      "discountCodes": [
+        "spoint3000"
+      ],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "2エントリー割引",
+          "description": null,
+          "applicable": null
+        },
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ALL",
+          "targetType": "LINE_ITEM",
+          "code": "spoint3000",
+          "title": null,
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17597093871935",
+          "title": "Aprilis Championships 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - ビギナー",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10239179686207",
+          "productTitle": "Aprilis Championships 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Aprilis Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Aprilis Championships",
+          "eventDate": "2026-04-24T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "会社員"
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17597093904703",
+          "title": "Aprilis Championships 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - ファーストチャレンジ",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10239179686207",
+          "productTitle": "Aprilis Championships 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Aprilis Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Aprilis Championships",
+          "eventDate": "2026-04-24T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "会社員"
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7481628459327",
+      "orderNumber": "#8643",
+      "orderedAt": "2026-03-13T15:00:04.000Z",
+      "customerId": "gid://shopify/Customer/7619381920063",
+      "customerEmail": "pomu2429dream@yahoo.co.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "G7",
+        "Login with Shop",
+        "Shop",
+        "subscription-48015900991-plan:年間サブスクリプション",
+        "subscription-48015900991-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": 50,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 8360,
+      "totalAmount": 8360,
+      "discountAmount": 2640,
+      "hasDiscount": true,
+      "discountCodes": [],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "1エントリー割引",
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17594923352383",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - オープン",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265332777279",
+          "productTitle": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "トレーナー"
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7481446596927",
+      "orderNumber": "#8639",
+      "orderedAt": "2026-03-13T12:35:47.000Z",
+      "customerId": "gid://shopify/Customer/10261379973439",
+      "customerEmail": "b_b88@ybb.ne.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "Shop",
+        "subscription-47701524799-plan:年間サブスクリプション",
+        "subscription-47701524799-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": 0,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 8360,
+      "totalAmount": 8360,
+      "discountAmount": 2640,
+      "hasDiscount": true,
+      "discountCodes": [],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "1エントリー割引",
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17594633945407",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィットネスモデル",
+          "variantTitle": "メンズフィットネスモデル",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265332711743",
+          "productTitle": "BLAZE OPEN 2026 コンテストエントリー メンズフィットネスモデル",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィットネスモデル",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "理容師"
+            },
+            {
+              "key": "プロフィール",
+              "value": "52歳から、トレーニング開始して、57歳になりました。初めての出場です。"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7481162858815",
+      "orderNumber": "#8634",
+      "orderedAt": "2026-03-13T05:12:52.000Z",
+      "customerId": "gid://shopify/Customer/10281563717951",
+      "customerEmail": "gonsuke0703@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47773188415-plan:年間サブスクリプション",
+        "subscription-47773188415-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": 0,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 13720,
+      "totalAmount": 13720,
+      "discountAmount": 8280,
+      "hasDiscount": true,
+      "discountCodes": [
+        "spoint3000"
+      ],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "2エントリー割引",
+          "description": null,
+          "applicable": null
+        },
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ALL",
+          "targetType": "LINE_ITEM",
+          "code": "spoint3000",
+          "title": null,
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17594163855679",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - リーン",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265333203263",
+          "productTitle": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "消防士"
+            },
+            {
+              "key": "プロフィール",
+              "value": "3年振りですが今の自分の実力を知るために出場します。"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "1枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17594163888447",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - オープン",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265333203263",
+          "productTitle": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "消防士"
+            },
+            {
+              "key": "プロフィール",
+              "value": "3年振りですが今の自分の実力を知るために出場します。"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "1枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7480972017983",
+      "orderNumber": "#8633",
+      "orderedAt": "2026-03-13T01:17:03.000Z",
+      "customerId": "gid://shopify/Customer/7619352363327",
+      "customerEmail": "avaricious.spirit.taku.no23@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "G8",
+        "subscription-48001843519-plan:年間サブスクリプション",
+        "subscription-48001843519-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": null,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "subtotalAmount": 16060,
+      "totalAmount": 16060,
+      "discountAmount": 2640,
+      "hasDiscount": true,
+      "discountCodes": [],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "1エントリー割引",
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17593815990591",
+          "title": "BLAZE OPEN 2026 コンテストエントリー ファミリーフィジーク",
+          "variantTitle": "ファミリーフィジーク / 4名",
+          "quantity": 1,
+          "price": 7700,
+          "productId": "gid://shopify/Product/10265333039423",
+          "productTitle": "BLAZE OPEN 2026 コンテストエントリー ファミリーフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "no-easy-points",
+            "Others",
+            "コンテストエントリー",
+            "ファミリーフィジーク"
+          ],
+          "classification": "event_entry",
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": false,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "公務員"
+            },
+            {
+              "key": "プロフィール",
+              "value": "子供達と同じステージに立つのが夢でした。可愛い子供3人とのステージを楽しみたいと思います。\r\n\r\n"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17593816023359",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - ビギナー",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265332777279",
+          "productTitle": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "公務員"
+            },
+            {
+              "key": "プロフィール",
+              "value": "今回で出場4回目になります。\r\n去年より１つでも上の順位になれるように頑張ります。"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sampleUndiscountedRewardTargetOrders": [],
+  "sampleNoEasyPointsOrders": [
+    {
+      "orderId": "gid://shopify/Order/7489471840575",
+      "orderNumber": "#8700",
+      "orderedAt": "2026-03-18T13:35:04.000Z",
+      "customerId": "gid://shopify/Customer/7619257958719",
+      "customerEmail": "okazaki619ab@ezweb.ne.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "G11",
+        "newsletter",
+        "subscription-46639382847-plan:年間サブスクリプション",
+        "subscription-46639382847-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": null,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "subtotalAmount": 5360,
+      "totalAmount": 5360,
+      "discountAmount": 5640,
+      "hasDiscount": true,
+      "discountCodes": [
+        "spoint3000"
+      ],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "1エントリー割引",
+          "description": null,
+          "applicable": null
+        },
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ALL",
+          "targetType": "LINE_ITEM",
+          "code": "spoint3000",
+          "title": null,
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17608470757695",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - マスターズ (50歳～)",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265332777279",
+          "productTitle": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "会社員"
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7489463124287",
+      "orderNumber": "#8699",
+      "orderedAt": "2026-03-18T13:25:07.000Z",
+      "customerId": "gid://shopify/Customer/7619441393983",
+      "customerEmail": "bita0813@i.softbank.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "G5",
+        "Login with Shop",
+        "Shop",
+        "subscription-48168141119-plan:年間サブスクリプション",
+        "subscription-48168141119-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": null,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "subtotalAmount": 5360,
+      "totalAmount": 5360,
+      "discountAmount": 5640,
+      "hasDiscount": true,
+      "discountCodes": [
+        "spoint3000"
+      ],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "1エントリー割引",
+          "description": null,
+          "applicable": null
+        },
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ALL",
+          "targetType": "LINE_ITEM",
+          "code": "spoint3000",
+          "title": null,
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17608455225663",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - ファーストチャレンジ",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265332777279",
+          "productTitle": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": ""
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "1枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7488987889983",
+      "orderNumber": "#8693",
+      "orderedAt": "2026-03-18T03:27:57.000Z",
+      "customerId": "gid://shopify/Customer/10302384210239",
+      "customerEmail": "kojima111110@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-48161685823-plan:年間サブスクリプション",
+        "subscription-48161685823-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": 0,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 13720,
+      "totalAmount": 13720,
+      "discountAmount": 8280,
+      "hasDiscount": true,
+      "discountCodes": [
+        "spoint3000"
+      ],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "2エントリー割引",
+          "description": null,
+          "applicable": null
+        },
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ALL",
+          "targetType": "LINE_ITEM",
+          "code": "spoint3000",
+          "title": null,
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17607700775231",
+          "title": "Aprilis Championships 2026 コンテストエントリー ボディビルディング",
+          "variantTitle": "ビギナー",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10239179751743",
+          "productTitle": "Aprilis Championships 2026 コンテストエントリー ボディビルディング",
+          "productTags": [
+            "2026シーズン",
+            "Aprilis Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "ボディビルディング",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Aprilis Championships",
+          "eventDate": "2026-04-24T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": ""
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17607700807999",
+          "title": "Aprilis Championships 2026 コンテストエントリー クラシックフィジーク",
+          "variantTitle": "クラシックフィジーク - ビギナー",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10239179718975",
+          "productTitle": "Aprilis Championships 2026 コンテストエントリー クラシックフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Aprilis Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "クラシックフィジーク",
+            "コンテストエントリー",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Aprilis Championships",
+          "eventDate": "2026-04-24T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": ""
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7487916900671",
+      "orderNumber": "#8685",
+      "orderedAt": "2026-03-17T10:12:46.000Z",
+      "customerId": "gid://shopify/Customer/10198549692735",
+      "customerEmail": "dragunv7.62mmr@icloud.com",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "Shop",
+        "subscription-47186903359-plan:年間サブスクリプション",
+        "subscription-47186903359-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": 700,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 5360,
+      "totalAmount": 5360,
+      "discountAmount": 5640,
+      "hasDiscount": true,
+      "discountCodes": [
+        "spoint3000"
+      ],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "1エントリー割引",
+          "description": null,
+          "applicable": null
+        },
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ALL",
+          "targetType": "LINE_ITEM",
+          "code": "spoint3000",
+          "title": null,
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17605590581567",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - ファーストチャレンジ",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265332777279",
+          "productTitle": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "調理師"
+            },
+            {
+              "key": "プロフィール",
+              "value": "トレーニング歴3年！\r\n目標は入賞！\r\n"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "1枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7486715625791",
+      "orderNumber": "#8677",
+      "orderedAt": "2026-03-16T14:10:08.000Z",
+      "customerId": "gid://shopify/Customer/10266952139071",
+      "customerEmail": "banchansoruto@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "Shop",
+        "subscription-47609020735-plan:年間サブスクリプション",
+        "subscription-47609020735-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": 0,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 13720,
+      "totalAmount": 13720,
+      "discountAmount": 8280,
+      "hasDiscount": true,
+      "discountCodes": [
+        "spoint3000"
+      ],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "2エントリー割引",
+          "description": null,
+          "applicable": null
+        },
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ALL",
+          "targetType": "LINE_ITEM",
+          "code": "spoint3000",
+          "title": null,
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17603434348863",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - ファーストチャレンジ",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265332777279",
+          "productTitle": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "学生"
+            },
+            {
+              "key": "プロフィール",
+              "value": "ここまで支えてくれた方々に結果で恩返ししたいと思います！"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17603434381631",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - オープン",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265332777279",
+          "productTitle": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "学生"
+            },
+            {
+              "key": "プロフィール",
+              "value": "勝つために本気で取り組んできました！応援よろしくお願いします！"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "1枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7486575903039",
+      "orderNumber": "#8676",
+      "orderedAt": "2026-03-16T12:12:23.000Z",
+      "customerId": "gid://shopify/Customer/10144163103039",
+      "customerEmail": "myouseiji.25@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "Shop",
+        "subscription-45372113215-plan:年間サブスクリプション",
+        "subscription-45372113215-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": 1000,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 21120,
+      "totalAmount": 21120,
+      "discountAmount": 5280,
+      "hasDiscount": true,
+      "discountCodes": [],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "2エントリー割引",
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17603111420223",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー キッズフィジーク",
+          "variantTitle": "キッズフィジーク",
+          "quantity": 1,
+          "price": 4400,
+          "productId": "gid://shopify/Product/10265333530943",
+          "productTitle": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー キッズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "no-easy-points",
+            "Others",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "キッズフィジーク",
+            "コンテストエントリー"
+          ],
+          "classification": "event_entry",
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": false,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "小学校4年生"
+            },
+            {
+              "key": "プロフィール",
+              "value": "毎日のようにサッカーで鍛えてます！細マッチョになりたい！"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17603111452991",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - マスターズ (40歳～)",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265333203263",
+          "productTitle": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": ""
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "1枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17603111485759",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - ファーストチャレンジ",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265333203263",
+          "productTitle": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "自営業"
+            },
+            {
+              "key": "プロフィール",
+              "value": "今日のため、日々精進してきました。全力で楽しんでいきたいと思います。"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "1枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7486507352383",
+      "orderNumber": "#8675",
+      "orderedAt": "2026-03-16T10:16:33.000Z",
+      "customerId": "gid://shopify/Customer/10256081879359",
+      "customerEmail": "shananlian4@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "Shop",
+        "subscription-47383740735-plan:年間サブスクリプション",
+        "subscription-47383740735-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": 0,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 13720,
+      "totalAmount": 13720,
+      "discountAmount": 8280,
+      "hasDiscount": true,
+      "discountCodes": [
+        "spoint3000"
+      ],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "2エントリー割引",
+          "description": null,
+          "applicable": null
+        },
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ALL",
+          "targetType": "LINE_ITEM",
+          "code": "spoint3000",
+          "title": null,
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17602993881407",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - オープン",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265333203263",
+          "productTitle": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "会社員"
+            },
+            {
+              "key": "プロフィール",
+              "value": "上位入賞を目指して精進しできたので、積み上げてきたものを発揮できるようなステージにしたいと思います。"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17602993914175",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - ファーストチャレンジ",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265333203263",
+          "productTitle": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": ""
+            },
+            {
+              "key": "プロフィール",
+              "value": "FWJは初挑戦です。日々の成果を発揮できるステージにします。"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7485676126527",
+      "orderNumber": "#8669",
+      "orderedAt": "2026-03-15T23:22:59.000Z",
+      "customerId": "gid://shopify/Customer/7619335160127",
+      "customerEmail": "ogayu2456@yahoo.co.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "G9",
+        "Login with Shop",
+        "Shop",
+        "subscription-47432237375-plan:年間サブスクリプション",
+        "subscription-47432237375-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": null,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "subtotalAmount": 20140,
+      "totalAmount": 20140,
+      "discountAmount": 2640,
+      "hasDiscount": true,
+      "discountCodes": [],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "1エントリー割引",
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17601817248063",
+          "title": "Aprilis Championships 2026 観戦チケット",
+          "variantTitle": "A席",
+          "quantity": 1,
+          "price": 5500,
+          "productId": "gid://shopify/Product/10255457550655",
+          "productTitle": "Aprilis Championships 2026 観戦チケット",
+          "productTags": [
+            "2026シーズン",
+            "Aprilis Championships 2026",
+            "観戦チケット"
+          ],
+          "classification": "normal_product",
+          "eventName": null,
+          "eventDate": null,
+          "isContestEntryByTag": false,
+          "isRewardTargetByTag": false,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": false,
+          "customAttributes": []
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17601817280831",
+          "title": "Aprilis Championships 2026 コンテストエントリー クラシックフィジーク",
+          "variantTitle": "クラシックフィジーク - ビギナー",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10239179718975",
+          "productTitle": "Aprilis Championships 2026 コンテストエントリー クラシックフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Aprilis Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "クラシックフィジーク",
+            "コンテストエントリー",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Aprilis Championships",
+          "eventDate": "2026-04-24T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "医師"
+            },
+            {
+              "key": "プロフィール",
+              "value": "憧れ目標とする師と出会い\r\nその指導下で準備して今シーズンより\r\nクラシックフィジークに移行参戦\r\n追い掛け応えるために今後も全力で挑みます"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "1枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17601817313599",
+          "title": "FWJクラシックフィジークショーツ",
+          "variantTitle": "L",
+          "quantity": 1,
+          "price": 6280,
+          "productId": "gid://shopify/Product/9864874131775",
+          "productTitle": "FWJクラシックフィジークショーツ",
+          "productTags": [
+            "FWJ",
+            "ウェア・服",
+            "ショーツ・ハーフパンツ",
+            "フィジークショーツ",
+            "メンズ"
+          ],
+          "classification": "normal_product",
+          "eventName": null,
+          "eventDate": null,
+          "isContestEntryByTag": false,
+          "isRewardTargetByTag": false,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": false,
+          "customAttributes": []
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7484848570687",
+      "orderNumber": "#8665",
+      "orderedAt": "2026-03-15T09:54:13.000Z",
+      "customerId": "gid://shopify/Customer/7695037301055",
+      "customerEmail": "s611119s@icloud.com",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "newsletter",
+        "Shop",
+        "subscription-48069968191-plan:年間サブスクリプション",
+        "subscription-48069968191-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": 40,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 5360,
+      "totalAmount": 5360,
+      "discountAmount": 5640,
+      "hasDiscount": true,
+      "discountCodes": [
+        "spoint3000"
+      ],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "1エントリー割引",
+          "description": null,
+          "applicable": null
+        },
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ALL",
+          "targetType": "LINE_ITEM",
+          "code": "spoint3000",
+          "title": null,
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17600277578047",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー クラシックスタイリッシュモデル",
+          "variantTitle": "クラシックスタイリッシュモデル - オープン",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265818825023",
+          "productTitle": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー クラシックスタイリッシュモデル",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "SEA OF JAPAN CHANPIONSHIPS 2026",
+            "クラシックスタイリッシュモデル",
+            "コンテストエントリー",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": ""
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7484718383423",
+      "orderNumber": "#8663",
+      "orderedAt": "2026-03-15T07:11:15.000Z",
+      "customerId": "gid://shopify/Customer/7619306946879",
+      "customerEmail": "etigotakeru@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "G9",
+        "Login with Shop",
+        "Shop",
+        "subscription-46379270463-plan:年間サブスクリプション",
+        "subscription-46379270463-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": 516,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 16720,
+      "totalAmount": 16720,
+      "discountAmount": 5280,
+      "hasDiscount": true,
+      "discountCodes": [],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "2エントリー割引",
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17600084214079",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - ファーストチャレンジ",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265332777279",
+          "productTitle": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "公務員"
+            },
+            {
+              "key": "プロフィール",
+              "value": "全力で頑張ります"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17600084246847",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - オープン",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265332777279",
+          "productTitle": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "公務員"
+            },
+            {
+              "key": "プロフィール",
+              "value": "全力で頑張ります"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "1枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7484708421951",
+      "orderNumber": "#8662",
+      "orderedAt": "2026-03-15T07:08:14.000Z",
+      "customerId": "gid://shopify/Customer/7619380019519",
+      "customerEmail": "87powersrrs@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "FWJカード会員（次回更新停止中）",
+        "G7",
+        "subscription-47125627199-cancel:2026-02-19"
+      ],
+      "loyaltyBalance": null,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "subtotalAmount": 22080,
+      "totalAmount": 22080,
+      "discountAmount": 10920,
+      "hasDiscount": true,
+      "discountCodes": [
+        "spoint3000"
+      ],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "3エントリー割引",
+          "description": null,
+          "applicable": null
+        },
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ALL",
+          "targetType": "LINE_ITEM",
+          "code": "spoint3000",
+          "title": null,
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17600073302335",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - マスターズ (40歳～)",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10239182012735",
+          "productTitle": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": ""
+            },
+            {
+              "key": "プロフィール",
+              "value": "３年ぶりの大会です！"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17600073335103",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - リーン",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10239182012735",
+          "productTitle": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": ""
+            },
+            {
+              "key": "プロフィール",
+              "value": "３年ぶりの大会です！"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17600073367871",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - オープン",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10239182012735",
+          "productTitle": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": ""
+            },
+            {
+              "key": "プロフィール",
+              "value": "３年ぶりの大会です！"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7484082815295",
+      "orderNumber": "#8658",
+      "orderedAt": "2026-03-15T04:01:54.000Z",
+      "customerId": "gid://shopify/Customer/10210906079551",
+      "customerEmail": "moromiki123070@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-46605599039-plan:年間サブスクリプション",
+        "subscription-46605599039-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": 0,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 8360,
+      "totalAmount": 8360,
+      "discountAmount": 2640,
+      "hasDiscount": true,
+      "discountCodes": [],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "1エントリー割引",
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17599538921791",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - リーン",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10239182012735",
+          "productTitle": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": ""
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7483989066047",
+      "orderNumber": "#8657",
+      "orderedAt": "2026-03-15T01:55:25.000Z",
+      "customerId": "gid://shopify/Customer/10265804341567",
+      "customerEmail": "suuya5477@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "FWJカード会員（次回更新停止中）",
+        "subscription-47575892287-cancel:2026-03-04"
+      ],
+      "loyaltyBalance": 0,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 8360,
+      "totalAmount": 8360,
+      "discountAmount": 2640,
+      "hasDiscount": true,
+      "discountCodes": [],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "1エントリー割引",
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17599377473855",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - ビギナー",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10239182012735",
+          "productTitle": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "パーソナルトレーナー"
+            },
+            {
+              "key": "プロフィール",
+              "value": "約6年ぶりの出場。楽しんでステージに立ちたいと思います！"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7483927429439",
+      "orderNumber": "#8655",
+      "orderedAt": "2026-03-15T00:46:33.000Z",
+      "customerId": "gid://shopify/Customer/7619448406335",
+      "customerEmail": "buonafortuna0314@yahoo.co.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "G5",
+        "subscription-48061776191-plan:年間サブスクリプション",
+        "subscription-48061776191-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": 500,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 16720,
+      "totalAmount": 16720,
+      "discountAmount": 5280,
+      "hasDiscount": true,
+      "discountCodes": [],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "2エントリー割引",
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17599268487487",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - リーン",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10239182012735",
+          "productTitle": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": ""
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17599268520255",
+          "title": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - オープン",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10239182012735",
+          "productTitle": "West Tokyo Championships 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "West Tokyo Championships 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "West Tokyo Championships",
+          "eventDate": "2026-04-03T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "パーソナルトレーナー"
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7482952941887",
+      "orderNumber": "#8650",
+      "orderedAt": "2026-03-14T11:55:26.000Z",
+      "customerId": "gid://shopify/Customer/10278106497343",
+      "customerEmail": "keitomiyuu@icloud.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47706374463-plan:年間サブスクリプション",
+        "subscription-47706374463-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": 0,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 25080,
+      "totalAmount": 25080,
+      "discountAmount": 7920,
+      "hasDiscount": true,
+      "discountCodes": [],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "3エントリー割引",
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17597390717247",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - リーン",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265333203263",
+          "productTitle": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "会社員"
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "1枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17597390750015",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - ビギナー",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265333203263",
+          "productTitle": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "会社員"
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "1枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17597390782783",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - ファーストチャレンジ",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265333203263",
+          "productTitle": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "会社員"
+            },
+            {
+              "key": "プロフィール",
+              "value": "普段から応援してくださった、友達、家族、恋人、職場の上司など皆様に感謝しながら全力で頑張ります！"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "1枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7482774323519",
+      "orderNumber": "#8649",
+      "orderedAt": "2026-03-14T06:49:12.000Z",
+      "customerId": "gid://shopify/Customer/10215112016191",
+      "customerEmail": "r.taguchi_06@outlook.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "FWJカード会員（次回更新停止中）",
+        "Login with Shop",
+        "Shop",
+        "subscription-48038117695-cancel:2026-03-14"
+      ],
+      "loyaltyBalance": 0,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 13720,
+      "totalAmount": 13720,
+      "discountAmount": 8280,
+      "hasDiscount": true,
+      "discountCodes": [
+        "spoint3000"
+      ],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "2エントリー割引",
+          "description": null,
+          "applicable": null
+        },
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ALL",
+          "targetType": "LINE_ITEM",
+          "code": "spoint3000",
+          "title": null,
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17597093871935",
+          "title": "Aprilis Championships 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - ビギナー",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10239179686207",
+          "productTitle": "Aprilis Championships 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Aprilis Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Aprilis Championships",
+          "eventDate": "2026-04-24T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "会社員"
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17597093904703",
+          "title": "Aprilis Championships 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - ファーストチャレンジ",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10239179686207",
+          "productTitle": "Aprilis Championships 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Aprilis Championships 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Aprilis Championships",
+          "eventDate": "2026-04-24T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "会社員"
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7481628459327",
+      "orderNumber": "#8643",
+      "orderedAt": "2026-03-13T15:00:04.000Z",
+      "customerId": "gid://shopify/Customer/7619381920063",
+      "customerEmail": "pomu2429dream@yahoo.co.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "G7",
+        "Login with Shop",
+        "Shop",
+        "subscription-48015900991-plan:年間サブスクリプション",
+        "subscription-48015900991-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": 50,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 8360,
+      "totalAmount": 8360,
+      "discountAmount": 2640,
+      "hasDiscount": true,
+      "discountCodes": [],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "1エントリー割引",
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17594923352383",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - オープン",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265332777279",
+          "productTitle": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "トレーナー"
+            },
+            {
+              "key": "プロフィール",
+              "value": ""
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7481446596927",
+      "orderNumber": "#8639",
+      "orderedAt": "2026-03-13T12:35:47.000Z",
+      "customerId": "gid://shopify/Customer/10261379973439",
+      "customerEmail": "b_b88@ybb.ne.jp",
+      "customerTags": [
+        "FWJカード会員",
+        "Login with Shop",
+        "Shop",
+        "subscription-47701524799-plan:年間サブスクリプション",
+        "subscription-47701524799-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": 0,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 8360,
+      "totalAmount": 8360,
+      "discountAmount": 2640,
+      "hasDiscount": true,
+      "discountCodes": [],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "1エントリー割引",
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17594633945407",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィットネスモデル",
+          "variantTitle": "メンズフィットネスモデル",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265332711743",
+          "productTitle": "BLAZE OPEN 2026 コンテストエントリー メンズフィットネスモデル",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィットネスモデル",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "理容師"
+            },
+            {
+              "key": "プロフィール",
+              "value": "52歳から、トレーニング開始して、57歳になりました。初めての出場です。"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7481162858815",
+      "orderNumber": "#8634",
+      "orderedAt": "2026-03-13T05:12:52.000Z",
+      "customerId": "gid://shopify/Customer/10281563717951",
+      "customerEmail": "gonsuke0703@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "subscription-47773188415-plan:年間サブスクリプション",
+        "subscription-47773188415-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": 0,
+      "loyaltyTier": "Default",
+      "loyaltyPercentage": 1,
+      "subtotalAmount": 13720,
+      "totalAmount": 13720,
+      "discountAmount": 8280,
+      "hasDiscount": true,
+      "discountCodes": [
+        "spoint3000"
+      ],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "2エントリー割引",
+          "description": null,
+          "applicable": null
+        },
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ALL",
+          "targetType": "LINE_ITEM",
+          "code": "spoint3000",
+          "title": null,
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17594163855679",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - リーン",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265333203263",
+          "productTitle": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "消防士"
+            },
+            {
+              "key": "プロフィール",
+              "value": "3年振りですが今の自分の実力を知るために出場します。"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "1枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17594163888447",
+          "title": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - オープン",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265333203263",
+          "productTitle": "SEA OF JAPAN CHAMPIONSHIPS 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "Mens",
+            "no-easy-points",
+            "SEA OF JAPAN CHAMPIONSHIPS 2026",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Sea of Japan Championships",
+          "eventDate": "2026-05-15T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "消防士"
+            },
+            {
+              "key": "プロフィール",
+              "value": "3年振りですが今の自分の実力を知るために出場します。"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "1枚"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "orderId": "gid://shopify/Order/7480972017983",
+      "orderNumber": "#8633",
+      "orderedAt": "2026-03-13T01:17:03.000Z",
+      "customerId": "gid://shopify/Customer/7619352363327",
+      "customerEmail": "avaricious.spirit.taku.no23@gmail.com",
+      "customerTags": [
+        "FWJカード会員",
+        "G8",
+        "subscription-48001843519-plan:年間サブスクリプション",
+        "subscription-48001843519-product:FWJカード会員申し込み"
+      ],
+      "loyaltyBalance": null,
+      "loyaltyTier": null,
+      "loyaltyPercentage": null,
+      "subtotalAmount": 16060,
+      "totalAmount": 16060,
+      "discountAmount": 2640,
+      "hasDiscount": true,
+      "discountCodes": [],
+      "discountApplications": [
+        {
+          "allocationMethod": "ACROSS",
+          "targetSelection": "ENTITLED",
+          "targetType": "LINE_ITEM",
+          "code": null,
+          "title": "1エントリー割引",
+          "description": null,
+          "applicable": null
+        }
+      ],
+      "items": [
+        {
+          "orderItemId": "gid://shopify/LineItem/17593815990591",
+          "title": "BLAZE OPEN 2026 コンテストエントリー ファミリーフィジーク",
+          "variantTitle": "ファミリーフィジーク / 4名",
+          "quantity": 1,
+          "price": 7700,
+          "productId": "gid://shopify/Product/10265333039423",
+          "productTitle": "BLAZE OPEN 2026 コンテストエントリー ファミリーフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "no-easy-points",
+            "Others",
+            "コンテストエントリー",
+            "ファミリーフィジーク"
+          ],
+          "classification": "event_entry",
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": false,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "公務員"
+            },
+            {
+              "key": "プロフィール",
+              "value": "子供達と同じステージに立つのが夢でした。可愛い子供3人とのステージを楽しみたいと思います。\r\n\r\n"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        },
+        {
+          "orderItemId": "gid://shopify/LineItem/17593816023359",
+          "title": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "variantTitle": "メンズフィジーク - ビギナー",
+          "quantity": 1,
+          "price": 11000,
+          "productId": "gid://shopify/Product/10265332777279",
+          "productTitle": "BLAZE OPEN 2026 コンテストエントリー メンズフィジーク",
+          "productTags": [
+            "2026シーズン",
+            "BLAZE OPEN 2026",
+            "Mens",
+            "no-easy-points",
+            "コンテストエントリー",
+            "メンズフィジーク",
+            "還元対象"
+          ],
+          "classification": "event_entry",
+          "eventName": "Blaze Open",
+          "eventDate": "2026-05-02T15:00:00.000Z",
+          "isContestEntryByTag": true,
+          "isRewardTargetByTag": true,
+          "isNoEasyDiscount": false,
+          "isNoEasyPoints": true,
+          "customAttributes": [
+            {
+              "key": "職業",
+              "value": "公務員"
+            },
+            {
+              "key": "プロフィール",
+              "value": "今回で出場4回目になります。\r\n去年より１つでも上の順位になれるように頑張ります。"
+            },
+            {
+              "key": "バックステージパス購入予定",
+              "value": "0枚"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "handle": "sample-entry-product",
+      "title": "Sample Entry Product",
+      "status": "ACTIVE",
+      "productType": "Contest Entry",
+      "tags": {
+        "add": ["還元対象", "member-only"],
+        "remove": ["legacy-tag"]
+      },
+      "metafields": [
+        {
+          "namespace": "fwj",
+          "key": "purchase_eligibility",
+          "type": "single_line_text_field",
+          "value": "member_only"
+        }
+      ],
+      "variants": [
+        {
+          "sku": "SAMPLE-ENTRY-001",
+          "price": "11000",
+          "compareAtPrice": "13000"
+        }
+      ]
+    }
+  ],
+  "customers": [
+    {
+      "email": "member@example.com",
+      "tags": {
+        "add": ["FWJカード会員", "G9"],
+        "remove": ["停止中"]
+      },
+      "metafields": [
+        {
+          "namespace": "fwj",
+          "key": "member_rank",
+          "type": "single_line_text_field",
+          "value": "Titan"
+        }
+      ]
+    }
+  ]
+}

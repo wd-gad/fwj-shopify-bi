@@ -1,0 +1,27 @@
+{
+  "name": "shopify-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --env-file=.env server.js",
+    "contest:import": "node --env-file=.env scripts/import-contest-schedules.js",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:push": "prisma db push",
+    "shopify:audit": "node --env-file=.env scripts/shopify-audit.js",
+    "shopify:config": "node --env-file=.env scripts/shopify-config-cli.js",
+    "shopify:monthly-points": "node --env-file=.env scripts/shopify-monthly-points.js",
+    "shopify:preflight": "node --env-file=.env scripts/shopify-preflight.js",
+    "shopify:reward-report": "node --env-file=.env scripts/shopify-reward-report.js",
+    "shopify:sync": "node --env-file=.env scripts/shopify-sync.js",
+    "shopify:rebuild": "node --env-file=.env scripts/rebuild-analytics.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.6.0",
+    "dotenv": "^17.3.1"
+  },
+  "devDependencies": {
+    "prisma": "^6.6.0"
+  }
+}

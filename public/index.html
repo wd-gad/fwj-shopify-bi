@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FWJ Member BI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="page-top">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">FWJ Member BI</p>
+          <h1>FWJ CONTEST BUSINESS INTELLIGENCE</h1>
+          <p class="lede">
+            会員加入、イベント申込、地域傾向を同じ画面で確認できるローカルダッシュボードです。
+          </p>
+          <p class="eyebrow">Display window: 2026-01-01 and later</p>
+        </div>
+        <div class="hero-meta">
+          <div class="meta-card sync-meta-card">
+            <div class="sync-meta-layout">
+              <div class="sync-meta-summary">
+                <span class="meta-label">Sync Status</span>
+                <div id="syncLoading" class="sync-loading" aria-hidden="true">
+                  <span class="sync-spinner"></span>
+                  <span class="sync-pulse"></span>
+                </div>
+                <strong id="lastUpdatedAt">Checking...</strong>
+                <span id="syncStatusLabel" class="meta-note">自動更新: フル 24:30 / 増分 03:15, 06:15, 09:15, 12:15, 15:15, 18:15, 21:15</span>
+              </div>
+              <div class="sync-meta-side">
+                <div class="sync-side-item">
+                  <span class="meta-label">Data Source</span>
+                  <strong>Shopify + PostgreSQL</strong>
+                </div>
+                <div class="sync-side-item">
+                  <span class="meta-label">View</span>
+                  <strong>Summary / Events / Members</strong>
+                </div>
+              </div>
+              <div class="sync-actions-row">
+                <label class="filter-field sync-select-field">
+                  <span class="filter-label">Export PDF Scope</span>
+                  <select id="exportScopeSelect">
+                    <option value="selected">Selected contest</option>
+                    <option value="all">All contests</option>
+                  </select>
+                </label>
+                <button id="exportPdfButton" class="ghost-button sync-button">Export PDF</button>
+                <button id="syncNowButton" class="primary-button sync-button admin-only">Update Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <nav class="tab-bar" aria-label="Dashboard sections">
+        <button type="button" id="tabOverview" class="tab-button is-active" data-tab-target="overviewTab" aria-selected="true"><span>Overview</span></button>
+        <button type="button" id="tabContest" class="tab-button" data-tab-target="contestTab" aria-selected="false"><span>Contest Info</span></button>
+        <button type="button" id="tabSpectatorInfo" class="tab-button" data-tab-target="spectatorInfoTab" aria-selected="false"><span>Spectator Info</span></button>
+        <button type="button" id="tabCustomerInfo" class="tab-button" data-tab-target="customerInfoTab" aria-selected="false"><span>Athlete Info</span></button>
+        <button type="button" id="tabCustomerDb" class="tab-button" data-tab-target="customerDbTab" aria-selected="false"><span>Customer DB</span></button>
+      </nav>
+      </div>
+
+      <main class="dashboard">
+        <div id="overviewTab" class="tab-panel is-active" role="tabpanel" aria-labelledby="tabOverview">
+        <section class="panel panel-wide customer-db-panel">
+          <div class="panel-header">
+            <div>
+              <p class="section-label">Overview</p>
+              <h2>Revenue And Volume</h2>
+              <p id="overviewSummary" class="muted">Membership filters are applied to this section</p>
+            </div>
+            <div class="filter-bar-group">
+              <form id="memberFilters" class="filter-bar">
+                <div class="filter-grid">
+                    <label class="filter-field">
+                      <span class="filter-label">Region</span>
+                      <select name="region">
+                        <option value="">All</option>
+                        <option value="北海道">北海道</option>
+                        <option value="東北">東北</option>
+                        <option value="関東">関東</option>
+                        <option value="中部">中部</option>
+                        <option value="近畿">近畿</option>
+                        <option value="中国">中国</option>
+                        <option value="四国">四国</option>
+                        <option value="九州・沖縄">九州・沖縄</option>
+                      </select>
+                    </label>
+                    <label class="filter-field">
+                      <span class="filter-label">Prefecture</span>
+                      <input type="text" name="prefecture" placeholder="例: 沖縄 / 東京都" />
+                    </label>
+                    <label class="filter-field">
+                      <span class="filter-label">From</span>
+                      <input type="date" name="joinedFrom" value="2026-01-01" />
+                    </label>
+                    <label class="filter-field">
+                      <span class="filter-label">To</span>
+                      <input type="date" name="joinedTo" />
+                    </label>
+                    <label class="filter-field">
+                      <span class="filter-label">Age band</span>
+                      <select name="ageBand">
+                        <option value="">All</option>
+                        <option value="10s">10s</option>
+                        <option value="20s">20s</option>
+                        <option value="30s">30s</option>
+                        <option value="40s">40s</option>
+                        <option value="50s">50s</option>
+                        <option value="60s">60s</option>
+                        <option value="70s">70s+</option>
+                      </select>
+                    </label>
+                    <label class="filter-field">
+                      <span class="filter-label">Granularity</span>
+                      <select name="granularity">
+                        <option value="month">Monthly</option>
+                        <option value="week" selected>Weekly</option>
+                      </select>
+                    </label>
+                    <label class="filter-field">
+                      <span class="filter-label">Membership status</span>
+                      <select name="membershipStatus">
+                        <option value="">All status</option>
+                        <option value="active" selected>active</option>
+                        <option value="expired">expired</option>
+                        <option value="refunded">refunded</option>
+                        <option value="cancelled">cancelled</option>
+                      </select>
+                    </label>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div id="summaryCards" class="overview-grid"></div>
+          <div class="overview-chart-grid">
+            <div class="event-insight-block event-spotlight-card revenue-card">
+              <div class="panel-header panel-header-compact">
+                <div>
+                  <p class="section-label">Revenue Mix</p>
+                  <h2>Sales By Category</h2>
+                </div>
+                <div class="chart-toggle chart-toggle-inline" role="group" aria-label="Overview revenue chart type">
+                  <button type="button" class="chart-toggle-button chart-toggle-button-small chart-type-line" data-chart-target="overviewRevenueChart" data-chart-type="line" aria-label="Line chart">LINE</button>
+                  <button type="button" class="chart-toggle-button chart-toggle-button-small chart-type-bar" data-chart-target="overviewRevenueChart" data-chart-type="bar" aria-label="Bar chart">BAR</button>
+                  <button type="button" class="chart-toggle-button chart-toggle-button-small chart-type-pie is-active" data-chart-target="overviewRevenueChart" data-chart-type="pie" aria-label="Pie chart">PIE</button>
+                </div>
+              </div>
+              <div id="overviewRevenueChart" class="timeline-list"></div>
+            </div>
+            <div class="event-insight-block event-spotlight-card category-card">
+              <div class="panel-header panel-header-compact">
+                <div>
+                  <p class="section-label">Volume Mix</p>
+                  <h2>Orders By Category</h2>
+                </div>
+                <div class="chart-toggle chart-toggle-inline" role="group" aria-label="Overview volume chart type">
+                  <button type="button" class="chart-toggle-button chart-toggle-button-small chart-type-line" data-chart-target="overviewVolumeChart" data-chart-type="line" aria-label="Line chart">LINE</button>
+                  <button type="button" class="chart-toggle-button chart-toggle-button-small chart-type-bar" data-chart-target="overviewVolumeChart" data-chart-type="bar" aria-label="Bar chart">BAR</button>
+                  <button type="button" class="chart-toggle-button chart-toggle-button-small chart-type-pie is-active" data-chart-target="overviewVolumeChart" data-chart-type="pie" aria-label="Pie chart">PIE</button>
+                </div>
+              </div>
+              <div id="overviewVolumeChart" class="timeline-list"></div>
+            </div>
+          </div>
+        </section>
+        </div>
+
+        <div id="customerInfoTab" class="tab-panel" role="tabpanel" aria-labelledby="tabCustomerInfo" hidden>
+        <section class="panel panel-wide membership-panel">
+          <div class="panel-header">
+            <div>
+              <p class="section-label">Members</p>
+              <h2>Membership Purchase Trend</h2>
+            </div>
+            <p class="muted">Overview filters are applied to this section</p>
+          </div>
+          <div class="member-insight-grid">
+            <div class="event-insight-block event-spotlight-card region-card">
+              <div class="panel-header panel-header-compact">
+                <div>
+                  <p class="section-label">Region</p>
+                  <h2>Memberships By Region</h2>
+                </div>
+                <div class="chart-toggle chart-toggle-inline" role="group" aria-label="Membership region chart type">
+                  <button type="button" class="chart-toggle-button chart-toggle-button-small chart-type-line" data-chart-target="memberRegionChart" data-chart-type="line" aria-label="Line chart">LINE</button>
+                  <button type="button" class="chart-toggle-button chart-toggle-button-small chart-type-bar" data-chart-target="memberRegionChart" data-chart-type="bar" aria-label="Bar chart">BAR</button>
+                  <button type="button" class="chart-toggle-button chart-toggle-button-small chart-type-pie is-active" data-chart-target="memberRegionChart" data-chart-type="pie" aria-label="Pie chart">PIE</button>
+                </div>
+              </div>
+              <div id="memberRegionChart" class="timeline-list"></div>
+            </div>
+            <div class="event-insight-block event-spotlight-card prefecture-card">
+              <div class="panel-header panel-header-compact">
+                <div>
+                  <p class="section-label">Prefecture</p>
+                  <h2>Memberships By Prefecture</h2>
+                  <p class="chart-note">上位7位までを表示</p>
+                </div>
+                <div class="chart-toggle chart-toggle-inline" role="group" aria-label="Membership prefecture chart type">
+                  <button type="button" class="chart-toggle-button chart-toggle-button-small chart-type-line" data-chart-target="memberPrefectureChart" data-chart-type="line" aria-label="Line chart">LINE</button>
+                  <button type="button" class="chart-toggle-button chart-toggle-button-small chart-type-bar" data-chart-target="memberPrefectureChart" data-chart-type="bar" aria-label="Bar chart">BAR</button>
+                  <button type="button" class="chart-toggle-button chart-toggle-button-small chart-type-pie is-active" data-chart-target="memberPrefectureChart" data-chart-type="pie" aria-label="Pie chart">PIE</button>
+                </div>
+              </div>
+              <div id="memberPrefectureChart" class="timeline-list"></div>
+            </div>
+          </div>
+          <div class="filter-chart-block">
+            <div class="panel-header panel-header-compact">
+              <div>
+                <p class="section-label">Filtered Result</p>
+                <h2>Membership Purchase Trend</h2>
+              </div>
+              <div class="chart-header-actions">
+                <p id="filterSummary" class="muted">2026年以降の加入データを表示</p>
+                <div class="chart-toggle chart-toggle-inline" role="group" aria-label="Membership trend chart type">
+                  <button type="button" class="chart-toggle-button chart-toggle-button-small chart-type-line is-active" data-chart-target="filterChart" data-chart-type="line" aria-label="Line chart">LINE</button>
+                  <button type="button" class="chart-toggle-button chart-toggle-button-small chart-type-bar" data-chart-target="filterChart" data-chart-type="bar" aria-label="Bar chart">BAR</button>
+                  <button type="button" class="chart-toggle-button chart-toggle-button-small chart-type-pie" data-chart-target="filterChart" data-chart-type="pie" aria-label="Pie chart">PIE</button>
+                </div>
+              </div>
+            </div>
+            <div id="filterChart" class="timeline-list"></div>
+          </div>
+        </section>
+        </div>
+
+        <div id="customerDbTab" class="tab-panel" role="tabpanel" aria-labelledby="tabCustomerDb" hidden>
+        <section class="panel panel-wide customer-db-panel">
+          <div class="panel-header">
+            <div>
+              <p class="section-label">Customer DB</p>
+              <h2>Customer Records</h2>
+              <p id="customerTableSummary" class="muted">Overview filters are applied to this section</p>
+            </div>
+            <div class="customer-db-controls">
+              <label class="filter-field customer-control-field customer-audience-field">
+                <span class="filter-label">Attendee</span>
+                <select id="customerAudienceFilter">
+                  <option value="">All</option>
+                  <option value="attendee">Attendee</option>
+                  <option value="spectator">Spectator</option>
+                </select>
+              </label>
+              <label class="filter-field customer-control-field">
+                <span class="filter-label">Contest</span>
+                <select id="customerContestFilter">
+                  <option value="">All contests</option>
+                </select>
+              </label>
+              <details class="column-picker customer-control-field">
+                <summary>
+                  <span class="column-picker-label">Columns</span>
+                  <span class="column-picker-hint">Choose visible fields</span>
+                </summary>
+                <div class="column-picker-popover">
+                  <p class="column-picker-note">Choose visible fields for this table</p>
+                  <div id="customerColumnOptions" class="column-option-grid"></div>
+                </div>
+              </details>
+              <button id="customerCsvExportButton" type="button" class="ghost-button customer-control-button">Export CSV</button>
+            </div>
+          </div>
+          <div class="customer-db-viewport">
+            <div class="table-shell">
+              <table class="data-table">
+                <thead id="customerTableHead"></thead>
+                <tbody id="customerTableBody">
+                  <tr>
+                    <td colspan="27" class="table-empty">Loading...</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        </div>
+
+        <div id="spectatorInfoTab" class="tab-panel" role="tabpanel" aria-labelledby="tabSpectatorInfo" hidden>
+        <section class="panel">
+          <div class="panel-header">
+            <div>
+              <p class="section-label">Spectators</p>
+              <h2>Spectator Insights</h2>
+            </div>
+          </div>
+          <div id="selectedSpectatorEventTitle" class="selected-event-title"></div>
+          <div class="event-toolbar">
+            <select id="spectatorEventSelect" class="event-select"></select>
+          </div>
+          <div class="insight-totals" id="spectatorTotals"></div>
+          <div class="event-summary-grid">
+            <div class="summary-card">
+              <p class="section-label">Ticket Categories</p>
+              <div id="spectatorCategorySummary" class="summary-list"></div>
+            </div>
+            <div class="summary-card">
+              <p class="section-label">Gender</p>
+              <div id="spectatorGenderSummary" class="summary-list"></div>
+            </div>
+            <div class="summary-card">
+              <p class="section-label">Age Bands</p>
+              <div id="spectatorAgeSummary" class="summary-list"></div>
+            </div>
+            <div class="summary-card">
+              <p class="section-label">Prefectures</p>
+              <div id="spectatorPrefectureSummary" class="summary-list"></div>
+            </div>
+            <div class="summary-card">
+              <p class="section-label">Regions</p>
+              <div id="spectatorRegionSummary" class="summary-list"></div>
+            </div>
+          </div>
+          <div class="event-insight-block">
+            <div class="panel-header panel-header-compact">
+              <div>
+                <p class="section-label">Weekly Trend</p>
+                <h2>Ticket Timing</h2>
+              </div>
+            </div>
+            <div id="spectatorEventsList" class="timeline-list"></div>
+          </div>
+        </section>
+
+        <section class="panel panel-wide">
+          <div class="event-grid">
+            <div class="event-insight-block event-spotlight-card category-card">
+              <div class="panel-header panel-header-compact">
+                <div>
+                  <p class="section-label">Category</p>
+                  <h2>Tickets By Category</h2>
+                </div>
+              </div>
+              <div id="spectatorCategoryChart" class="timeline-list"></div>
+            </div>
+            <div class="event-insight-block event-spotlight-card gender-card">
+              <div class="panel-header panel-header-compact">
+                <div>
+                  <p class="section-label">Gender</p>
+                  <h2>Spectators By Gender</h2>
+                </div>
+              </div>
+              <div id="spectatorGenderChart" class="timeline-list"></div>
+            </div>
+            <div class="event-insight-block event-spotlight-card age-card">
+              <div class="panel-header panel-header-compact">
+                <div>
+                  <p class="section-label">Age</p>
+                  <h2>Spectators By Age Band</h2>
+                </div>
+              </div>
+              <div id="spectatorAgeChart" class="timeline-list"></div>
+            </div>
+            <div class="event-insight-block event-spotlight-card prefecture-card">
+              <div class="panel-header panel-header-compact">
+                <div>
+                  <p class="section-label">Prefecture</p>
+                  <h2>Spectators By Prefecture</h2>
+                </div>
+              </div>
+              <div id="spectatorPrefectureChart" class="timeline-list"></div>
+            </div>
+            <div class="event-insight-block event-spotlight-card region-card">
+              <div class="panel-header panel-header-compact">
+                <div>
+                  <p class="section-label">Region</p>
+                  <h2>Spectators By Region</h2>
+                </div>
+              </div>
+              <div id="spectatorRegionChart" class="timeline-list"></div>
+            </div>
+          </div>
+        </section>
+        </div>
+
+        <div id="contestTab" class="tab-panel" role="tabpanel" aria-labelledby="tabContest" hidden>
+        <section class="panel">
+          <div class="panel-header">
+            <div>
+              <p class="section-label">Events</p>
+              <h2>Event Insights</h2>
+            </div>
+          </div>
+          <div id="selectedEventTitle" class="selected-event-title"></div>
+          <div class="event-toolbar">
+            <select id="eventSelect" class="event-select"></select>
+          </div>
+          <div class="insight-totals" id="eventTotals"></div>
+          <div class="event-summary-grid">
+            <div class="summary-card">
+              <p class="section-label">Entry Categories</p>
+              <div id="categorySummary" class="summary-list"></div>
+            </div>
+            <div class="summary-card">
+              <p class="section-label">Gender</p>
+              <div id="genderSummary" class="summary-list"></div>
+            </div>
+            <div class="summary-card">
+              <p class="section-label">Age Bands</p>
+              <div id="ageSummary" class="summary-list"></div>
+            </div>
+            <div class="summary-card">
+              <p class="section-label">Prefectures</p>
+              <div id="prefectureSummary" class="summary-list"></div>
+            </div>
+            <div class="summary-card">
+              <p class="section-label">Regions</p>
+              <div id="regionSummary" class="summary-list"></div>
+            </div>
+          </div>
+          <div class="event-insight-block">
+            <div class="panel-header panel-header-compact">
+              <div>
+                <p class="section-label">Weekly Trend</p>
+                <h2>Entry Timing</h2>
+              </div>
+            </div>
+            <div id="eventsList" class="timeline-list"></div>
+          </div>
+        </section>
+
+        <section class="panel panel-wide">
+          <div class="event-grid">
+            <div class="event-insight-block event-spotlight-card category-card">
+              <div class="panel-header panel-header-compact">
+                <div>
+                  <p class="section-label">Category</p>
+                  <h2>Entries By Category</h2>
+                </div>
+              </div>
+              <div id="categoryChart" class="timeline-list"></div>
+            </div>
+            <div class="event-insight-block event-spotlight-card gender-card">
+              <div class="panel-header panel-header-compact">
+                <div>
+                  <p class="section-label">Gender</p>
+                  <h2>Participants By Gender</h2>
+                </div>
+              </div>
+              <div id="genderChart" class="timeline-list"></div>
+            </div>
+            <div class="event-insight-block event-spotlight-card age-card">
+              <div class="panel-header panel-header-compact">
+                <div>
+                  <p class="section-label">Age</p>
+                  <h2>Participants By Age Band</h2>
+                </div>
+              </div>
+              <div id="ageChart" class="timeline-list"></div>
+            </div>
+            <div class="event-insight-block event-spotlight-card prefecture-card">
+              <div class="panel-header panel-header-compact">
+                <div>
+                  <p class="section-label">Prefecture</p>
+                  <h2>Participants By Prefecture</h2>
+                </div>
+              </div>
+              <div id="prefectureChart" class="timeline-list"></div>
+            </div>
+            <div class="event-insight-block event-spotlight-card region-card">
+              <div class="panel-header panel-header-compact">
+                <div>
+                  <p class="section-label">Region</p>
+                  <h2>Participants By Region</h2>
+                </div>
+              </div>
+              <div id="regionChart" class="timeline-list"></div>
+            </div>
+          </div>
+        </section>
+        </div>
+      </main>
+    </div>
+
+    <script src="/app.js" defer></script>
+  </body>
+  </html>
