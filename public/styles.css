@@ -1101,6 +1101,48 @@ body {
   justify-items: end;
 }
 
+.filter-collapsible {
+  overflow: hidden;
+  max-height: 400px;
+  transition: max-height 0.25s ease, opacity 0.2s ease;
+  opacity: 1;
+}
+
+.filter-collapsible.is-collapsed {
+  max-height: 0;
+  opacity: 0;
+}
+
+.filter-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  padding: 5px 12px;
+  background: rgba(6, 12, 18, 0.7);
+  border: 1px solid rgba(111, 230, 255, 0.16);
+  border-radius: 8px;
+  color: #7ca8c8;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.filter-toggle-btn:hover {
+  color: #a8d4f0;
+  border-color: rgba(111, 230, 255, 0.35);
+}
+
+.filter-toggle-icon {
+  transition: transform 0.25s ease;
+}
+
+.filter-toggle-btn[aria-expanded="true"] .filter-toggle-icon {
+  transform: rotate(180deg);
+}
+
 .filter-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));

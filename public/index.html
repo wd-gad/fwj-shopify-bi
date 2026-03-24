@@ -81,7 +81,12 @@
               <p class="section-label">Overview</p>
               <h2>Revenue And Volume</h2>
               <p id="overviewSummary" class="muted">Membership filters are applied to this section</p>
+              <button type="button" id="filterToggleBtn" class="filter-toggle-btn" aria-expanded="false" aria-controls="memberFilterCollapsible">
+                <span class="filter-toggle-label">FILTERS</span>
+                <svg class="filter-toggle-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 5L7 9.5L11.5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
             </div>
+            <div id="memberFilterCollapsible" class="filter-collapsible is-collapsed">
             <div class="filter-bar-group">
               <form id="memberFilters" class="filter-bar">
                 <div class="filter-grid">
@@ -143,6 +148,7 @@
                     </label>
                 </div>
               </form>
+            </div>
             </div>
           </div>
           <div id="summaryCards" class="overview-grid"></div>

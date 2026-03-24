@@ -1959,6 +1959,14 @@ exportPdfButton.addEventListener("click", async () => {
   printFrame.srcdoc = reportHtml;
 });
 
+const filterToggleBtn = document.getElementById("filterToggleBtn");
+const memberFilterCollapsible = document.getElementById("memberFilterCollapsible");
+
+filterToggleBtn.addEventListener("click", () => {
+  const isCollapsed = memberFilterCollapsible.classList.toggle("is-collapsed");
+  filterToggleBtn.setAttribute("aria-expanded", String(!isCollapsed));
+});
+
 memberFilters.addEventListener("submit", (event) => {
   event.preventDefault();
   debounceMemberFilterUpdate();
