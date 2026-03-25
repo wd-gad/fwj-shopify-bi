@@ -619,6 +619,14 @@ const server = http.createServer(async (req, res) => {
       return sendJson(res, 200, { ok: true });
     }
 
+    // Public read-only aggregation endpoints (aggregate stats only, no PII)
+    if (INTERNAL_PATHS.includes(pathname)) {
+      const internalKey = req.headers["x-internal-key"] || searchParams.get("_ikey");
+      if (!INTERNAL_API_KEY || internalKey === INTERNAL_API_KEY) {
+        return await handleApi(req, res, pathname, searchParams, null);
+      }
+    }
+
     // Internal server-to-server calls (e.g. from Itinerary)
     const isInternalCall = INTERNAL_API_KEY && req.headers["x-internal-key"] === INTERNAL_API_KEY;
     const isInternalPath = INTERNAL_PATHS.includes(pathname);
