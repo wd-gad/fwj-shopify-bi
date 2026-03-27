@@ -77,8 +77,8 @@ body {
 
 .portal-nav-row {
   position: fixed;
-  top: 24px;
-  left: 24px;
+  bottom: 24px;
+  right: 24px;
   z-index: 75;
   display: flex;
   gap: 8px;
@@ -91,17 +91,19 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(18, 24, 34, 0.88);
+  border: 1px solid rgba(0, 212, 255, 0.4);
+  background: rgba(0, 50, 80, 0.6);
   backdrop-filter: blur(12px);
-  color: rgba(200, 220, 240, 0.6);
+  color: #00d4ff;
   text-decoration: none;
   cursor: pointer;
-  transition: color 0.15s, border-color 0.15s;
+  box-shadow: 0 0 12px rgba(0, 212, 255, 0.2), inset 0 0 8px rgba(0, 212, 255, 0.1);
+  transition: color 0.15s, border-color 0.15s, box-shadow 0.15s;
 }
 .back-to-portal-link:hover {
-  color: #e8f0f8;
-  border-color: rgba(255, 255, 255, 0.25);
+  color: #00d4ff;
+  border-color: rgba(0, 212, 255, 0.8);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.4), inset 0 0 12px rgba(0, 212, 255, 0.15);
 }
 
 .lede {
