@@ -541,8 +541,19 @@ async function getEventOptions() {
     orderBy: [{ eventDate: "asc" }, { contestName: "asc" }]
   });
 
+  // Deduplicate by contestName — keep the earliest eventDate per contest.
+  // ContestSchedule allows multiple rows per contestName (different dates),
+  // which would otherwise cause duplicate entries in the event selector.
+  const seen = new Map();
+  for (const schedule of schedules) {
+    if (!seen.has(schedule.contestName)) {
+      seen.set(schedule.contestName, schedule);
+    }
+  }
+  const uniqueSchedules = Array.from(seen.values());
+
   const results = await Promise.all(
-    schedules.map(async (schedule) => {
+    uniqueSchedules.map(async (schedule) => {
       const count = await prisma.eventEntry.count({
         where: { status: "applied", eventName: schedule.contestName }
       });
