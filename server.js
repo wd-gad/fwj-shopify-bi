@@ -177,15 +177,6 @@ function sendFile(res, filePath) {
   });
 }
 
-function sendCsv(res, statusCode, filename, csvContent) {
-  res.writeHead(statusCode, {
-    "Content-Type": "text/csv; charset=utf-8",
-    "Content-Disposition": `attachment; filename="${filename}"`,
-    "Cache-Control": "no-store"
-  });
-  res.end(csvContent, "utf-8");
-}
-
 function normalizeFilters(searchParams) {
   const filters = {};
 
@@ -488,117 +479,6 @@ async function handleApi(req, res, pathname, searchParams, session) {
     const member = await getMemberDetail(memberId);
     if (!member) return sendJson(res, 404, { error: "Member not found" });
     return reply(200, { member });
-  }
-
-  if (pathname === "/api/export/event-entries") {
-    try {
-      const eventEntries = await prisma.eventEntry.findMany({
-        include: {
-          member: {
-            select: {
-              id: true,
-              fullName: true,
-              email: true,
-              gender: true,
-              birthDate: true,
-              prefecture: true,
-              region: true,
-              ageBand: true
-            }
-          },
-          order: {
-            select: {
-              id: true,
-              orderNumber: true,
-              totalPrice: true,
-              orderedAt: true
-            }
-          },
-          orderItem: {
-            select: {
-              id: true,
-              title: true,
-              sku: true
-            }
-          }
-        },
-        orderBy: {
-          eventDate: "desc"
-        }
-      });
-
-      if (eventEntries.length === 0) {
-        return sendJson(res, 200, { message: "No event entries found" });
-      }
-
-      const headers = [
-        "エントリーID",
-        "メンバーID",
-        "メンバー名",
-        "メールアドレス",
-        "性別",
-        "生年月日",
-        "都道府県",
-        "地域",
-        "年代",
-        "大会名",
-        "大会日",
-        "申込日",
-        "参加人数",
-        "ステータス",
-        "注文ID",
-        "注文番号",
-        "注文日",
-        "注文金額",
-        "商品名",
-        "SKU"
-      ];
-
-      const rows = eventEntries.map(entry => [
-        entry.id,
-        entry.memberId,
-        entry.member?.fullName || "",
-        entry.member?.email || "",
-        entry.member?.gender || "",
-        entry.member?.birthDate ? entry.member.birthDate.toISOString().split("T")[0] : "",
-        entry.member?.prefecture || "",
-        entry.member?.region || "",
-        entry.member?.ageBand || "",
-        entry.eventName,
-        entry.eventDate ? entry.eventDate.toISOString().split("T")[0] : "",
-        entry.appliedAt.toISOString().split("T")[0],
-        entry.quantity,
-        entry.status,
-        entry.orderId,
-        entry.order?.orderNumber || "",
-        entry.order?.orderedAt ? entry.order.orderedAt.toISOString().split("T")[0] : "",
-        entry.order?.totalPrice || "",
-        entry.orderItem?.title || "",
-        entry.orderItem?.sku || ""
-      ]);
-
-      const csvContent = [
-        headers.join(","),
-        ...rows.map(row =>
-          row.map(cell => {
-            if (cell === null || cell === undefined) return "";
-            const str = String(cell);
-            if (str.includes(",") || str.includes("\n") || str.includes('"')) {
-              return `"${str.replace(/"/g, '""')}"`;
-            }
-            return str;
-          }).join(",")
-        )
-      ].join("\n");
-
-      const timestamp = new Date().toISOString().replace(/[:-]/g, "").slice(0, 15);
-      const filename = `event_entries_${timestamp}.csv`;
-
-      return sendCsv(res, 200, filename, csvContent);
-    } catch (error) {
-      console.error("EventEntry export error:", error);
-      return sendJson(res, 500, { error: error instanceof Error ? error.message : "Export failed" });
-    }
   }
 
   return sendJson(res, 404, { error: "Not found" });

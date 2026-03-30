@@ -75,35 +75,24 @@ body {
   max-width: 15ch;
 }
 
-.portal-nav-row {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 75;
-  display: flex;
-  gap: 8px;
-}
-
 .back-to-portal-link {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 12px;
-  border: 1px solid rgba(0, 212, 255, 0.4);
-  background: rgba(0, 50, 80, 0.6);
-  backdrop-filter: blur(12px);
-  color: #00d4ff;
+  min-height: 34px;
+  margin-bottom: 12px;
+  padding: 0 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--muted);
+  font-size: 0.8rem;
   text-decoration: none;
   cursor: pointer;
-  box-shadow: 0 0 12px rgba(0, 212, 255, 0.2), inset 0 0 8px rgba(0, 212, 255, 0.1);
-  transition: color 0.15s, border-color 0.15s, box-shadow 0.15s;
+  transition: background 0.15s, color 0.15s;
 }
 .back-to-portal-link:hover {
-  color: #00d4ff;
-  border-color: rgba(0, 212, 255, 0.8);
-  box-shadow: 0 0 20px rgba(0, 212, 255, 0.4), inset 0 0 12px rgba(0, 212, 255, 0.15);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
 }
 
 .lede {
@@ -1111,48 +1100,6 @@ body {
   display: grid;
   gap: 10px;
   justify-items: end;
-}
-
-.filter-collapsible {
-  overflow: hidden;
-  max-height: 400px;
-  transition: max-height 0.25s ease, opacity 0.2s ease;
-  opacity: 1;
-}
-
-.filter-collapsible.is-collapsed {
-  max-height: 0;
-  opacity: 0;
-}
-
-.filter-toggle-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 10px;
-  padding: 5px 12px;
-  background: rgba(6, 12, 18, 0.7);
-  border: 1px solid rgba(111, 230, 255, 0.16);
-  border-radius: 8px;
-  color: #7ca8c8;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  cursor: pointer;
-  transition: color 0.15s, border-color 0.15s;
-}
-
-.filter-toggle-btn:hover {
-  color: #a8d4f0;
-  border-color: rgba(111, 230, 255, 0.35);
-}
-
-.filter-toggle-icon {
-  transition: transform 0.25s ease;
-}
-
-.filter-toggle-btn[aria-expanded="true"] .filter-toggle-icon {
-  transform: rotate(180deg);
 }
 
 .filter-grid {
