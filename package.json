@@ -11,6 +11,7 @@
     "db:migrate": "prisma migrate dev",
     "db:migrate:deploy": "prisma migrate deploy",
     "db:migrate:status": "prisma migrate status",
+    "db:seed:dev": "node --env-file=.env prisma/seed.js",
     "shopify:audit": "node --env-file=.env scripts/shopify-audit.js",
     "shopify:config": "node --env-file=.env scripts/shopify-config-cli.js",
     "shopify:monthly-points": "node --env-file=.env scripts/shopify-monthly-points.js",
@@ -18,6 +19,9 @@
     "shopify:reward-report": "node --env-file=.env scripts/shopify-reward-report.js",
     "shopify:sync": "node --env-file=.env scripts/shopify-sync.js",
     "shopify:rebuild": "node --env-file=.env scripts/rebuild-analytics.js"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
   },
   "dependencies": {
     "@prisma/client": "^6.6.0",
