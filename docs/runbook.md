@@ -242,7 +242,59 @@ fwj-shopify-bi/
 
 ---
 
-## 10. 今後の migration 追加時のチェックリスト
+## 10. Development Seed
+
+### テーブル別 seed 方針
+
+| テーブル | 方針 | 実行タイミング |
+|---------|------|-------------|
+| `contest_schedules` | `data/contest-schedules.json` から自動 upsert | **server.js 起動時に自動** |
+| `product_classifications` | `reclassify-products.js` で自動生成 | **server.js 起動時に自動** |
+| `shopify_products` / `shopify_customers` / `shopify_orders` | `prisma/seed.js` の ダミーデータ | **手動（開発時のみ）** |
+| `member_profiles` / `event_entries` / `membership_purchases` | `rebuild-analytics.js` から派生 | **手動（seed 後に実行）** |
+
+### development DB へのセット手順
+
+```bash
+# 1. dev ダミーデータを投入（.env に開発DBの DATABASE_URL が設定されていること）
+npm run db:seed:dev
+
+# 2. ダミーデータから分析テーブルを構築
+npm run shopify:rebuild
+
+# 3. BI ダッシュボードで動作確認
+npm run dev
+# → http://127.0.0.1:3007
+```
+
+### seed データの内容
+
+| 種別 | 内容 | 件数 |
+|------|------|------|
+| 商品 | 年間会員 × 1、イベントエントリー × 2 | 3 |
+| 顧客 | seed-alice / seed-bob / seed-carol（@example.com） | 3 |
+| 注文 | Alice（会員+イベント）、Bob（イベント×2）、Carol（イベント） | 3 |
+
+### seed の安全ガード
+
+`prisma/seed.js` は起動時に `DATABASE_URL` の接続先ホストをチェックし、
+production ホスト（`gondola.proxy.rlwy.net`）が含まれている場合は **即座に abort** します。
+
+```
+[seed] ERROR: DATABASE_URL points to production DB. Aborting.
+```
+
+### 禁止事項
+
+| 操作 | 理由 |
+|------|------|
+| production DB に対して `npm run db:seed:dev` を実行 | seed.js の安全ガードで阻止されるが、そもそも試みない |
+| `prisma db seed` を production デプロイの自動処理に含める | `preDeployCommand` には含めない |
+| seed データをそのまま本番に反映 | `@example.com` メールやダミー ID は本番には不要 |
+
+---
+
+## 11. 今後の migration 追加時のチェックリスト
 
 - [ ] `prisma/schema.prisma` の変更内容を確認
 - [ ] `npm run db:migrate` で migration ファイルを生成
