@@ -99,7 +99,7 @@ async function rebuildMember(member) {
       where: { id: member.id },
       data: profile
     });
-  });
+  }, { timeout: 60000 });
 }
 
 async function main() {
