@@ -294,7 +294,182 @@ production ホスト（`gondola.proxy.rlwy.net`）が含まれている場合は
 
 ---
 
-## 11. 今後の migration 追加時のチェックリスト
+## 11. バックアップと復元
+
+### バックアップ方法の種類
+
+| 方法 | 頻度 | 保持期間 | 操作場所 |
+|------|------|---------|---------|
+| Railway 自動バックアップ | 毎日 | 7日間 | Railway ダッシュボード |
+| 手動 pg_dump | 任意 | 手元で管理 | `scripts/backup-db.sh` |
+
+### Railway 自動バックアップの確認と復元
+
+1. [Railway ダッシュボード](https://railway.com) → `imaginative-trust` プロジェクト
+2. `production` 環境 → Postgres サービスを選択
+3. **Backups** タブ → 一覧から日付を選択
+4. **Restore** ボタン → 確認してクリック
+
+> ⚠️ Railway からの復元は既存のDBを上書きします。アプリを一時停止するか、停止状態で行うこと。
+
+### 手動バックアップ（pg_dump）
+
+#### 前提: pg_dump のインストール
+
+```bash
+# macOS
+brew install libpq
+brew link --force libpq
+# → /usr/local/bin/pg_dump が使えるようになる
+```
+
+#### バックアップ取得
+
+```bash
+# DATABASE_URL に production の PUBLIC URL を設定して実行
+DATABASE_URL="postgresql://postgres:PASS@gondola.proxy.rlwy.net:38773/railway" \
+  bash scripts/backup-db.sh
+
+# → backups/YYYY-MM-DD_HHMMSS_railway.dump が作成される
+```
+
+production の `DATABASE_PUBLIC_URL` は Railway ダッシュボード → production 環境 → Variables で確認する。
+
+#### バックアップファイルの保管
+
+```
+backups/          # .gitignore 対象（リポジトリにコミットしない）
+  2026-03-30_120000_railway.dump
+  2026-03-29_120000_railway.dump
+```
+
+> バックアップファイルには本番データが含まれます。安全な場所（ローカル暗号化ストレージなど）に保管し、外部に公開しないこと。
+
+---
+
+## 12. 復元手順
+
+### ケース別の判断
+
+| 状況 | 対処法 |
+|------|-------|
+| migration を誤って適用した | migration ロールバック（次セクション）または DB 復元 |
+| データを誤って削除・変更した | DB 復元（Railway 自動バックアップまたは pg_dump） |
+| アプリが壊れた（DBは正常） | Railway デプロイを前のバージョンに巻き戻す |
+| スキーマと DB が不整合になった | DB 復元 → migration 再適用 |
+
+### pg_dump バックアップからの復元
+
+```bash
+# 復元先 DB URL（production または空の staging DB）
+TARGET_URL="postgresql://postgres:PASS@gondola.proxy.rlwy.net:38773/railway"
+
+# 復元実行
+pg_restore \
+  --clean \
+  --no-acl \
+  --no-owner \
+  --verbose \
+  -d "$TARGET_URL" \
+  backups/YYYY-MM-DD_HHMMSS_railway.dump
+```
+
+> `--clean` は既存テーブルを DROP してから復元します。実行前にアプリを停止または Railway デプロイを一時停止すること。
+
+### migration との関係
+
+- pg_dump には `_prisma_migrations` テーブルも含まれるため、復元後は migration 履歴も復元される
+- 復元後に `prisma migrate status` を実行して整合性を確認する
+- 差分 migration がある場合は `prisma migrate deploy` で再適用する
+
+---
+
+## 13. ロールバック戦略
+
+### 判断フロー
+
+```
+問題発生
+  │
+  ├─ DBデータが壊れた/消えた？
+  │    → DB 復元（Railway Backups または pg_dump）
+  │
+  ├─ Migration が間違って適用された？
+  │    ├─ データ破壊なし → migration SQL を手動で逆順 DDL 実行
+  │    └─ データ破壊あり → DB 復元
+  │
+  └─ アプリコードのバグ（DBは正常）？
+       → Railway ダッシュボード → Deployments → 前のデプロイを Rollback
+```
+
+### Migration ロールバックの考え方
+
+Prisma は `migrate down` をサポートしていないため、migration の取り消しは以下のいずれかで行う:
+
+1. **新しい migration で打ち消す**（推奨）
+   - 例: `ADD COLUMN` した場合 → `DROP COLUMN` する migration を作成して適用
+   - データが残っている場合にも安全
+
+2. **DB 復元**
+   - migration 適用前の pg_dump から復元
+   - データも migration 適用前の状態に戻る
+
+> ⚠️ `prisma migrate reset` は **本番では絶対に使わない**。全データが消える。
+
+---
+
+## 14. 緊急時フロー（障害対応）
+
+### 本番アプリが応答しない
+
+1. `/api/health` を確認: `curl https://bi.teamfwj.org/api/health`
+2. Railway ダッシュボード → production → デプロイログを確認
+3. DB 接続エラーが出ている場合 → Postgres サービスのステータスを確認
+4. アプリのクラッシュ（コードバグ）の場合 → 前のデプロイに Rollback
+5. 解消しない場合 → Railway サポートに問い合わせ
+
+### Migration 適用後に問題が発生した
+
+1. `railway logs --deployment` でエラーを確認
+2. 直前の pg_dump バックアップがあるか確認
+3. バックアップあり → `pg_restore` で復元 → `prisma migrate status` で確認
+4. バックアップなし → Railway 自動バックアップ（前日）から復元
+5. 復元後 → `prisma migrate status` → pending があれば `prisma migrate deploy`
+6. `/api/health` で疎通確認
+
+### データが誤って変更された
+
+1. 影響範囲を特定（テーブル名・ID・変更内容）
+2. Railway Backups から直近のバックアップを確認（最大24h前）
+3. 対象テーブルのみ手動で修正できる場合 → 直接 SQL で修正
+4. 影響範囲が広い場合 → DB 全体を復元
+
+### アプリコードのロールバック
+
+```bash
+# Railway ダッシュボード → production → Deployments
+# → 正常だったバージョンの "Rollback" ボタンをクリック
+# または GitHub で以前のコミットを cherry-pick して push
+
+git revert <bad-commit-hash>
+git push origin main
+```
+
+---
+
+## 15. バックアップ運用の注意事項
+
+| 項目 | 注意 |
+|------|------|
+| バックアップファイルの管理 | `backups/` は `.gitignore` 対象。リポジトリにコミットしない |
+| 本番データの扱い | バックアップファイルには全顧客・注文データが含まれる。取扱注意 |
+| Railway 自動バックアップ | Hobby プランは **7日間** のみ保持。古い障害は対応不可 |
+| 定期手動バックアップ | schema 変更前・大量データ変更前には必ず手動バックアップを取得する |
+| 復元テスト | 定期的に development DB で復元テストを行い、バックアップが有効か確認する |
+
+---
+
+## 16. 今後の migration 追加時のチェックリスト
 
 - [ ] `prisma/schema.prisma` の変更内容を確認
 - [ ] `npm run db:migrate` で migration ファイルを生成
