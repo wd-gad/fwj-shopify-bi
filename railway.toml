@@ -8,3 +8,9 @@ healthcheckPath = "/api/health"
 healthcheckTimeout = 30
 restartPolicyType = "on_failure"
 restartPolicyMaxRetries = 3
+
+[[crons]]
+# Itinerary の変更通知を定期実行（1時間ごと）
+# 必要な環境変数: CRON_SECRET, ITINERARY_URL（Railway production に設定済み）
+schedule = "0 * * * *"
+command = "node scripts/cron-notify.js"

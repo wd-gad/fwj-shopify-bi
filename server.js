@@ -540,37 +540,5 @@ server.listen(PORT, HOST, () => {
   console.log(`Shopify analytics dashboard running at http://${HOST}:${PORT}`);
   console.log(`Alias: http://${LOCAL_ALIAS}`);
   scheduleNextAutoSync();
-
-  // Run schema sync in background after server is up
-  if (process.env.DATABASE_URL) {
-    const { exec } = require("child_process");
-    exec("npx prisma db push --accept-data-loss", (err, stdout, stderr) => {
-      if (err) console.error("prisma db push failed:", err.message);
-      else console.log("prisma db push: schema synced");
-    });
-
-    // Seed contest schedules, then reclassify products, then rebuild analytics
-    const { seedContestSchedules } = require("./scripts/seed-contest-schedules.js");
-    seedContestSchedules()
-      .then(() => {
-        const { execFile } = require("child_process");
-        const node = process.execPath;
-        const reclassify = require("path").join(__dirname, "scripts/reclassify-products.js");
-        const rebuild = require("path").join(__dirname, "scripts/rebuild-analytics.js");
-        return new Promise((resolve, reject) => {
-          execFile(node, [reclassify], (err, stdout, stderr) => {
-            if (stdout) process.stdout.write(stdout);
-            if (stderr) process.stderr.write(stderr);
-            if (err) { console.error("reclassify-products failed:", err.message); return reject(err); }
-            execFile(node, [rebuild], (err2, stdout2, stderr2) => {
-              if (stdout2) process.stdout.write(stdout2);
-              if (stderr2) process.stderr.write(stderr2);
-              if (err2) { console.error("rebuild-analytics failed:", err2.message); return reject(err2); }
-              resolve();
-            });
-          });
-        });
-      })
-      .catch((err) => console.error("startup analytics init failed:", err));
-  }
+  console.log("Startup DB mutation is disabled. Run manual scripts only after confirming DATABASE_URL.");
 });
