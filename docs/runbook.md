@@ -163,6 +163,13 @@ No pending migrations to apply.
 
 `.env` は `.gitignore` で除外済み。**コミットしないこと。**
 
+### ローカル安全起動
+
+- `npm run dev` / `npm run start` は安全起動用
+- 起動時に `prisma db push`, seed, rebuild は自動実行しない
+- DB 変更系は手動 script でのみ実行する
+- 実行前に `DATABASE_URL` を確認する
+
 ---
 
 ## 7. 障害時の確認ポイント
@@ -248,10 +255,10 @@ fwj-shopify-bi/
 
 | テーブル | 方針 | 実行タイミング |
 |---------|------|-------------|
-| `contest_schedules` | `data/contest-schedules.json` から自動 upsert | **server.js 起動時に自動** |
-| `product_classifications` | `reclassify-products.js` で自動生成 | **server.js 起動時に自動** |
+| `contest_schedules` | `data/contest-schedules.json` から upsert | **手動 (`npm run seed:contest-schedules`)** |
+| `product_classifications` | `reclassify-products.js` で自動生成 | **手動 (`npm run products:reclassify`)** |
 | `shopify_products` / `shopify_customers` / `shopify_orders` | `prisma/seed.js` の ダミーデータ | **手動（開発時のみ）** |
-| `member_profiles` / `event_entries` / `membership_purchases` | `rebuild-analytics.js` から派生 | **手動（seed 後に実行）** |
+| `member_profiles` / `event_entries` / `membership_purchases` | `rebuild-analytics.js` から派生 | **手動 (`npm run analytics:rebuild`)** |
 
 ### development DB へのセット手順
 
