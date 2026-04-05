@@ -1,0 +1,7 @@
+[build]
+builder = "nixpacks"
+buildCommand = "npm install --omit=dev --ignore-scripts"
+
+[deploy]
+startCommand = "node scripts/cron-notify.js"
+cronSchedule = "0 * * * *"
