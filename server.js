@@ -518,10 +518,21 @@ const server = http.createServer(async (req, res) => {
       return await handleApi(req, res, pathname, searchParams, session);
     }
 
-    const filePath =
-      pathname === "/"
-        ? path.join(PUBLIC_DIR, "index.html")
-        : path.join(PUBLIC_DIR, pathname.replace(/^\/+/, ""));
+    if (pathname === "/") {
+      // index.html の PORTAL_URL を環境変数で差し替えて配信
+      const indexPath = path.join(PUBLIC_DIR, "index.html");
+      try {
+        let html = fs.readFileSync(indexPath, "utf8");
+        html = html.replace("https://www.teamfwj.org", PORTAL_URL);
+        res.writeHead(200, { "Content-Type": "text/html", "Cache-Control": "no-store" });
+        res.end(html);
+      } catch {
+        sendJson(res, 500, { error: "Failed to read index.html" });
+      }
+      return;
+    }
+
+    const filePath = path.join(PUBLIC_DIR, pathname.replace(/^\/+/, ""));
 
     if (!filePath.startsWith(PUBLIC_DIR)) {
       return sendJson(res, 403, { error: "Forbidden" });

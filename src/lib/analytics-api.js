@@ -299,6 +299,17 @@ function buildSpectatorItemFilter(filters = {}) {
 
 async function getDashboardSummary(filters = {}) {
   const memberWhere = buildMemberWhere(filters);
+  // Date filter for transaction-based queries (entries, tickets, passes).
+  // Uses the same From/To dates but filters by transaction date, not member joinedAt.
+  const displayWindow = buildDefaultDisplayWindow(filters);
+  const orderedAtFilter = displayWindow.joinedFrom ? { gte: displayWindow.joinedFrom } : {};
+  const appliedAtFilter = displayWindow.joinedFrom ? { gte: displayWindow.joinedFrom } : {};
+  if (displayWindow.joinedTo) {
+    orderedAtFilter.lte = displayWindow.joinedTo;
+    appliedAtFilter.lte = displayWindow.joinedTo;
+  }
+  const orderDateWhere = Object.keys(orderedAtFilter).length > 0 ? { orderedAt: orderedAtFilter } : {};
+
   const [
     totalMembers,
     activeMembers,
@@ -323,19 +334,19 @@ async function getDashboardSummary(filters = {}) {
     prisma.eventEntry.count({
       where: {
         status: "applied",
-        member: memberWhere
+        appliedAt: appliedAtFilter
       }
     }),
     prisma.membershipPurchase.count({
       where: {
         status: "active",
-        member: memberWhere
+        purchasedAt: appliedAtFilter
       }
     }),
     prisma.membershipPurchase.findMany({
       where: {
         status: "active",
-        member: memberWhere
+        purchasedAt: appliedAtFilter
       },
       select: {
         orderItem: {
@@ -349,7 +360,7 @@ async function getDashboardSummary(filters = {}) {
     prisma.eventEntry.findMany({
       where: {
         status: "applied",
-        member: memberWhere
+        appliedAt: appliedAtFilter
       },
       select: {
         order: {
@@ -381,13 +392,7 @@ async function getDashboardSummary(filters = {}) {
             }
           }
         ],
-        order: {
-          customer: {
-            memberProfiles: {
-              some: memberWhere
-            }
-          }
-        }
+        order: orderDateWhere
       },
       select: {
         quantity: true,
@@ -405,13 +410,7 @@ async function getDashboardSummary(filters = {}) {
         title: {
           contains: "バックステージパス"
         },
-        order: {
-          customer: {
-            memberProfiles: {
-              some: memberWhere
-            }
-          }
-        }
+        order: orderDateWhere
       },
       select: {
         quantity: true,
@@ -428,7 +427,7 @@ async function getDashboardSummary(filters = {}) {
       by: ["eventName", "eventDate"],
       where: {
         status: "applied",
-        member: memberWhere
+        appliedAt: appliedAtFilter
       },
       _count: { _all: true },
       orderBy: [{ eventDate: "desc" }, { eventName: "asc" }],
@@ -765,9 +764,19 @@ async function getEventInsights(eventName) {
     prefectureCounts: [...prefectureBuckets.entries()]
       .sort((left, right) => right[1] - left[1] || left[0].localeCompare(right[0], "ja"))
       .map(([label, count]) => ({ label, count })),
-    categoryCounts: [...categoryBuckets.entries()]
-      .sort((left, right) => right[1] - left[1] || left[0].localeCompare(right[0], "ja"))
-      .map(([label, count]) => ({ label, count }))
+    categoryCounts: [
+      ...[...categoryBuckets.entries()]
+        .sort((left, right) => right[1] - left[1] || left[0].localeCompare(right[0], "ja"))
+        .map(([label, count]) => ({ label, count })),
+      ...(() => {
+        const backstageCount = backstageRows
+          .filter((row) => row.title.includes("バックステージパス") && isOrderRevenueValid(row.order))
+          .reduce((sum, row) => sum + Number(row.quantity || 1), 0);
+        return backstageCount > 0
+          ? [{ label: "バックステージサポート", count: backstageCount, special: "backstage" }]
+          : [];
+      })()
+    ]
   };
 }
 
@@ -921,7 +930,7 @@ async function getSpectatorInsights(eventName) {
       const sourceReduction = sourceReductionBuckets.get(label) || 0;
       return {
         label,
-        count: Math.max(baseCount + upgradeCount - sourceReduction, 0),
+        count: baseCount + upgradeCount,
         upgradeCount,
         sourceReduction
       };
