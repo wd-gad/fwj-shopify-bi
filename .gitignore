@@ -8,3 +8,5 @@ dist
 tmp
 .claude/
 backups/
+metabase.db.*
+plugins/

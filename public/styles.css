@@ -75,24 +75,42 @@ body {
   max-width: 15ch;
 }
 
-.back-to-portal-link {
+.back-to-portal-fab {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 75;
+}
+
+.back-to-portal-fab-button {
+  width: 40px;
+  height: 40px;
   display: inline-flex;
   align-items: center;
-  min-height: 34px;
-  margin-bottom: 12px;
-  padding: 0 14px;
-  border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.04);
-  color: var(--muted);
-  font-size: 0.8rem;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 212, 255, 0.4);
+  background: rgba(0, 30, 50, 0.85);
+  color: rgba(0, 212, 255, 0.8);
   text-decoration: none;
   cursor: pointer;
-  transition: background 0.15s, color 0.15s;
+  transition: all 0.15s;
+  box-shadow: 0 0 12px rgba(0, 212, 255, 0.2), inset 0 0 8px rgba(0, 212, 255, 0.1);
 }
-.back-to-portal-link:hover {
-  background: rgba(255, 255, 255, 0.08);
-  color: var(--text);
+
+.back-to-portal-fab-button:hover {
+  color: #00ffff;
+  border-color: rgba(0, 212, 255, 0.8);
+  background: rgba(0, 60, 100, 0.8);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.4), inset 0 0 12px rgba(0, 212, 255, 0.15);
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .back-to-portal-fab {
+    bottom: 16px;
+    right: 16px;
+  }
 }
 
 .lede {
@@ -1028,6 +1046,24 @@ body {
   display: grid;
   gap: 8px;
   margin-top: 10px;
+  max-height: 180px;
+  overflow-y: auto;
+  padding-right: 6px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+.summary-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.summary-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.summary-list::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
 }
 
 .summary-list-row {
@@ -1054,6 +1090,17 @@ body {
   display: flex;
   flex-direction: column;
   gap: 3px;
+}
+
+.summary-list-row--backstage {
+  margin-top: 8px;
+  padding-top: 10px;
+  border-top: 2px solid #e04fff;
+  color: #e04fff;
+}
+
+.summary-list-row--backstage strong {
+  color: #e04fff;
 }
 
 .summary-subnote {

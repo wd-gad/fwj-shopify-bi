@@ -509,9 +509,10 @@ function renderSummary(summary) {
     state.activeFilters.membershipStatus ? `Status = ${state.activeFilters.membershipStatus}` : null
   ].filter(Boolean);
 
+  const baseNote = "Entries, tickets, and passes are filtered by transaction date. Member counts are filtered by join date.";
   overviewSummary.textContent = summaryParts.length
-    ? summaryParts.join(" / ")
-    : "Membership filters are applied to this section";
+    ? summaryParts.join(" / ") + " — " + baseNote
+    : baseNote;
 }
 
 function renderMemberJoinTrendPayload(payload, filters = {}) {
@@ -780,7 +781,7 @@ function renderSummaryList(container, rows, emptyLabel = "No data") {
   container.innerHTML = rows
     .map(
       (row) => `
-        <div class="summary-list-row">
+        <div class="summary-list-row${row.special === "backstage" ? " summary-list-row--backstage" : ""}">
           <span>
             ${row.label}
             ${row.note ? `<small class="summary-subnote">${row.note}</small>` : ""}
@@ -1076,11 +1077,12 @@ async function loadSpectatorInsights(eventName) {
     spectatorCategorySummary,
     payload.categoryCounts.map((row) => ({
       ...row,
-      note: row.upgradeCount > 0 ? `Upgrade ${formatNumber(row.upgradeCount)}` : "",
-      displayCount:
-        row.sourceReduction > 0
-          ? `${formatNumber(row.count)} (-${formatNumber(row.sourceReduction)})`
-          : formatNumber(row.count)
+      note: row.upgradeCount > 0
+        ? `UPGRADE ${formatNumber(row.upgradeCount)}`
+        : row.sourceReduction > 0
+          ? `(-${formatNumber(row.sourceReduction)})`
+          : "",
+      displayCount: formatNumber(row.count)
     })),
     "No ticket categories"
   );
@@ -1790,15 +1792,67 @@ function buildReportHtml(eventReports = []) {
           }
           @media print {
             .report-shell { gap: 0; }
-            html,
-            body {
-              background: transparent !important;
+            html, body {
+              background: #fff !important;
+              color: #111 !important;
             }
             body::before {
-              background:
-                radial-gradient(circle at top left, rgba(255, 135, 87, 0.22), transparent 30%),
-                radial-gradient(circle at top right, rgba(255, 209, 125, 0.14), transparent 20%),
-                linear-gradient(180deg, #0d1116 0%, #131922 100%) !important;
+              display: none !important;
+            }
+            .report-page {
+              background: #fff !important;
+            }
+            .report-meta-card,
+            .report-card,
+            .report-block,
+            .report-overview-card {
+              background: #fff !important;
+              border-color: #ccc !important;
+              color: #111 !important;
+            }
+            .report-meta-card strong,
+            .report-card strong,
+            .report-overview-metric strong {
+              color: #111 !important;
+            }
+            .report-meta-card span,
+            .report-card span,
+            .report-card small,
+            .report-overview-metric small,
+            .report-overview-card > span {
+              color: #555 !important;
+            }
+            .report-kicker {
+              color: #0066cc !important;
+            }
+            h1, h2, h3 {
+              color: #111 !important;
+            }
+            h2 {
+              border-bottom-color: #ccc !important;
+            }
+            .report-header {
+              border-bottom-color: #0066cc !important;
+            }
+            .report-table th,
+            .report-table td {
+              border-bottom-color: #ddd !important;
+              color: #111 !important;
+            }
+            .report-axis-label {
+              fill: #666 !important;
+            }
+            .report-point-label {
+              fill: #111 !important;
+            }
+            .report-pie-center-label {
+              fill: #666 !important;
+            }
+            .report-pie-center-value {
+              fill: #111 !important;
+            }
+            .report-empty {
+              color: #999 !important;
             }
           }
         </style>
