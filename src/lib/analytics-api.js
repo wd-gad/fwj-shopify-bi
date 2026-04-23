@@ -654,7 +654,8 @@ async function getEventInsights(eventName) {
     prisma.shopifyOrderItem.findMany({
       where: {
         title: {
-          contains: eventName
+          contains: eventName,
+          mode: "insensitive"
         },
         order: {
           orderedAt: dateGte(DEFAULT_DISPLAY_FROM)
@@ -675,7 +676,8 @@ async function getEventInsights(eventName) {
     prisma.shopifyOrderItem.findMany({
       where: {
         title: {
-          contains: eventName
+          contains: eventName,
+          mode: "insensitive"
         },
         order: {
           orderedAt: dateGte(DEFAULT_DISPLAY_FROM)
@@ -803,7 +805,8 @@ async function getSpectatorInsights(eventName) {
   const rows = await prisma.shopifyOrderItem.findMany({
     where: {
       title: {
-        contains: eventName
+        contains: eventName,
+        mode: "insensitive"
       }
     },
     select: {
