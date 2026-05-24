@@ -282,6 +282,29 @@ async function runTarget(target, updatedAfter) {
     for (const product of products) {
       await upsertProduct(product, contestSchedules);
     }
+
+    // When new schedules were created, re-classify existing DB products that
+    // were previously unmatched (eventDate is null = no schedule matched).
+    // This ensures incremental syncs fix products synced in earlier runs.
+    if (schedulesCreated > 0) {
+      const unmatched = await prisma.productClassificationRule.findMany({
+        where: { classification: "event_entry", eventDate: null },
+        select: { productId: true }
+      });
+      if (unmatched.length > 0) {
+        const unmatchedProducts = await prisma.shopifyProduct.findMany({
+          where: { id: { in: unmatched.map((u) => u.productId) } }
+        });
+        for (const product of unmatchedProducts) {
+          await upsertProduct(
+            { id: product.id, title: product.title, tags: product.tags, handle: product.handle, productType: product.productType, status: product.status, rawJson: product.rawJson, updatedAt: product.updatedAt },
+            contestSchedules
+          );
+        }
+        console.log(`[auto-schedule] Re-classified ${unmatchedProducts.length} previously unmatched products`);
+      }
+    }
+
     return { target, count: products.length };
   }
 
