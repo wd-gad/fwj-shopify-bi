@@ -532,40 +532,65 @@ async function getEventBreakdown({ limit = 20 } = {}) {
 }
 
 async function getEventOptions() {
-  // Use ContestSchedule (non-nullable eventDate) to find 2026+ events,
-  // then count matching EventEntry records by contestName.
-  // EventEntry.eventDate is nullable so filtering on it misses many records.
-  const schedules = await prisma.contestSchedule.findMany({
-    where: { eventDate: { gte: DEFAULT_DISPLAY_FROM } },
-    orderBy: [{ eventDate: "asc" }, { contestName: "asc" }]
+  // Derive event list directly from EventEntry (the source of truth for
+  // which contests have actual entries), then enrich with ContestSchedule
+  // metadata (venue, date) when available.  This avoids the previous
+  // dependency on ContestSchedule as the sole event catalogue — contests
+  // missing from that table are no longer invisible.
+  const events = await prisma.eventEntry.groupBy({
+    by: ["eventName"],
+    where: {
+      status: "applied",
+      appliedAt: dateGte(DEFAULT_DISPLAY_FROM)
+    },
+    _count: { _all: true }
   });
 
-  // Deduplicate by contestName — keep the earliest eventDate per contest.
-  // ContestSchedule allows multiple rows per contestName (different dates),
-  // which would otherwise cause duplicate entries in the event selector.
-  const seen = new Map();
-  for (const schedule of schedules) {
-    if (!seen.has(schedule.contestName)) {
-      seen.set(schedule.contestName, schedule);
+  if (events.length === 0) {
+    return [];
+  }
+
+  // Fetch schedule metadata for venue / date enrichment.
+  const schedules = await prisma.contestSchedule.findMany();
+  const scheduleMap = new Map();
+  for (const s of schedules) {
+    // Multiple schedules may share a normalised key; keep the first.
+    if (!scheduleMap.has(s.contestName)) {
+      scheduleMap.set(s.contestName, s);
     }
   }
-  const uniqueSchedules = Array.from(seen.values());
 
-  const results = await Promise.all(
-    uniqueSchedules.map(async (schedule) => {
-      const count = await prisma.eventEntry.count({
-        where: { status: "applied", eventName: schedule.contestName }
-      });
-      return {
-        eventName: schedule.contestName,
-        eventDate: schedule.eventDate,
-        eventVenueName: schedule.venueName ?? null,
-        entries: count
-      };
-    })
-  );
+  // Best-effort date: prefer EventEntry.eventDate, then ContestSchedule.
+  const eventDates = await prisma.eventEntry.groupBy({
+    by: ["eventName"],
+    where: {
+      status: "applied",
+      eventDate: { not: null },
+      appliedAt: dateGte(DEFAULT_DISPLAY_FROM)
+    },
+    _min: { eventDate: true }
+  });
+  const dateMap = new Map(eventDates.map((e) => [e.eventName, e._min.eventDate]));
 
-  return results.filter((r) => r.entries > 0);
+  const results = events.map((event) => {
+    const schedule = scheduleMap.get(event.eventName) ?? null;
+    return {
+      eventName: event.eventName,
+      eventDate: dateMap.get(event.eventName) ?? schedule?.eventDate ?? null,
+      eventVenueName: schedule?.venueName ?? null,
+      entries: event._count._all
+    };
+  });
+
+  // Sort by eventDate ascending (nulls last), then by name.
+  results.sort((a, b) => {
+    if (a.eventDate && b.eventDate) return new Date(a.eventDate) - new Date(b.eventDate);
+    if (a.eventDate) return -1;
+    if (b.eventDate) return 1;
+    return a.eventName.localeCompare(b.eventName);
+  });
+
+  return results;
 }
 
 async function getEventInsights(eventName) {
