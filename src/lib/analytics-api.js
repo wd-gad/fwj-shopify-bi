@@ -550,36 +550,26 @@ async function getEventOptions() {
     return [];
   }
 
-  // Fetch schedule metadata for venue / date enrichment.
-  const schedules = await prisma.contestSchedule.findMany();
+  // Fetch confirmed schedules only — draft/cancelled/unregistered events are hidden.
+  const schedules = await prisma.contestSchedule.findMany({
+    where: { status: "confirmed" }
+  });
   const scheduleMap = new Map();
   for (const s of schedules) {
-    // Multiple schedules may share a normalised key; keep the first.
     if (!scheduleMap.has(s.contestName)) {
       scheduleMap.set(s.contestName, s);
     }
   }
 
-  // Best-effort date: prefer EventEntry.eventDate, then ContestSchedule.
-  const eventDates = await prisma.eventEntry.groupBy({
-    by: ["eventName"],
-    where: {
-      status: "applied",
-      eventDate: { not: null },
-      appliedAt: dateGte(DEFAULT_DISPLAY_FROM)
-    },
-    _min: { eventDate: true }
-  });
-  const dateMap = new Map(eventDates.map((e) => [e.eventName, e._min.eventDate]));
+  // Only include events that have a confirmed schedule.
+  const confirmedEvents = events.filter((e) => scheduleMap.has(e.eventName));
 
-  const results = events.map((event) => {
-    const schedule = scheduleMap.get(event.eventName) ?? null;
-    // Confirmed schedule date takes priority over EventEntry-derived date
-    const confirmedDate = schedule?.status === "confirmed" ? schedule.eventDate : null;
+  const results = confirmedEvents.map((event) => {
+    const schedule = scheduleMap.get(event.eventName);
     return {
       eventName: event.eventName,
-      eventDate: confirmedDate ?? dateMap.get(event.eventName) ?? schedule?.eventDate ?? null,
-      eventVenueName: schedule?.venueName ?? null,
+      eventDate: schedule.eventDate,
+      eventVenueName: schedule.venueName ?? null,
       entries: event._count._all
     };
   });
