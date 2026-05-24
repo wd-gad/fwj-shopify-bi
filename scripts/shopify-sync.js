@@ -223,10 +223,21 @@ async function runTarget(target, updatedAfter) {
     const products = await fetchProducts({ updatedAfter });
 
     // Auto-register ContestSchedule entries from product titles.
-    // Products with "コンテストエントリー" in the title are contest entry products.
-    // Extract unique contest names and upsert them so classification can match.
+    // Scan BOTH fetched products AND all existing DB products so that
+    // incremental syncs (--updated-after) still discover contests from
+    // previously synced products that were never matched to a schedule.
     const discoveredContests = new Map();
     for (const product of products) {
+      const contestName = extractContestName(product.title);
+      if (contestName && !discoveredContests.has(contestName)) {
+        discoveredContests.set(contestName, product);
+      }
+    }
+    const dbProducts = await prisma.shopifyProduct.findMany({
+      where: { title: { contains: "コンテストエントリー" } },
+      select: { title: true }
+    });
+    for (const product of dbProducts) {
       const contestName = extractContestName(product.title);
       if (contestName && !discoveredContests.has(contestName)) {
         discoveredContests.set(contestName, product);
