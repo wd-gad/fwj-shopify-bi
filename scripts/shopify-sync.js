@@ -1,7 +1,7 @@
 const { Prisma } = require("@prisma/client");
 const { prisma } = require("../src/lib/prisma.js");
 const { fetchCustomers, fetchOrders, fetchProducts } = require("../src/lib/shopify-admin.js");
-const { classifyShopifyProduct } = require("../src/lib/shopify-product-classification.js");
+const { classifyShopifyProduct, extractContestName, normalizeContestKey } = require("../src/lib/shopify-product-classification.js");
 
 function parseArgs(argv) {
   const options = {
@@ -220,8 +220,54 @@ async function runTarget(target, updatedAfter) {
   }
 
   if (target === "products") {
-    const contestSchedules = await prisma.contestSchedule.findMany();
     const products = await fetchProducts({ updatedAfter });
+
+    // Auto-register ContestSchedule entries from product titles.
+    // Products with "コンテストエントリー" in the title are contest entry products.
+    // Extract unique contest names and upsert them so classification can match.
+    const discoveredContests = new Map();
+    for (const product of products) {
+      const contestName = extractContestName(product.title);
+      if (contestName && !discoveredContests.has(contestName)) {
+        discoveredContests.set(contestName, product);
+      }
+    }
+
+    // Load existing schedules to check for duplicates using normalized keys.
+    const existingSchedules = await prisma.contestSchedule.findMany();
+    const existingKeys = existingSchedules.map((s) => normalizeContestKey(s.contestName));
+
+    function isAlreadyRegistered(key) {
+      return existingKeys.some((existing) => key.includes(existing) || existing.includes(key));
+    }
+
+    let schedulesCreated = 0;
+    for (const [contestName] of discoveredContests) {
+      const key = normalizeContestKey(contestName);
+      if (isAlreadyRegistered(key)) {
+        continue;
+      }
+      // Extract year from contest name (e.g. "... 2026") for a placeholder date.
+      // Must be >= 2026-01-01 to pass the DEFAULT_DISPLAY_FROM filter in analytics.
+      const yearMatch = contestName.match(/\b(20\d{2})\b/);
+      const year = yearMatch ? Number(yearMatch[1]) : new Date().getFullYear();
+      const placeholderDate = new Date(Date.UTC(year, 0, 1));
+      await prisma.contestSchedule.create({
+        data: {
+          contestName,
+          eventDate: placeholderDate
+        }
+      });
+      existingKeys.push(key);
+      schedulesCreated++;
+      console.log(`[auto-schedule] Created: ${contestName}`);
+    }
+    if (schedulesCreated > 0) {
+      console.log(`[auto-schedule] ${schedulesCreated} new contest(s) registered`);
+    }
+
+    // Reload schedules after auto-registration, then classify products.
+    const contestSchedules = await prisma.contestSchedule.findMany();
     for (const product of products) {
       await upsertProduct(product, contestSchedules);
     }

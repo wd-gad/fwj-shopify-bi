@@ -178,7 +178,19 @@ function parseEventTitleFromProduct(product, fallbackYear) {
   return parseEventTitle(product?.title, fallbackYear);
 }
 
+function extractContestName(title) {
+  const normalized = normalizeText(title);
+  if (!normalized.includes(CONTEST_ENTRY_MARKER)) {
+    return null;
+  }
+  const [contestPart] = normalized.split(CONTEST_ENTRY_MARKER);
+  const name = normalizeText(contestPart);
+  return name || null;
+}
+
 module.exports = {
   classifyShopifyProduct,
+  extractContestName,
+  normalizeContestKey,
   parseEventTitleFromProduct
 };
