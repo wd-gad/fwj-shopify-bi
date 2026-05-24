@@ -793,12 +793,18 @@ function renderSummaryList(container, rows, emptyLabel = "No data") {
     .join("");
 }
 
+function formatCancelNote(cancelled, gross) {
+  if (!cancelled) return "";
+  return `<span class="cancel-note">${gross}件中${cancelled}件がキャンセル/返金</span>`;
+}
+
 function renderInsightTotals(totals) {
   eventTotals.innerHTML = `
     <article class="summary-card event-total-card total-entries-card">
       <p class="section-label">Selected Event</p>
       <strong>${formatNumber(totals.totalEntries || 0)}</strong>
-      <span>総エントリー数</span>
+      <span>総エントリー数${totals.cancelledEntries ? ` (Cancelled -${totals.cancelledEntries})` : ""}</span>
+      ${formatCancelNote(totals.cancelledEntries, totals.grossEntries)}
     </article>
     <article class="summary-card event-total-card unique-participants-card">
       <p class="section-label">Unique Participants</p>
@@ -833,7 +839,8 @@ function renderSpectatorTotals(totals) {
     <article class="summary-card event-total-card total-entries-card">
       <p class="section-label">Selected Event</p>
       <strong>${formatNumber(totals.totalTickets || 0)}</strong>
-      <span>総観戦チケット数</span>
+      <span>総観戦チケット数${totals.cancelledTickets ? ` (Cancelled -${totals.cancelledTickets})` : ""}</span>
+      ${formatCancelNote(totals.cancelledTickets, totals.grossTickets)}
     </article>
     <article class="summary-card event-total-card unique-participants-card">
       <p class="section-label">Unique Spectators</p>

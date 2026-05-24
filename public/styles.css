@@ -1922,6 +1922,15 @@ select {
   }
 }
 
+.cancel-note {
+  display: block;
+  margin-top: 4px;
+  color: #ff8f8f;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
 /* ── Schedule Management ── */
 
 .schedule-controls {

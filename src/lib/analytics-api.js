@@ -605,11 +605,9 @@ async function getEventInsights(eventName) {
     };
   }
 
-  const entries = await prisma.eventEntry.findMany({
-    where: {
-      status: "applied",
-      eventName
-    },
+  // Fetch all entries (applied + cancelled/refunded) to report cancellation counts.
+  const allEntries = await prisma.eventEntry.findMany({
+    where: { eventName },
     include: {
       member: {
         select: {
@@ -637,6 +635,9 @@ async function getEventInsights(eventName) {
       appliedAt: "asc"
     }
   });
+
+  const entries = allEntries.filter((e) => e.status === "applied");
+  const cancelledEntries = allEntries.filter((e) => e.status !== "applied");
 
   const weeklyBuckets = new Map();
   const categoryBuckets = new Map();
@@ -762,6 +763,8 @@ async function getEventInsights(eventName) {
   return {
     totals: {
       totalEntries: entries.length,
+      cancelledEntries: cancelledEntries.length,
+      grossEntries: allEntries.length,
       uniqueParticipants: uniqueParticipantIds.size,
       entryRevenue: validEntryRevenue,
       spectatorRevenue,
@@ -867,9 +870,9 @@ async function getSpectatorInsights(eventName) {
     }
   });
 
-  const spectatorRows = rows.filter(
-    (row) => isSpectatorTicketTitle(row.title) && isOrderRevenueValid(row.order)
-  );
+  const allSpectatorRows = rows.filter((row) => isSpectatorTicketTitle(row.title));
+  const spectatorRows = allSpectatorRows.filter((row) => isOrderRevenueValid(row.order));
+  const cancelledSpectatorRows = allSpectatorRows.filter((row) => !isOrderRevenueValid(row.order));
 
   const weeklyBuckets = new Map();
   const baseCategoryBuckets = new Map();
@@ -933,6 +936,8 @@ async function getSpectatorInsights(eventName) {
   }
 
   const totalTickets = spectatorRows.reduce((sum, row) => sum + Number(row.quantity || 1), 0);
+  const cancelledTickets = cancelledSpectatorRows.reduce((sum, row) => sum + Number(row.quantity || 1), 0);
+  const grossTickets = totalTickets + cancelledTickets;
   const ticketRevenue = spectatorRows.reduce(
     (sum, row) => sum + Number(row.price || 0) * Number(row.quantity || 1),
     0
@@ -960,6 +965,8 @@ async function getSpectatorInsights(eventName) {
   return {
     totals: {
       totalTickets,
+      cancelledTickets,
+      grossTickets,
       uniqueSpectators: uniqueSpectators.size,
       ticketRevenue,
       totalOrders,
