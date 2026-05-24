@@ -84,10 +84,21 @@ async function main() {
     };
   }).filter((record) => record.eventDate && record.contestName);
 
+  // Deduplicate: keep only the latest date per contest (drop pre-travel day rows)
+  const byName = new Map();
+  for (const record of records) {
+    const existing = byName.get(record.contestName);
+    if (!existing || record.eventDate > existing.eventDate) {
+      byName.set(record.contestName, record);
+    }
+  }
+  const deduplicated = [...byName.values()];
+  console.log(`Parsed ${records.length} rows, deduplicated to ${deduplicated.length} contests`);
+
   await prisma.$transaction(async (tx) => {
     await tx.contestSchedule.deleteMany();
     await tx.contestSchedule.createMany({
-      data: records
+      data: deduplicated
     });
   });
 

@@ -266,7 +266,9 @@ async function runTarget(target, updatedAfter) {
       await prisma.contestSchedule.create({
         data: {
           contestName,
-          eventDate: placeholderDate
+          eventDate: placeholderDate,
+          status: "draft",
+          source: "shopify-auto"
         }
       });
       existingKeys.push(key);
