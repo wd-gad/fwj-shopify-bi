@@ -550,36 +550,26 @@ async function getEventOptions() {
     return [];
   }
 
-  // Fetch schedule metadata for venue / date enrichment.
-  const schedules = await prisma.contestSchedule.findMany();
+  // Fetch confirmed schedules only — draft/cancelled/unregistered events are hidden.
+  const schedules = await prisma.contestSchedule.findMany({
+    where: { status: "confirmed" }
+  });
   const scheduleMap = new Map();
   for (const s of schedules) {
-    // Multiple schedules may share a normalised key; keep the first.
     if (!scheduleMap.has(s.contestName)) {
       scheduleMap.set(s.contestName, s);
     }
   }
 
-  // Best-effort date: prefer EventEntry.eventDate, then ContestSchedule.
-  const eventDates = await prisma.eventEntry.groupBy({
-    by: ["eventName"],
-    where: {
-      status: "applied",
-      eventDate: { not: null },
-      appliedAt: dateGte(DEFAULT_DISPLAY_FROM)
-    },
-    _min: { eventDate: true }
-  });
-  const dateMap = new Map(eventDates.map((e) => [e.eventName, e._min.eventDate]));
+  // Only include events that have a confirmed schedule.
+  const confirmedEvents = events.filter((e) => scheduleMap.has(e.eventName));
 
-  const results = events.map((event) => {
-    const schedule = scheduleMap.get(event.eventName) ?? null;
-    // Confirmed schedule date takes priority over EventEntry-derived date
-    const confirmedDate = schedule?.status === "confirmed" ? schedule.eventDate : null;
+  const results = confirmedEvents.map((event) => {
+    const schedule = scheduleMap.get(event.eventName);
     return {
       eventName: event.eventName,
-      eventDate: confirmedDate ?? dateMap.get(event.eventName) ?? schedule?.eventDate ?? null,
-      eventVenueName: schedule?.venueName ?? null,
+      eventDate: schedule.eventDate,
+      eventVenueName: schedule.venueName ?? null,
       entries: event._count._all
     };
   });
@@ -615,11 +605,9 @@ async function getEventInsights(eventName) {
     };
   }
 
-  const entries = await prisma.eventEntry.findMany({
-    where: {
-      status: "applied",
-      eventName
-    },
+  // Fetch all entries (applied + cancelled/refunded) to report cancellation counts.
+  const allEntries = await prisma.eventEntry.findMany({
+    where: { eventName },
     include: {
       member: {
         select: {
@@ -647,6 +635,9 @@ async function getEventInsights(eventName) {
       appliedAt: "asc"
     }
   });
+
+  const entries = allEntries.filter((e) => e.status === "applied");
+  const cancelledEntries = allEntries.filter((e) => e.status !== "applied");
 
   const weeklyBuckets = new Map();
   const categoryBuckets = new Map();
@@ -772,6 +763,8 @@ async function getEventInsights(eventName) {
   return {
     totals: {
       totalEntries: entries.length,
+      cancelledEntries: cancelledEntries.length,
+      grossEntries: allEntries.length,
       uniqueParticipants: uniqueParticipantIds.size,
       entryRevenue: validEntryRevenue,
       spectatorRevenue,
@@ -877,9 +870,9 @@ async function getSpectatorInsights(eventName) {
     }
   });
 
-  const spectatorRows = rows.filter(
-    (row) => isSpectatorTicketTitle(row.title) && isOrderRevenueValid(row.order)
-  );
+  const allSpectatorRows = rows.filter((row) => isSpectatorTicketTitle(row.title));
+  const spectatorRows = allSpectatorRows.filter((row) => isOrderRevenueValid(row.order));
+  const cancelledSpectatorRows = allSpectatorRows.filter((row) => !isOrderRevenueValid(row.order));
 
   const weeklyBuckets = new Map();
   const baseCategoryBuckets = new Map();
@@ -943,6 +936,8 @@ async function getSpectatorInsights(eventName) {
   }
 
   const totalTickets = spectatorRows.reduce((sum, row) => sum + Number(row.quantity || 1), 0);
+  const cancelledTickets = cancelledSpectatorRows.reduce((sum, row) => sum + Number(row.quantity || 1), 0);
+  const grossTickets = totalTickets + cancelledTickets;
   const ticketRevenue = spectatorRows.reduce(
     (sum, row) => sum + Number(row.price || 0) * Number(row.quantity || 1),
     0
@@ -970,6 +965,8 @@ async function getSpectatorInsights(eventName) {
   return {
     totals: {
       totalTickets,
+      cancelledTickets,
+      grossTickets,
       uniqueSpectators: uniqueSpectators.size,
       ticketRevenue,
       totalOrders,
