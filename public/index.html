@@ -11,9 +11,15 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#0d1116" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
+    <script>if("serviceWorker" in navigator)navigator.serviceWorker.register("/sw.js")</script>
     <div class="page-shell">
       <div class="page-top">
       <header class="hero">
@@ -74,6 +80,7 @@
         <button type="button" id="tabSpectatorInfo" class="tab-button" data-tab-target="spectatorInfoTab" aria-selected="false"><span>Spectator Info</span></button>
         <button type="button" id="tabCustomerInfo" class="tab-button" data-tab-target="customerInfoTab" aria-selected="false"><span>Athlete Info</span></button>
         <button type="button" id="tabCustomerDb" class="tab-button inhouse-only" data-tab-target="customerDbTab" aria-selected="false"><span>Customer DB</span></button>
+        <button type="button" id="tabSchedule" class="tab-button admin-only" data-tab-target="scheduleTab" aria-selected="false"><span>Schedule</span></button>
       </nav>
       </div>
 
@@ -484,6 +491,80 @@
               </div>
               <div id="regionChart" class="timeline-list"></div>
             </div>
+          </div>
+        </section>
+        </div>
+
+        <div id="scheduleTab" class="tab-panel admin-only" role="tabpanel" aria-labelledby="tabSchedule" hidden>
+        <section class="panel panel-wide">
+          <div class="panel-header">
+            <div>
+              <p class="section-label">Master Data</p>
+              <h2>Contest Schedule Management</h2>
+              <p class="muted">Shopify sync detects new contests automatically as "draft". Set the correct date and venue to confirm.</p>
+            </div>
+            <div class="schedule-controls">
+              <button id="scheduleAddButton" type="button" class="primary-button">Add Contest</button>
+            </div>
+          </div>
+          <div id="scheduleFormContainer" class="schedule-form-container" hidden>
+            <form id="scheduleForm" class="schedule-form">
+              <input type="hidden" id="scheduleFormId" value="" />
+              <div class="schedule-form-grid">
+                <label class="filter-field">
+                  <span class="filter-label">Contest Name *</span>
+                  <input type="text" id="scheduleFormName" required />
+                </label>
+                <label class="filter-field">
+                  <span class="filter-label">Event Date *</span>
+                  <input type="date" id="scheduleFormDate" required />
+                </label>
+                <label class="filter-field">
+                  <span class="filter-label">Venue</span>
+                  <input type="text" id="scheduleFormVenue" />
+                </label>
+                <label class="filter-field">
+                  <span class="filter-label">Nearest Station</span>
+                  <input type="text" id="scheduleFormStation" />
+                </label>
+                <label class="filter-field">
+                  <span class="filter-label">Address</span>
+                  <input type="text" id="scheduleFormAddress" />
+                </label>
+                <label class="filter-field">
+                  <span class="filter-label">Status</span>
+                  <select id="scheduleFormStatus">
+                    <option value="confirmed">Confirmed</option>
+                    <option value="draft">Draft</option>
+                    <option value="cancelled">Cancelled</option>
+                  </select>
+                </label>
+              </div>
+              <div class="schedule-form-actions">
+                <button type="submit" class="primary-button">Save</button>
+                <button type="button" id="scheduleFormCancel" class="ghost-button">Cancel</button>
+              </div>
+              <p id="scheduleFormError" class="schedule-form-error" hidden></p>
+            </form>
+          </div>
+          <div class="schedule-table-viewport">
+            <table class="data-table schedule-table">
+              <thead>
+                <tr>
+                  <th>Status</th>
+                  <th>Date</th>
+                  <th>Contest Name</th>
+                  <th>Venue</th>
+                  <th>Station</th>
+                  <th>Address</th>
+                  <th>Source</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="scheduleTableBody">
+                <tr><td colspan="8" class="table-empty">Loading...</td></tr>
+              </tbody>
+            </table>
           </div>
         </section>
         </div>

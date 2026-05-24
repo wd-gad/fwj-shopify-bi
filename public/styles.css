@@ -410,6 +410,10 @@ body {
   --tab-edge: #bb8cff;
 }
 
+#tabSchedule {
+  --tab-edge: #ff6b9d;
+}
+
 .tab-button:hover {
   color: #edf3fa;
   border-color: color-mix(in srgb, var(--tab-edge, #6fe6ff) 42%, rgba(255, 255, 255, 0.08));
@@ -1915,6 +1919,125 @@ select {
   .chart-point {
     fill: #ffffff !important;
     stroke: #111111 !important;
+  }
+}
+
+/* ── Schedule Management ── */
+
+.schedule-controls {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.schedule-form-container {
+  margin-bottom: 16px;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 107, 157, 0.3);
+  background: rgba(255, 107, 157, 0.04);
+}
+
+.schedule-form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.schedule-form-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.schedule-form-error {
+  margin-top: 8px;
+  color: #ff8f8f;
+  font-size: 0.85rem;
+}
+
+.schedule-table-viewport {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid rgba(111, 230, 255, 0.1);
+  border-radius: 18px;
+  background: rgba(6, 11, 18, 0.7);
+}
+
+.schedule-table {
+  width: 100%;
+  min-width: 900px;
+}
+
+.schedule-status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.schedule-status-confirmed {
+  background: rgba(121, 242, 163, 0.15);
+  border: 1px solid rgba(121, 242, 163, 0.3);
+  color: #79f2a3;
+}
+
+.schedule-status-draft {
+  background: rgba(255, 209, 125, 0.15);
+  border: 1px solid rgba(255, 209, 125, 0.3);
+  color: #ffd17d;
+}
+
+.schedule-status-cancelled {
+  background: rgba(255, 143, 143, 0.15);
+  border: 1px solid rgba(255, 143, 143, 0.3);
+  color: #ff8f8f;
+}
+
+.schedule-source-badge {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.schedule-action-button {
+  appearance: none;
+  background: none;
+  border: 1px solid rgba(111, 230, 255, 0.2);
+  border-radius: 8px;
+  padding: 4px 10px;
+  color: #b7c5d4;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: border-color 150ms, color 150ms;
+}
+
+.schedule-action-button:hover {
+  border-color: rgba(111, 230, 255, 0.5);
+  color: #edf3fa;
+}
+
+.schedule-action-button--delete {
+  border-color: rgba(255, 143, 143, 0.25);
+  color: #ff8f8f;
+}
+
+.schedule-action-button--delete:hover {
+  border-color: rgba(255, 143, 143, 0.6);
+  color: #ffd6d6;
+}
+
+.schedule-actions-cell {
+  display: flex;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+  .schedule-form-grid {
+    grid-template-columns: 1fr;
   }
 }
 

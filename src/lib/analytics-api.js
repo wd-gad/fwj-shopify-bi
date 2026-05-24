@@ -574,9 +574,11 @@ async function getEventOptions() {
 
   const results = events.map((event) => {
     const schedule = scheduleMap.get(event.eventName) ?? null;
+    // Confirmed schedule date takes priority over EventEntry-derived date
+    const confirmedDate = schedule?.status === "confirmed" ? schedule.eventDate : null;
     return {
       eventName: event.eventName,
-      eventDate: dateMap.get(event.eventName) ?? schedule?.eventDate ?? null,
+      eventDate: confirmedDate ?? dateMap.get(event.eventName) ?? schedule?.eventDate ?? null,
       eventVenueName: schedule?.venueName ?? null,
       entries: event._count._all
     };

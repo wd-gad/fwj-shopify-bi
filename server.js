@@ -16,6 +16,13 @@ const {
   getMembers,
   getMemberDetail
 } = require("./src/lib/analytics-api.js");
+const {
+  listContestSchedules,
+  getContestSchedule,
+  createContestSchedule,
+  updateContestSchedule,
+  deleteContestSchedule
+} = require("./src/lib/contest-schedule-api.js");
 
 const PORT = Number(process.env.PORT || 3007);
 const HOST = process.env.HOST || "0.0.0.0";
@@ -28,7 +35,7 @@ const INTERNAL_API_KEY = process.env.INTERNAL_API_KEY;
 const SESSION_COOKIE = "bi_session";
 
 // Endpoints callable server-to-server (e.g. from Itinerary) with INTERNAL_API_KEY
-const INTERNAL_PATHS = ["/api/event-options", "/api/event-insights", "/api/spectator-insights"];
+const INTERNAL_PATHS = ["/api/event-options", "/api/event-insights", "/api/spectator-insights", "/api/contest-schedules"];
 
 // Revenue fields hidden from "USER" (それ以外) role
 const REVENUE_KEYS = new Set(["entryRevenue", "totalRevenue", "memberRevenue", "revenue", "price", "amount", "sales", "totalSales"]);
@@ -143,6 +150,30 @@ const MIME_TYPES = {
   ".json": "application/json; charset=utf-8",
   ".svg": "image/svg+xml; charset=utf-8"
 };
+
+function readJsonBody(req, maxBytes = 1048576) {
+  return new Promise((resolve, reject) => {
+    const chunks = [];
+    let size = 0;
+    req.on("data", (chunk) => {
+      size += chunk.length;
+      if (size > maxBytes) {
+        reject(new Error("Request body too large"));
+        req.destroy();
+        return;
+      }
+      chunks.push(chunk);
+    });
+    req.on("end", () => {
+      try {
+        resolve(JSON.parse(Buffer.concat(chunks).toString()));
+      } catch {
+        reject(new Error("Invalid JSON"));
+      }
+    });
+    req.on("error", reject);
+  });
+}
 
 function sendJson(res, statusCode, payload) {
   res.writeHead(statusCode, {
@@ -481,6 +512,62 @@ async function handleApi(req, res, pathname, searchParams, session) {
     return reply(200, { member });
   }
 
+  // --- Contest Schedule CRUD ---
+  if (pathname === "/api/contest-schedules") {
+    if (req.method === "GET") {
+      const filters = {};
+      if (searchParams.get("year")) filters.year = searchParams.get("year");
+      if (searchParams.get("status")) filters.status = searchParams.get("status");
+      const schedules = await listContestSchedules(filters);
+      return sendJson(res, 200, { schedules });
+    }
+    if (req.method === "POST") {
+      if (!isAdmin) return sendJson(res, 403, { error: "Admin only" });
+      try {
+        const body = await readJsonBody(req);
+        if (!body.contestName || !body.eventDate) {
+          return sendJson(res, 400, { error: "contestName and eventDate are required" });
+        }
+        const schedule = await createContestSchedule(body);
+        return sendJson(res, 201, { schedule });
+      } catch (error) {
+        const message = error instanceof Error ? error.message : "Failed to create";
+        return sendJson(res, 400, { error: message });
+      }
+    }
+    return sendJson(res, 405, { error: "Method not allowed" });
+  }
+
+  if (pathname.startsWith("/api/contest-schedules/")) {
+    const id = decodeURIComponent(pathname.replace("/api/contest-schedules/", ""));
+    if (!id) return sendJson(res, 400, { error: "Missing id" });
+
+    if (req.method === "GET") {
+      const schedule = await getContestSchedule(id);
+      if (!schedule) return sendJson(res, 404, { error: "Not found" });
+      return sendJson(res, 200, { schedule });
+    }
+    if (req.method === "PUT") {
+      if (!isAdmin) return sendJson(res, 403, { error: "Admin only" });
+      try {
+        const body = await readJsonBody(req);
+        const schedule = await updateContestSchedule(id, body);
+        if (!schedule) return sendJson(res, 404, { error: "Not found" });
+        return sendJson(res, 200, { schedule });
+      } catch (error) {
+        const message = error instanceof Error ? error.message : "Failed to update";
+        return sendJson(res, 400, { error: message });
+      }
+    }
+    if (req.method === "DELETE") {
+      if (!isAdmin) return sendJson(res, 403, { error: "Admin only" });
+      const deleted = await deleteContestSchedule(id);
+      if (!deleted) return sendJson(res, 404, { error: "Not found" });
+      return sendJson(res, 200, { deleted: true });
+    }
+    return sendJson(res, 405, { error: "Method not allowed" });
+  }
+
   return sendJson(res, 404, { error: "Not found" });
 }
 
@@ -499,12 +586,18 @@ const server = http.createServer(async (req, res) => {
       return sendJson(res, 200, { ok: true });
     }
 
+    // PWA assets — no auth required
+    if (pathname === "/manifest.json" || pathname === "/sw.js" || pathname === "/icon-192.png" || pathname === "/icon-512.png") {
+      return sendFile(res, path.join(PUBLIC_DIR, pathname.replace(/^\/+/, "")));
+    }
+
     // Internal server-to-server calls (e.g. from Itinerary)
     const isInternalCall = INTERNAL_API_KEY && req.headers["x-internal-key"] === INTERNAL_API_KEY;
-    const isInternalPath = INTERNAL_PATHS.includes(pathname);
+    const isInternalPath = INTERNAL_PATHS.includes(pathname) || INTERNAL_PATHS.some((p) => pathname.startsWith(p + "/"));
 
-    // Resolve session
-    const session = getSession(req);
+    // Resolve session — local dev bypass: skip SSO when AUTH_BYPASS=1
+    const authBypass = process.env.AUTH_BYPASS === "1";
+    const session = authBypass ? { email: "local@dev", name: "Local Dev", role: "ADMIN" } : getSession(req);
 
     // Auth gate
     if (!session && !(isInternalCall && isInternalPath)) {

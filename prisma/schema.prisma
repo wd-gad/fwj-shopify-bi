@@ -220,6 +220,8 @@ model ContestSchedule {
   travelDescription String?   @map("travel_description")
   address           String?   @map("address")
   phoneNumber       String?   @map("phone_number")
+  status            String    @default("draft") @map("status")
+  source            String?   @map("source")
   createdAt         DateTime  @default(now()) @map("created_at")
   updatedAt         DateTime  @updatedAt @map("updated_at")
 

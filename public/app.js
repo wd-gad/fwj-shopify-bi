@@ -2161,6 +2161,165 @@ spectatorEventSelect.addEventListener("change", async (event) => {
   await loadSpectatorInsights(state.selectedSpectatorEventName);
 });
 
+// --- Schedule Management ---
+const scheduleTableBody = document.querySelector("#scheduleTableBody");
+const scheduleAddButton = document.querySelector("#scheduleAddButton");
+const scheduleFormContainer = document.querySelector("#scheduleFormContainer");
+const scheduleForm = document.querySelector("#scheduleForm");
+const scheduleFormId = document.querySelector("#scheduleFormId");
+const scheduleFormName = document.querySelector("#scheduleFormName");
+const scheduleFormDate = document.querySelector("#scheduleFormDate");
+const scheduleFormVenue = document.querySelector("#scheduleFormVenue");
+const scheduleFormStation = document.querySelector("#scheduleFormStation");
+const scheduleFormAddress = document.querySelector("#scheduleFormAddress");
+const scheduleFormStatus = document.querySelector("#scheduleFormStatus");
+const scheduleFormCancel = document.querySelector("#scheduleFormCancel");
+const scheduleFormError = document.querySelector("#scheduleFormError");
+
+state.schedules = [];
+
+function formatScheduleDate(dateStr) {
+  if (!dateStr) return "-";
+  const d = new Date(dateStr);
+  return `${d.getFullYear()}/${String(d.getMonth() + 1).padStart(2, "0")}/${String(d.getDate()).padStart(2, "0")}`;
+}
+
+function formatIsoDate(dateStr) {
+  if (!dateStr) return "";
+  const d = new Date(dateStr);
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+}
+
+function renderScheduleTable() {
+  if (!scheduleTableBody) return;
+  if (state.schedules.length === 0) {
+    scheduleTableBody.innerHTML = '<tr><td colspan="8" class="table-empty">No contest schedules found</td></tr>';
+    return;
+  }
+  scheduleTableBody.innerHTML = state.schedules.map((s) => {
+    const statusClass = `schedule-status-${s.status || "draft"}`;
+    return `<tr>
+      <td><span class="schedule-status-badge ${statusClass}">${s.status || "draft"}</span></td>
+      <td>${formatScheduleDate(s.eventDate)}</td>
+      <td>${escapeHtml(s.contestName)}</td>
+      <td>${escapeHtml(s.venueName || "-")}</td>
+      <td>${escapeHtml(s.nearestStation || "-")}</td>
+      <td>${escapeHtml(s.address || "-")}</td>
+      <td><span class="schedule-source-badge">${escapeHtml(s.source || "-")}</span></td>
+      <td><div class="schedule-actions-cell">
+        <button type="button" class="schedule-action-button" data-schedule-edit="${s.id}">Edit</button>
+        <button type="button" class="schedule-action-button schedule-action-button--delete" data-schedule-delete="${s.id}">Delete</button>
+      </div></td>
+    </tr>`;
+  }).join("");
+}
+
+function escapeHtml(str) {
+  const div = document.createElement("div");
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+async function loadSchedules() {
+  try {
+    const res = await fetch("/api/contest-schedules");
+    if (!res.ok) return;
+    const data = await res.json();
+    state.schedules = data.schedules || [];
+    renderScheduleTable();
+  } catch {
+    // ignore
+  }
+}
+
+function showScheduleForm(schedule) {
+  if (!scheduleFormContainer) return;
+  scheduleFormId.value = schedule?.id || "";
+  scheduleFormName.value = schedule?.contestName || "";
+  scheduleFormDate.value = formatIsoDate(schedule?.eventDate) || "";
+  scheduleFormVenue.value = schedule?.venueName || "";
+  scheduleFormStation.value = schedule?.nearestStation || "";
+  scheduleFormAddress.value = schedule?.address || "";
+  scheduleFormStatus.value = schedule?.status || "confirmed";
+  scheduleFormError.hidden = true;
+  scheduleFormContainer.hidden = false;
+  scheduleFormName.focus();
+}
+
+function hideScheduleForm() {
+  if (!scheduleFormContainer) return;
+  scheduleFormContainer.hidden = true;
+  scheduleFormError.hidden = true;
+}
+
+if (scheduleAddButton) {
+  scheduleAddButton.addEventListener("click", () => showScheduleForm(null));
+}
+
+if (scheduleFormCancel) {
+  scheduleFormCancel.addEventListener("click", hideScheduleForm);
+}
+
+if (scheduleForm) {
+  scheduleForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const id = scheduleFormId.value;
+    const body = {
+      contestName: scheduleFormName.value.trim(),
+      eventDate: scheduleFormDate.value,
+      venueName: scheduleFormVenue.value.trim(),
+      nearestStation: scheduleFormStation.value.trim(),
+      address: scheduleFormAddress.value.trim(),
+      status: scheduleFormStatus.value
+    };
+    try {
+      const method = id ? "PUT" : "POST";
+      const url = id ? `/api/contest-schedules/${encodeURIComponent(id)}` : "/api/contest-schedules";
+      const res = await fetch(url, {
+        method,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body)
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        scheduleFormError.textContent = data.error || "Failed to save";
+        scheduleFormError.hidden = false;
+        return;
+      }
+      hideScheduleForm();
+      await loadSchedules();
+    } catch (error) {
+      scheduleFormError.textContent = error.message || "Network error";
+      scheduleFormError.hidden = false;
+    }
+  });
+}
+
+if (scheduleTableBody) {
+  scheduleTableBody.addEventListener("click", async (e) => {
+    const editButton = e.target.closest("[data-schedule-edit]");
+    if (editButton) {
+      const id = editButton.dataset.scheduleEdit;
+      const schedule = state.schedules.find((s) => s.id === id);
+      if (schedule) showScheduleForm(schedule);
+      return;
+    }
+    const deleteButton = e.target.closest("[data-schedule-delete]");
+    if (deleteButton) {
+      const id = deleteButton.dataset.scheduleDelete;
+      const schedule = state.schedules.find((s) => s.id === id);
+      if (!schedule) return;
+      if (!confirm(`Delete "${schedule.contestName}"?`)) return;
+      try {
+        const res = await fetch(`/api/contest-schedules/${encodeURIComponent(id)}`, { method: "DELETE" });
+        if (res.ok) await loadSchedules();
+      } catch {
+        // ignore
+      }
+    }
+  });
+}
+
 async function initAuth() {
   try {
     const res = await fetch("/api/me");
@@ -2183,4 +2342,5 @@ initAuth().then(() => {
     setChartMode(target, value);
   });
   window.setInterval(loadSyncStatus, 30000);
+  loadSchedules();
 });
