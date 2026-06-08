@@ -183,6 +183,154 @@ function sendJson(res, statusCode, payload) {
   res.end(JSON.stringify(payload));
 }
 
+function readTextBody(req, maxBytes = 1048576) {
+  return new Promise((resolve, reject) => {
+    const chunks = [];
+    let size = 0;
+    req.on("data", (chunk) => {
+      size += chunk.length;
+      if (size > maxBytes) {
+        reject(new Error("Request body too large"));
+        req.destroy();
+        return;
+      }
+      chunks.push(chunk);
+    });
+    req.on("end", () => resolve(Buffer.concat(chunks).toString("utf8")));
+    req.on("error", reject);
+  });
+}
+
+function readCsvSet(name) {
+  return new Set(
+    (process.env[name] || "")
+      .split(",")
+      .map((value) => value.trim())
+      .filter(Boolean)
+  );
+}
+
+function getShopifyNotifyTargets() {
+  return {
+    productIds: readCsvSet("SHOPIFY_NOTIFY_PRODUCT_IDS"),
+    variantIds: readCsvSet("SHOPIFY_NOTIFY_VARIANT_IDS"),
+    skus: readCsvSet("SHOPIFY_NOTIFY_SKUS")
+  };
+}
+
+function hasShopifyNotifyTargets(targets) {
+  return targets.productIds.size > 0 || targets.variantIds.size > 0 || targets.skus.size > 0;
+}
+
+function matchesShopifyNotifyTarget(lineItem, targets) {
+  const productId = lineItem?.product_id == null ? "" : String(lineItem.product_id);
+  const variantId = lineItem?.variant_id == null ? "" : String(lineItem.variant_id);
+  const sku = lineItem?.sku?.trim() || "";
+
+  return (
+    (productId && targets.productIds.has(productId)) ||
+    (variantId && targets.variantIds.has(variantId)) ||
+    (sku && targets.skus.has(sku))
+  );
+}
+
+function verifyShopifyWebhookHmac(rawBody, hmacHeader) {
+  const secret = process.env.SHOPIFY_WEBHOOK_SECRET || process.env.SHOPIFY_API_CLIENT_SECRET;
+  if (!secret || !hmacHeader) return false;
+
+  const digest = crypto.createHmac("sha256", secret).update(rawBody, "utf8").digest("base64");
+  const actual = Buffer.from(hmacHeader);
+  const expected = Buffer.from(digest);
+
+  return actual.length === expected.length && crypto.timingSafeEqual(actual, expected);
+}
+
+function getShopifyAdminOrderUrl(order) {
+  const shopDomain = (process.env.SHOPIFY_STORE_DOMAIN || "").replace(/^https?:\/\//, "").replace(/\/$/, "");
+  if (!shopDomain || !order?.id) return null;
+  return `https://${shopDomain}/admin/orders/${order.id}`;
+}
+
+function getShopifyOrderCustomerName(order) {
+  const shippingName = order?.shipping_address?.name?.trim();
+  if (shippingName) return shippingName;
+
+  const firstName = order?.customer?.first_name?.trim();
+  const lastName = order?.customer?.last_name?.trim();
+  return [lastName, firstName].filter(Boolean).join(" ") || "不明";
+}
+
+function buildGoogleChatOrderText(order, matchedItems) {
+  const orderLabel = order?.name || (order?.order_number ? `#${order.order_number}` : String(order?.id || "不明"));
+  const total = [order?.total_price, order?.currency].filter(Boolean).join(" ");
+  const adminUrl = getShopifyAdminOrderUrl(order);
+  const contact = order?.email || order?.customer?.email || order?.phone || order?.shipping_address?.phone || "未取得";
+  const destination = [order?.shipping_address?.province, order?.shipping_address?.city].filter(Boolean).join(" ");
+  const itemLines = matchedItems
+    .map((item) => {
+      const quantity = item.quantity == null ? "" : ` x ${item.quantity}`;
+      const sku = item.sku ? ` / SKU: ${item.sku}` : "";
+      return `- ${item.name || item.title || "商品名未取得"}${quantity}${sku}`;
+    })
+    .join("\n");
+
+  return [
+    "Shopifyで対象商品の注文が入りました。",
+    `注文: ${orderLabel}`,
+    `対象商品:\n${itemLines}`,
+    `顧客: ${getShopifyOrderCustomerName(order)}`,
+    `連絡先: ${contact}`,
+    destination ? `配送先: ${destination}` : null,
+    total ? `合計: ${total}` : null,
+    adminUrl ? `管理画面: ${adminUrl}` : null
+  ]
+    .filter(Boolean)
+    .join("\n");
+}
+
+async function sendGoogleChatNotification(text) {
+  const webhookUrl = process.env.GOOGLE_CHAT_WEBHOOK_URL;
+  if (!webhookUrl) {
+    throw new Error("GOOGLE_CHAT_WEBHOOK_URL is not configured.");
+  }
+
+  const response = await fetch(webhookUrl, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ text })
+  });
+
+  if (!response.ok) {
+    throw new Error(`Google Chat notification failed: ${response.status} ${await response.text()}`);
+  }
+}
+
+async function handleShopifyOrderNotify(req, res) {
+  if (req.method !== "POST") {
+    return sendJson(res, 405, { error: "Method not allowed" });
+  }
+
+  const rawBody = await readTextBody(req);
+  if (!verifyShopifyWebhookHmac(rawBody, req.headers["x-shopify-hmac-sha256"])) {
+    return sendJson(res, 401, { error: "Invalid Shopify webhook signature." });
+  }
+
+  const targets = getShopifyNotifyTargets();
+  if (!hasShopifyNotifyTargets(targets)) {
+    return sendJson(res, 500, { error: "No Shopify target products configured." });
+  }
+
+  const order = JSON.parse(rawBody);
+  const matchedItems = (order.line_items || []).filter((item) => matchesShopifyNotifyTarget(item, targets));
+
+  if (matchedItems.length === 0) {
+    return sendJson(res, 200, { ok: true, notified: false });
+  }
+
+  await sendGoogleChatNotification(buildGoogleChatOrderText(order, matchedItems));
+  return sendJson(res, 200, { ok: true, notified: true, matchedItems: matchedItems.length });
+}
+
 function sendFile(res, filePath) {
   fs.stat(filePath, (statError, stats) => {
     if (statError || !stats.isFile()) {
@@ -589,6 +737,11 @@ const server = http.createServer(async (req, res) => {
     // PWA assets — no auth required
     if (pathname === "/manifest.json" || pathname === "/sw.js" || pathname === "/icon-192.png" || pathname === "/icon-512.png") {
       return sendFile(res, path.join(PUBLIC_DIR, pathname.replace(/^\/+/, "")));
+    }
+
+    // Shopify webhook — public endpoint protected by Shopify HMAC.
+    if (pathname === "/api/shopify/order-notify") {
+      return await handleShopifyOrderNotify(req, res);
     }
 
     // Internal server-to-server calls (e.g. from Itinerary)
