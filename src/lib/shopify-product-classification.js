@@ -70,6 +70,44 @@ function matchContestSchedule(title, contestSchedules = []) {
   return contestSchedules.find((schedule) => titleKey.includes(schedule.contestKey)) || null;
 }
 
+// ContestSchedule を正とした event_entry を組み立てる。日付・名称・会場はスケジュールから採用し、
+// タイトル先頭の日付プレフィックス（例: "0313"）由来の分裂を防ぐ。
+function eventEntryFromSchedule(schedule, eventCategory = null) {
+  return {
+    classification: "event_entry",
+    membershipPlanName: null,
+    eventName: schedule.contestName,
+    eventDate: schedule.eventDate,
+    eventCategory,
+    eventVenueName: schedule.venueName ?? null,
+    eventAddress: schedule.address ?? null
+  };
+}
+
+// タグ/タイトル日付プレフィックス経由の event_entry を、可能なら ContestSchedule に解決する。
+// スケジュールが一致した場合はスケジュールの日付・名称・会場を正とし、タイトル日付への
+// フォールバック（同一コンテストが日付ごとに割れる現象）を最小化する。
+function buildEventEntry(title, parsed, contestSchedules = []) {
+  const eventName = (parsed?.eventName || normalizeText(title)) || null;
+  const schedule =
+    matchContestSchedule(eventName || "", contestSchedules) ||
+    matchContestSchedule(title, contestSchedules);
+
+  if (schedule) {
+    return eventEntryFromSchedule(schedule);
+  }
+
+  return {
+    classification: "event_entry",
+    membershipPlanName: null,
+    eventName,
+    eventDate: parsed?.eventDate ?? null,
+    eventCategory: null,
+    eventVenueName: null,
+    eventAddress: null
+  };
+}
+
 function parseContestEntry(title, contestSchedules = []) {
   if (!normalizeText(title).includes(CONTEST_ENTRY_MARKER)) {
     return null;
@@ -91,15 +129,7 @@ function parseContestEntry(title, contestSchedules = []) {
     };
   }
 
-  return {
-    classification: "event_entry",
-    membershipPlanName: null,
-    eventName: schedule.contestName,
-    eventDate: schedule.eventDate,
-    eventCategory,
-    eventVenueName: schedule.venueName ?? null,
-    eventAddress: schedule.address ?? null
-  };
+  return eventEntryFromSchedule(schedule, eventCategory);
 }
 
 function classifyShopifyProduct(product, options = {}) {
@@ -126,16 +156,7 @@ function classifyShopifyProduct(product, options = {}) {
   }
 
   if (tags.some((tag) => EVENT_TAGS.includes(tag))) {
-    const parsed = parseEventTitle(title, fallbackYear);
-    return {
-      classification: "event_entry",
-      membershipPlanName: null,
-      eventName: parsed?.eventName ?? title ?? null,
-      eventDate: parsed?.eventDate ?? null,
-      eventCategory: null,
-      eventVenueName: null,
-      eventAddress: null
-    };
+    return buildEventEntry(title, parseEventTitle(title, fallbackYear), contestSchedules);
   }
 
   if (hasAnyKeyword(title, MEMBERSHIP_KEYWORDS)) {
@@ -152,15 +173,7 @@ function classifyShopifyProduct(product, options = {}) {
 
   const parsed = parseEventTitle(title, fallbackYear);
   if (parsed) {
-    return {
-      classification: "event_entry",
-      membershipPlanName: null,
-      eventName: parsed.eventName,
-      eventDate: parsed.eventDate,
-      eventCategory: null,
-      eventVenueName: null,
-      eventAddress: null
-    };
+    return buildEventEntry(title, parsed, contestSchedules);
   }
 
   return {
