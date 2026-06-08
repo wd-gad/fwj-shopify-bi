@@ -19,6 +19,7 @@
     "db:seed:dev": "node --env-file=.env prisma/seed.js",
     "shopify:audit": "node --env-file=.env scripts/shopify-audit.js",
     "shopify:config": "node --env-file=.env scripts/shopify-config-cli.js",
+    "shopify:setup-google-chat-webhook": "node --env-file=.env scripts/setup-google-chat-order-webhook.mjs",
     "shopify:monthly-points": "node --env-file=.env scripts/shopify-monthly-points.js",
     "shopify:preflight": "node --env-file=.env scripts/shopify-preflight.js",
     "shopify:reward-report": "node --env-file=.env scripts/shopify-reward-report.js",
