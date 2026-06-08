@@ -1,10 +1,72 @@
 const { prisma } = require("./prisma.js");
 const { normalizePrefecture, inferRegionFromPrefecture } = require("./member-analytics.js");
+const { normalizeContestKey } = require("./shopify-product-classification.js");
 
 const DEFAULT_DISPLAY_FROM = new Date("2026-01-01T00:00:00.000Z");
 
 function dateGte(date) {
   return date ? { gte: date } : {};
+}
+
+// --- コンテスト名の正規化マッチング（読み取り層） ---
+// 同期/分類層 (shopify-product-classification.js matchContestSchedule) と同じ
+// 正規化キー + 部分一致のセマンティクスを読み取り層にも適用する。
+// これにより EventEntry.eventName の年号ドリフト（例: "Discovery Championships 2026"）や
+// 日付分裂が、ContestSchedule との完全一致から漏れて「一覧から消える / 件数が割れる」現象を防ぐ。
+
+// confirmed スケジュールを [{ schedule, key }] 化し、キー長の降順（=最も具体的なものを優先）で並べる。
+function buildScheduleIndex(schedules) {
+  return schedules
+    .map((schedule) => ({ schedule, key: normalizeContestKey(schedule.contestName) }))
+    .filter((entry) => entry.key)
+    .sort((left, right) => right.key.length - left.key.length);
+}
+
+// eventName（年号/日付のゆれを含みうる）を正規化キーの包含で confirmed スケジュールへ解決する。
+// 一致が無ければ null。
+function matchScheduleForName(eventName, scheduleIndex) {
+  const key = normalizeContestKey(eventName || "");
+  if (!key) return null;
+  const hit = scheduleIndex.find((entry) => key.includes(entry.key));
+  return hit ? hit.schedule : null;
+}
+
+// (eventName, eventDate) で割れた集計バケットを、正規化キーで同一コンテストにマージする。
+// 代表の eventName/eventDate は最大件数のバケットを採用。rows は groupBy 結果 or {eventName,eventDate,entries}。
+function mergeContestBuckets(rows) {
+  const merged = new Map();
+  for (const row of rows) {
+    const eventName = row.eventName;
+    const eventDate = row.eventDate;
+    const count = row._count?._all ?? row.entries ?? 0;
+    const key = normalizeContestKey(eventName || "") || `__raw__:${eventName}`;
+    const acc = merged.get(key) || { eventName, eventDate, entries: 0, _top: -1 };
+    acc.entries += count;
+    if (count > acc._top) {
+      acc._top = count;
+      acc.eventName = eventName;
+      acc.eventDate = eventDate;
+    }
+    merged.set(key, acc);
+  }
+  return [...merged.values()].map(({ eventName, eventDate, entries }) => ({ eventName, eventDate, entries }));
+}
+
+// eventName を、同一コンテストに属する全 EventEntry.eventName（ドリフト名を含む）へ展開する。
+// ドリルダウン系で where:{eventName} の完全一致による取りこぼしを防ぐ。
+async function resolveEntryNames(eventName) {
+  const targetKey = normalizeContestKey(eventName || "");
+  if (!targetKey) return eventName ? [eventName] : [];
+  const groups = await prisma.eventEntry.groupBy({
+    by: ["eventName"]
+  });
+  const names = groups
+    .map((group) => group.eventName)
+    .filter((name) => {
+      const key = normalizeContestKey(name || "");
+      return key && (key.includes(targetKey) || targetKey.includes(key));
+    });
+  return names.length ? names : [eventName];
 }
 
 function maxDate(left, right) {
@@ -430,8 +492,7 @@ async function getDashboardSummary(filters = {}) {
         appliedAt: appliedAtFilter
       },
       _count: { _all: true },
-      orderBy: [{ eventDate: "desc" }, { eventName: "asc" }],
-      take: 5
+      orderBy: [{ eventDate: "desc" }, { eventName: "asc" }]
     }),
     prisma.memberProfile.findMany({
       where: memberWhere,
@@ -501,11 +562,14 @@ async function getDashboardSummary(filters = {}) {
       backstagePassCount,
       backstagePassRevenue
     },
-    recentEvents: recentEvents.map((event) => ({
-      eventName: event.eventName,
-      eventDate: event.eventDate,
-      entries: event._count._all
-    })),
+    recentEvents: mergeContestBuckets(recentEvents)
+      .sort((a, b) => {
+        if (a.eventDate && b.eventDate) return new Date(b.eventDate) - new Date(a.eventDate);
+        if (a.eventDate) return -1;
+        if (b.eventDate) return 1;
+        return 0;
+      })
+      .slice(0, 5),
     joinedByMonth,
     eventEntriesByMonth: []
   };
@@ -520,15 +584,18 @@ async function getEventBreakdown({ limit = 20 } = {}) {
       appliedAt: dateGte(DEFAULT_DISPLAY_FROM)
     },
     _count: { _all: true },
-    orderBy: [{ eventDate: "desc" }, { eventName: "asc" }],
-    take
+    orderBy: [{ eventDate: "desc" }, { eventName: "asc" }]
   });
 
-  return events.map((event) => ({
-    eventName: event.eventName,
-    eventDate: event.eventDate,
-    entries: event._count._all
-  }));
+  // 同一コンテストが (eventName, eventDate) で割れたバケットを正規化キーでマージしてから上位を返す。
+  return mergeContestBuckets(events)
+    .sort((a, b) => {
+      if (a.eventDate && b.eventDate) return new Date(b.eventDate) - new Date(a.eventDate);
+      if (a.eventDate) return -1;
+      if (b.eventDate) return 1;
+      return a.eventName.localeCompare(b.eventName);
+    })
+    .slice(0, take);
 }
 
 async function getEventOptions() {
@@ -554,25 +621,26 @@ async function getEventOptions() {
   const schedules = await prisma.contestSchedule.findMany({
     where: { status: "confirmed" }
   });
-  const scheduleMap = new Map();
-  for (const s of schedules) {
-    if (!scheduleMap.has(s.contestName)) {
-      scheduleMap.set(s.contestName, s);
-    }
-  }
+  const scheduleIndex = buildScheduleIndex(schedules);
 
-  // Only include events that have a confirmed schedule.
-  const confirmedEvents = events.filter((e) => scheduleMap.has(e.eventName));
-
-  const results = confirmedEvents.map((event) => {
-    const schedule = scheduleMap.get(event.eventName);
-    return {
-      eventName: event.eventName,
+  // 正規化キーの部分一致で confirmed スケジュールへ解決し、スケジュール単位で集約する。
+  // 完全一致をやめることで、年号ドリフト名や日付分裂が一覧から消える/件数が割れる問題を解消。
+  // 同一スケジュールに複数の eventName（"X" と "X 2026" など）がぶら下がっても合算される。
+  const bySchedule = new Map();
+  for (const event of events) {
+    const schedule = matchScheduleForName(event.eventName, scheduleIndex);
+    if (!schedule) continue;
+    const acc = bySchedule.get(schedule.contestName) || {
+      eventName: schedule.contestName,
       eventDate: schedule.eventDate,
       eventVenueName: schedule.venueName ?? null,
-      entries: event._count._all
+      entries: 0
     };
-  });
+    acc.entries += event._count._all;
+    bySchedule.set(schedule.contestName, acc);
+  }
+
+  const results = [...bySchedule.values()];
 
   // Sort by eventDate ascending (nulls last), then by name.
   results.sort((a, b) => {
@@ -605,9 +673,11 @@ async function getEventInsights(eventName) {
     };
   }
 
+  // 同一コンテストに属する全 eventName（年号ドリフト名を含む）を解決してから取得する。
+  const entryNames = await resolveEntryNames(eventName);
   // Fetch all entries (applied + cancelled/refunded) to report cancellation counts.
   const allEntries = await prisma.eventEntry.findMany({
-    where: { eventName },
+    where: { eventName: { in: entryNames } },
     include: {
       member: {
         select: {

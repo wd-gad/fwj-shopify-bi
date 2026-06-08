@@ -165,13 +165,32 @@ function mapOrderItem(item, orderId) {
 
 async function upsertOrder(order) {
   const items = (order.lineItems?.edges ?? []).map((edge) => mapOrderItem(edge.node, order.id));
+  const customerId = order.customer?.id ?? null;
 
   await prisma.$transaction(async (tx) => {
+    // FK制約 (shopify_orders_shopify_customer_id_fkey) 対策：
+    // 注文が参照する顧客がまだDBに無い場合（フル同期で顧客取得→注文取得の間に新規登録した等）に
+    // 最小スタブを作って参照整合性を満たす。既存顧客は update:{} で一切変更しない（顧客同期が後で本データを充填）。
+    if (customerId) {
+      await tx.shopifyCustomer.upsert({
+        where: { id: customerId },
+        create: {
+          id: customerId,
+          email: order.customer?.email ?? order.email ?? null,
+          firstName: order.customer?.firstName ?? null,
+          lastName: order.customer?.lastName ?? null,
+          rawJson: order.customer ?? { id: customerId },
+          syncedAt: new Date()
+        },
+        update: {}
+      });
+    }
+
     await tx.shopifyOrder.upsert({
       where: { id: order.id },
       create: {
         id: order.id,
-        customerId: order.customer?.id ?? null,
+        customerId,
         orderNumber: order.name ?? null,
         email: order.email ?? null,
         financialStatus: order.displayFinancialStatus ?? null,
@@ -184,7 +203,7 @@ async function upsertOrder(order) {
         syncedAt: new Date()
       },
       update: {
-        customerId: order.customer?.id ?? null,
+        customerId,
         orderNumber: order.name ?? null,
         email: order.email ?? null,
         financialStatus: order.displayFinancialStatus ?? null,
@@ -312,10 +331,21 @@ async function runTarget(target, updatedAfter) {
 
   if (target === "orders") {
     const orders = await fetchOrders({ updatedAfter });
+    // 1件の失敗で同期バッチ全体を止めない（残りの注文と後続の rebuild-analytics を守る）。
+    let failed = 0;
     for (const order of orders) {
-      await upsertOrder(order);
+      try {
+        await upsertOrder(order);
+      } catch (error) {
+        failed += 1;
+        const id = order?.name ?? order?.id ?? "(unknown)";
+        console.error(`[orders] upsert failed for ${id}: ${error instanceof Error ? error.message : error}`);
+      }
     }
-    return { target, count: orders.length };
+    if (failed > 0) {
+      console.warn(`[orders] ${failed}/${orders.length} order(s) failed and were skipped (sync continued)`);
+    }
+    return { target, count: orders.length, failed };
   }
 
   if (target === "all") {
