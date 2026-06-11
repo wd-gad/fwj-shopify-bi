@@ -1,8 +1,28 @@
 const { prisma } = require("./prisma.js");
 const { normalizePrefecture, inferRegionFromPrefecture } = require("./member-analytics.js");
-const { normalizeContestKey } = require("./shopify-product-classification.js");
+const {
+  normalizeContestKey,
+  parseDayIndex,
+  dayIndexFromName,
+  stripDayNameSuffix
+} = require("./shopify-product-classification.js");
 
 const DEFAULT_DISPLAY_FROM = new Date("2026-01-01T00:00:00.000Z");
+
+// 複数日開催の eventName（"... 2026 D2"）を、商品タイトル突き合わせ用の
+// 本体名 + 開催日インデックスに分解する。単日開催は dayIndex=null。
+// 観戦チケット等のタイトルには "Day-N" は入るが " D2" サフィックスは入らないため、
+// 本体名で contains 検索し、取得後に matchesEventDay() でタイトルの "Day-N" を突き合わせる。
+function splitEventDay(eventName) {
+  const name = eventName || "";
+  const baseName = stripDayNameSuffix(name) || name;
+  return { baseName, dayIndex: dayIndexFromName(name) };
+}
+
+function matchesEventDay(title, dayIndex) {
+  if (dayIndex == null) return true;
+  return parseDayIndex(title) === dayIndex;
+}
 
 function dateGte(date) {
   return date ? { gte: date } : {};
@@ -673,6 +693,10 @@ async function getEventInsights(eventName) {
     };
   }
 
+  // 複数日開催（"... D1"/"... D2"）では、観戦/バックステージ等のチケット明細を
+  // 本体名で取得し、タイトルの "Day-N" で当該日に絞る。
+  const { baseName, dayIndex } = splitEventDay(eventName);
+
   // 同一コンテストに属する全 eventName（年号ドリフト名を含む）を解決してから取得する。
   const entryNames = await resolveEntryNames(eventName);
   // Fetch all entries (applied + cancelled/refunded) to report cancellation counts.
@@ -742,7 +766,7 @@ async function getEventInsights(eventName) {
     prisma.shopifyOrderItem.findMany({
       where: {
         title: {
-          contains: eventName,
+          contains: baseName,
           mode: "insensitive"
         },
         order: {
@@ -764,7 +788,7 @@ async function getEventInsights(eventName) {
     prisma.shopifyOrderItem.findMany({
       where: {
         title: {
-          contains: eventName,
+          contains: baseName,
           mode: "insensitive"
         },
         order: {
@@ -786,11 +810,21 @@ async function getEventInsights(eventName) {
   ]);
 
   const spectatorRevenue = spectatorRows
-    .filter((row) => isSpectatorTicketTitle(row.title) && isOrderRevenueValid(row.order))
+    .filter(
+      (row) =>
+        isSpectatorTicketTitle(row.title) &&
+        matchesEventDay(row.title, dayIndex) &&
+        isOrderRevenueValid(row.order)
+    )
     .reduce((sum, row) => sum + Number(row.price || 0) * Number(row.quantity || 1), 0);
 
   const backstageRevenue = backstageRows
-    .filter((row) => row.title.includes("バックステージパス") && isOrderRevenueValid(row.order))
+    .filter(
+      (row) =>
+        row.title.includes("バックステージパス") &&
+        matchesEventDay(row.title, dayIndex) &&
+        isOrderRevenueValid(row.order)
+    )
     .reduce((sum, row) => sum + Number(row.price || 0) * Number(row.quantity || 1), 0);
 
   for (const entry of entries) {
@@ -862,7 +896,12 @@ async function getEventInsights(eventName) {
         .map(([label, count]) => ({ label, count })),
       ...(() => {
         const backstageCount = backstageRows
-          .filter((row) => row.title.includes("バックステージパス") && isOrderRevenueValid(row.order))
+          .filter(
+            (row) =>
+              row.title.includes("バックステージパス") &&
+              matchesEventDay(row.title, dayIndex) &&
+              isOrderRevenueValid(row.order)
+          )
           .reduce((sum, row) => sum + Number(row.quantity || 1), 0);
         return backstageCount > 0
           ? [{ label: "バックステージサポート", count: backstageCount, special: "backstage" }]
@@ -892,10 +931,12 @@ async function getSpectatorInsights(eventName) {
     };
   }
 
+  const { baseName, dayIndex } = splitEventDay(eventName);
+
   const rows = await prisma.shopifyOrderItem.findMany({
     where: {
       title: {
-        contains: eventName,
+        contains: baseName,
         mode: "insensitive"
       }
     },
@@ -940,7 +981,9 @@ async function getSpectatorInsights(eventName) {
     }
   });
 
-  const allSpectatorRows = rows.filter((row) => isSpectatorTicketTitle(row.title));
+  const allSpectatorRows = rows.filter(
+    (row) => isSpectatorTicketTitle(row.title) && matchesEventDay(row.title, dayIndex)
+  );
   const spectatorRows = allSpectatorRows.filter((row) => isOrderRevenueValid(row.order));
   const cancelledSpectatorRows = allSpectatorRows.filter((row) => !isOrderRevenueValid(row.order));
 
