@@ -128,6 +128,11 @@ function normalizeSizeLabel(raw) {
 function extractSize(item) {
   const variant = String(item.variantTitle || "").trim();
   if (variant && variant.toLowerCase() !== "default title") {
+    // variantTitle の形式: "6/20 Generation Classic 2026 / S" → 末尾の "/ SIZE" を抽出
+    const sizeMatch = variant.match(/\/\s*([^/]+?)\s*$/);
+    if (sizeMatch) {
+      return normalizeSizeLabel(sizeMatch[1]);
+    }
     return normalizeSizeLabel(variant);
   }
 
@@ -172,8 +177,9 @@ function aggregateRentalsForEvent(eventKey, rentalItems) {
   for (const item of rentalItems) {
     if (!isOrderRevenueValid(item.order)) continue;
 
-    const titleKey = normalizeContestKey(item.title || "");
-    if (!titleKey || !titleKey.includes(eventKey)) continue;
+    // コンテスト名は title でなく variantTitle に含まれる ("6/20 Generation Classic 2026 / S")
+    const variantKey = normalizeContestKey(item.variantTitle || "");
+    if (!variantKey || !variantKey.includes(eventKey)) continue;
 
     const size = extractSize(item);
     const qty = Number(item.quantity || 0) || 0;
