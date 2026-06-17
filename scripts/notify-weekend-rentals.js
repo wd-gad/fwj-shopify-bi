@@ -32,6 +32,7 @@ const {
 
 const RENTAL_TITLE_KEYWORD =
   process.env.RENTAL_TITLE_KEYWORD || "【レンタル】ステージ用サーフパンツ";
+const SHOPIFY_STORE_DOMAIN = process.env.SHOPIFY_STORE_DOMAIN || "";
 const JST_OFFSET_MS = 9 * 60 * 60 * 1000;
 const isDryRun = process.env.DRY_RUN === "true";
 
@@ -172,6 +173,7 @@ function dedupeWeekendEvents(schedules) {
 
 function aggregateRentalsForEvent(eventKey, rentalItems) {
   const sizeTotals = new Map();
+  const sizeOrders = new Map(); // size -> [{orderNumber, orderId}]
   let matchedLines = 0;
 
   for (const item of rentalItems) {
@@ -186,6 +188,11 @@ function aggregateRentalsForEvent(eventKey, rentalItems) {
     if (qty <= 0) continue;
 
     sizeTotals.set(size, (sizeTotals.get(size) || 0) + qty);
+    if (!sizeOrders.has(size)) sizeOrders.set(size, []);
+    sizeOrders.get(size).push({
+      orderNumber: item.order?.orderNumber || "",
+      orderId: item.order?.id || "",
+    });
     matchedLines += 1;
   }
 
@@ -195,7 +202,7 @@ function aggregateRentalsForEvent(eventKey, rentalItems) {
         sizeSortKey(a[0]) - sizeSortKey(b[0]) ||
         String(a[0]).localeCompare(String(b[0]), "ja")
     )
-    .map(([size, count]) => ({ size, count }));
+    .map(([size, count]) => ({ size, count, orders: sizeOrders.get(size) || [] }));
 
   const totalQty = sizes.reduce((sum, s) => sum + s.count, 0);
   return { sizes, totalQty, matchedLines };
@@ -203,12 +210,27 @@ function aggregateRentalsForEvent(eventKey, rentalItems) {
 
 // ---- メッセージ整形 ----------------------------------------------------
 
+function shopifyOrderUrl(orderId) {
+  // orderId: "gid://shopify/Order/7677055861055" → 数値IDを抽出
+  if (!SHOPIFY_STORE_DOMAIN || !orderId) return "";
+  const numericId = String(orderId).replace(/^.*\//, "");
+  return `https://${SHOPIFY_STORE_DOMAIN}/admin/orders/${numericId}`;
+}
+
 function buildMessage(displayName, aggregate) {
   if (aggregate.totalQty <= 0) {
     return `今週末の${displayName}の対象レンタル（${RENTAL_TITLE_KEYWORD}）オーダーは現在0件です。`;
   }
 
-  const lines = aggregate.sizes.map((s) => `${s.size} x ${s.count}`);
+  const lines = aggregate.sizes.map((s) => {
+    const orderRefs = s.orders
+      .map(({ orderNumber, orderId }) => {
+        const url = shopifyOrderUrl(orderId);
+        return url ? `${orderNumber} ${url}` : orderNumber;
+      })
+      .join(", ");
+    return `${s.size} x ${s.count}（${orderRefs}）`;
+  });
   return [
     `今週末の${displayName}では、以下のレンタルオーダーが入っています。ご準備願います。`,
     ...lines,
@@ -272,7 +294,7 @@ async function run() {
       variantTitle: true,
       quantity: true,
       order: {
-        select: { financialStatus: true, rawJson: true },
+        select: { id: true, orderNumber: true, financialStatus: true, rawJson: true },
       },
     },
   });
