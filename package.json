@@ -24,7 +24,8 @@
     "shopify:preflight": "node --env-file=.env scripts/shopify-preflight.js",
     "shopify:reward-report": "node --env-file=.env scripts/shopify-reward-report.js",
     "shopify:sync": "node --env-file=.env scripts/shopify-sync.js",
-    "shopify:rebuild": "node --env-file=.env scripts/rebuild-analytics.js"
+    "shopify:rebuild": "node --env-file=.env scripts/rebuild-analytics.js",
+    "notify:weekend-rentals": "node --env-file=.env scripts/notify-weekend-rentals.js"
   },
   "prisma": {
     "seed": "node prisma/seed.js"

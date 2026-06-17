@@ -1,0 +1,20 @@
+# Railway Cron サービス設定: 毎週木曜 17:00 JST のレンタル集計通知
+#
+# 使い方:
+#   Railway 上で fwj-shopify-bi リポジトリから「新しいサービス（Cron）」を作成し、
+#   このファイルを Config-as-code（Settings > Config-as-code path）に指定する。
+#   ※ 既存の railway-cron.toml（毎時 cron-notify.js）とは別サービスとして追加する。
+#
+# cronSchedule は UTC 基準。木曜 17:00 JST = 木曜 08:00 UTC → "0 8 * * 4"
+#
+# 必要な環境変数（このサービスに設定）:
+#   DATABASE_URL            本体サービスと同じ分析DB(Postgres)
+#   GOOGLE_CHAT_WEBHOOK_URL 通知先 Google Chat スペースの Webhook URL
+
+[build]
+builder = "nixpacks"
+buildCommand = "npm install --omit=dev --ignore-scripts && npx prisma generate"
+
+[deploy]
+startCommand = "node scripts/notify-weekend-rentals.js"
+cronSchedule = "0 8 * * 4"
