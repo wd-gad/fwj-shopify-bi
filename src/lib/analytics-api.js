@@ -6,6 +6,7 @@ const {
   dayIndexFromName,
   stripDayNameSuffix
 } = require("./shopify-product-classification.js");
+const { listPortalContests } = require("./portal-contests-client.js");
 
 const DEFAULT_DISPLAY_FROM = new Date("2026-01-01T00:00:00.000Z");
 
@@ -637,10 +638,8 @@ async function getEventOptions() {
     return [];
   }
 
-  // Fetch confirmed schedules only — draft/cancelled/unregistered events are hidden.
-  const schedules = await prisma.contestSchedule.findMany({
-    where: { status: "confirmed" }
-  });
+  // Fetch confirmed schedules from Portal (Origin).
+  const schedules = await listPortalContests({ status: "confirmed" });
   const scheduleIndex = buildScheduleIndex(schedules);
 
   // 正規化キーの部分一致で confirmed スケジュールへ解決し、スケジュール単位で集約する。
