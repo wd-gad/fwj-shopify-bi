@@ -29,6 +29,7 @@ const {
   normalizeContestKey,
   stripDayNameSuffix,
 } = require("../src/lib/shopify-product-classification.js");
+const { listPortalContests } = require("../src/lib/portal-contests-client.js");
 
 const RENTAL_TITLE_KEYWORD =
   process.env.RENTAL_TITLE_KEYWORD || "【レンタル】ステージ用サーフパンツ";
@@ -268,10 +269,8 @@ async function run() {
     `[weekend-rentals] 週末判定(JST): ${weekend.saturday} (土) / ${weekend.sunday} (日)`
   );
 
-  const confirmed = await prisma.contestSchedule.findMany({
-    where: { status: "confirmed" },
-    orderBy: { eventDate: "asc" },
-  });
+  const confirmed = (await listPortalContests({ status: "confirmed" }))
+    .sort((a, b) => new Date(a.eventDate) - new Date(b.eventDate));
 
   const weekendSchedules = confirmed.filter(
     (s) => s.eventDate && weekend.set.has(toUtcYmd(new Date(s.eventDate)))
